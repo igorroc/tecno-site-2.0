@@ -7,7 +7,11 @@ const Wrapper = styled("div", {
 	width: "100%",
 	height: "85vh",
 	zIndex: "-10",
-
+	filter: `drop-shadow(0 2px 1px rgba(0,0,0,0.09))
+			drop-shadow(0 4px 2px rgba(0,0,0,0.09))
+			drop-shadow(0 8px 4px rgba(0,0,0,0.09))
+			drop-shadow(0 16px 8px rgba(0,0,0,0.09))
+			drop-shadow(0 32px 16px rgba(0,0,0,0.09))`,
 	"& img": {
 		width: "100%",
 		height: "100%",
