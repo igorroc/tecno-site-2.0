@@ -9,17 +9,19 @@
  *
  */
 
-import * as fontawesome from "@fortawesome/fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+
+/** SOLID ICONS (PREFIX: fas) */
+import { fas } from "@fortawesome/free-solid-svg-icons"
 
 /** BRAND ICONS (PREFIX: fab) */
-import * as faWindows from "@fortawesome/fontawesome-free-brands/faWindows"
-import * as faGithub from "@fortawesome/fontawesome-free-brands/faGithub"
-import * as faLinkedin from "@fortawesome/fontawesome-free-brands/faLinkedin"
-import * as faFacebook from "@fortawesome/fontawesome-free-brands/faFacebook"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
+/** REGULAR ICONS (PREFIX: far) */
+import { far } from "@fortawesome/free-regular-svg-icons"
 
 export default {
-	init: () =>
-		fontawesome.library.add(faWindows, faGithub, faLinkedin, faFacebook),
+	init: () => library.add(fas),
 }
 
 // <FontAwesomeIcon icon={item.icon as any} fixedWidth={true} />
