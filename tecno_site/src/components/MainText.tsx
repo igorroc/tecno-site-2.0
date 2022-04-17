@@ -15,7 +15,7 @@ const gradientAnimation = keyframes({
 	},
 })
 
-const Text = styled("h1", {
+const Text = styled("span", {
 	fontSize: "1em",
 	fontWeight: "bold",
 	color: "transparent",
@@ -26,6 +26,7 @@ const Text = styled("h1", {
 	backgroundSize: "200%",
 	backgroundPosition: "-100%",
 	animation: `${gradientAnimation} 8s infinite linear`,
+	display: "block",
 
 	variants: {
 		size: {
@@ -39,10 +40,6 @@ const Text = styled("h1", {
 				fontSize: "1em",
 			},
 		},
-	},
-	"&.softBoxShadow": {
-		// textShadow:
-		// 	"0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);",
 	},
 })
 
