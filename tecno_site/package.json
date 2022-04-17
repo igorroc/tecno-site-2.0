@@ -14,6 +14,7 @@
 		"@fortawesome/free-regular-svg-icons": "^6.1.1",
 		"@fortawesome/free-solid-svg-icons": "^6.1.1",
 		"@fortawesome/react-fontawesome": "^0.1.18",
+		"@googlemaps/react-wrapper": "^1.1.31",
 		"@stitches/react": "^1.2.7",
 		"babel-plugin-macros": "^3.1.0",
 		"react": "^18.0.0",
