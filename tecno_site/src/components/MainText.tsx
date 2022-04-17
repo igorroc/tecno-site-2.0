@@ -1,11 +1,5 @@
 import { keyframes, styled } from "@stitches/react"
 
-const breathingAnimation = keyframes({
-	"0%": { transform: "scale(1)" },
-	"50%": { transform: "scale(1.1)" },
-	"100%": { transform: "scale(1)" },
-})
-
 const gradientAnimation = keyframes({
 	"0%": {
 		backgroundPosition: "-100%",
