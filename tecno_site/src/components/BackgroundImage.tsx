@@ -5,7 +5,7 @@ const Wrapper = styled("div", {
 	top: "0",
 	left: "0",
 	width: "100%",
-	height: "85vh",
+	height: "95vh",
 	zIndex: "-10",
 	filter: `drop-shadow(0 2px 1px rgba(0,0,0,0.09))
 			drop-shadow(0 4px 2px rgba(0,0,0,0.09))

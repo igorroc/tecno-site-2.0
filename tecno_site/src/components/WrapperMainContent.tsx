@@ -2,13 +2,11 @@ import { styled } from "@stitches/react"
 
 const WrapperContent = styled("div", {
 	position: "relative",
-	height: "90vh",
+	height: "100vh",
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "center",
 	gap: "45px",
-
-	// padding: "6em 0",
 
 	"& > h1": {
 		whiteSpace: "nowrap",
