@@ -1,13 +1,20 @@
-import { styled } from "@stitches/react"
+import { keyframes, styled } from "@stitches/react"
 
 const size = "1.6em"
 const shadow = "0px 0px 5px #000"
+const rotation = "rotateZ(-90deg)"
+
+const slidingAnimation = keyframes({
+	"0%": { transform: `${rotation} translateX(10%)`},
+	"50%": { transform: `${rotation} translateX(-10%)`},
+	"100%": { transform: `${rotation} translateX(10%)`},
+})
 
 const Div = styled("div", {
 	position: "absolute",
 	top: "50%",
 	right: "0",
-	transform: "rotateZ(-90deg)",
+	transform: rotation,
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
@@ -15,6 +22,7 @@ const Div = styled("div", {
 	color: "white",
 	textShadow: shadow,
 	fontSize: size,
+	animation: `${slidingAnimation} 2s infinite ease-in-out`,
 })
 
 const Line = styled("div", {
