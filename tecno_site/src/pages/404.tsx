@@ -15,9 +15,14 @@ const Wrapper = styled("div", {
 })
 
 const WrapperContent = styled("div", {
-	width: "50%",
+	width: "90%",
+	height: "100vh",
 	maxWidth: "510px",
-	margin: "10vh auto",
+
+	position: "absolute",
+	left: "50%",
+	transform: "translateX(-50%)",
+
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "center",

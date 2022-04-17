@@ -4,13 +4,16 @@ import Logo from "../assets/icons/logo_nome_horizontal_white.svg?component"
 import { MaxWidthWrapper } from "./MaxWidthWrapper"
 
 const HeaderDiv = styled("header", {
-	backgroundColor: "#ffffff05",
+	position: "fixed",
+	top: "0",
+	backgroundColor: "#00000005",
 	width: "100%",
 	display: "flex",
 	height: "80px",
 	alignItems: "center",
 	justifyContent: "center",
 	backdropFilter: "blur(10px)",
+	zIndex: "10",
 
 	"& #headerLogo svg": {
 		height: "30px",
@@ -57,9 +60,23 @@ const HeaderDiv = styled("header", {
 		alignItems: "center",
 		justifyContent: "space-between",
 	},
-})
 
-const ContentWrapper = styled("div", {})
+	"&::before": {
+		content: "",
+		width: "100%",
+		height: "1px",
+		position: "absolute",
+		bottom: "0",
+		zIndex: "-1",
+
+		backgroundColor: "#fff5",
+		filter: `drop-shadow(0 1px 1px rgba(0,0,0,1))
+				drop-shadow(0 2px 2px rgba(0,0,0,0.8))
+				drop-shadow(0 4px 4px rgba(0,0,0,0.6))
+				drop-shadow(0 6px 6px rgba(0,0,0,0.4))
+				drop-shadow(0 8px 8px rgba(0,0,0,0.2))`,
+	},
+})
 
 const LinkList = [
 	{ url: "/about", text: "Sobre" },
@@ -74,30 +91,32 @@ type HeaderProps = {
 
 export function Header(props: HeaderProps) {
 	return (
-		<HeaderDiv id="header">
-			<MaxWidthWrapper>
-				<a id="headerLogo" href="/">
-					<Logo />
-				</a>
-				<ul>
-					{LinkList.map((link, index) => {
-						return (
-							<a
-								href={link.url}
-								key={index}
-								className={
-									link.text == props.active
-										? "headerActiveItem"
-										: ""
-								}
-							>
-								{link.text}
-							</a>
-						)
-					})}
-				</ul>
-				<ButtonBorder text="Faça Login!" />
-			</MaxWidthWrapper>
-		</HeaderDiv>
+		<div id="pageTop">
+			<HeaderDiv id="header">
+				<MaxWidthWrapper>
+					<a id="headerLogo" href="/">
+						<Logo />
+					</a>
+					<ul>
+						{LinkList.map((link, index) => {
+							return (
+								<a
+									href={link.url}
+									key={index}
+									className={
+										link.text == props.active
+											? "headerActiveItem"
+											: ""
+									}
+								>
+									{link.text}
+								</a>
+							)
+						})}
+					</ul>
+					<ButtonBorder text="Faça Login!" />
+				</MaxWidthWrapper>
+			</HeaderDiv>
+		</div>
 	)
 }
