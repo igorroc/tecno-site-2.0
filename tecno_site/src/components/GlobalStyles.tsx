@@ -9,6 +9,7 @@ const globalStyles = globalCss({
 	body: {
 		backgroundColor: "#1b1b1b",
 		color: "white",
+		overflowX: "hidden",
 	},
 	a: {
 		textDecoration: "none",
