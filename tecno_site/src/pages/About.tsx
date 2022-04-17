@@ -1,32 +1,29 @@
 import { styled } from "@stitches/react"
 import { Header } from "../components/Header"
 
-import mainBg from "../assets/img/backgroundAbout.png"
 import { MainText } from "../components/MainText"
 import { Button } from "../components/Button"
 import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
+import { SectionTitle } from "../components/SectionTitle"
+import { WrapperMainContent } from "../components/WrapperMainContent"
+import { Icon } from "../components/Icon"
+import {
+	MemberGrid,
+	MemberCard,
+	MemberName,
+	MemberRole,
+	MemberLinksRow,
+	MemberLink,
+	MemberImage,
+	MemberBox,
+} from "../components/MemberGrid"
 
-const WrapperContent = styled("div", {
-	position: "relative",
-	width: "100%",
-	display: "flex",
-	flexDirection: "column",
-	gap: "45px",
+import mainBg from "../assets/img/backgroundAbout.png"
+import membersInfo from "../common/membersInfo"
+import { IconName } from "@fortawesome/fontawesome-svg-core"
 
-	marginTop: "6em",
-
-	"& > h1": {
-		fontSize: "3em",
-		width: "max-content",
-	},
-
-	"& > p": {
-		fontSize: "1.2em",
-		maxWidth: "500px",
-	},
-})
 
 function About() {
 	return (
@@ -34,7 +31,7 @@ function About() {
 			<Header active="Sobre"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
-				<WrapperContent>
+				<WrapperMainContent>
 					<h1>
 						Quem é a<MainText>TecnoJr?</MainText>
 					</h1>
@@ -47,12 +44,42 @@ function About() {
 						empreendedor de seus colaboradores. Atualmente é
 						constituida por 19 membros.
 					</p>
-					<Button url="#">
-						Membros
+					<Button url="#membros">
+						MEMBROS
 						<i className="fa-solid fa-user"></i>
 					</Button>
 					<ScrollIndicator />
-				</WrapperContent>
+				</WrapperMainContent>
+				<SectionTitle title="Ideais" color="blue">
+					Missão, Visão e Valores!
+				</SectionTitle>
+				<SectionTitle title="Membros" color="purple">
+					Conheça os devs da <strong>Tecno</strong>!
+				</SectionTitle>
+				<MemberGrid>
+					{membersInfo.map((usr, index) => {
+						return (
+							<MemberCard key={index}>
+								<MemberImage img={usr.img} />
+								<MemberBox>
+									<MemberName>{usr.name}</MemberName>
+									<MemberRole>{usr.role}</MemberRole>
+								</MemberBox>
+								<MemberLinksRow>
+									{usr.links.map((link, index) => {
+										return (
+											<MemberLink
+												key={index}
+												icon={link.icon as IconName}
+												url={link.url}
+											/>
+										)
+									})}
+								</MemberLinksRow>
+							</MemberCard>
+						)
+					})}
+				</MemberGrid>
 			</MaxWidthWrapper>
 		</div>
 	)
