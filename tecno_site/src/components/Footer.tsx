@@ -42,7 +42,7 @@ const FooterDiv = styled("footer", {
 	},
 	"& #copy": {
 		textAlign: "center",
-		marginBottom: "100px",
+		marginBottom: "50px",
 	},
 })
 
