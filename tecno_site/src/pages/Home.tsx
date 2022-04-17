@@ -7,26 +7,16 @@ import { Button } from "../components/Button"
 import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
-
-const WrapperContent = styled("div", {
-	position: "relative",
-	width: "100%",
-	display: "flex",
-	flexDirection: "column",
-	gap: "45px",
-
-	marginTop: "6em",
-
-	"& > h1": {
-		fontSize: "3em",
-		width: "max-content",
-	},
-
-	"& > p": {
-		fontSize: "1.2em",
-		maxWidth: "500px",
-	},
-})
+import { WrapperMainContent } from "../components/WrapperMainContent"
+import {
+	Carrousel,
+	CarrouselNode,
+	CarrouselNodeIcon,
+	CarrouselNodeTitle,
+	CarrouselNodeContent,
+} from "../components/Carrousel"
+import { SectionTitle } from "../components/SectionTitle"
+import { Icon } from "../components/Icon"
 
 function Home() {
 	return (
@@ -34,7 +24,8 @@ function Home() {
 			<Header></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
-				<WrapperContent>
+				{/* Main Section */}
+				<WrapperMainContent>
 					<h1>
 						Implementando
 						<MainText>Sonhos e Soluções</MainText>
@@ -51,7 +42,44 @@ function Home() {
 						<i className="fa-solid fa-arrow-right"></i>
 					</Button>
 					<ScrollIndicator />
-				</WrapperContent>
+				</WrapperMainContent>
+				{/* Sections */}
+				<SectionTitle title="Serviços" color="blue">
+					Conheça os nossos <strong>serviços</strong>!
+				</SectionTitle>
+				<Carrousel>
+					<CarrouselNode>
+						<CarrouselNodeIcon />
+						<CarrouselNodeTitle>Aplicativos</CarrouselNodeTitle>
+						<CarrouselNodeContent>
+							Nós desenvolvemos aplicativos nativos de alta
+							performance para atender sua necessidade, seus
+							clientes e seu bolso.
+						</CarrouselNodeContent>
+					</CarrouselNode>
+					<CarrouselNode active>
+						<CarrouselNodeIcon />
+						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
+						<CarrouselNodeContent>
+							Desenvolvemos desde uma página simples de portfólio,
+							até um site institucional com várias páginas.
+						</CarrouselNodeContent>
+					</CarrouselNode>
+					<CarrouselNode>
+						<Icon prefix="fas" iconName="eyes" />
+						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
+						<CarrouselNodeContent>
+							Usamos das melhores tecnologias do mercado para
+							desenvolver sua aplicação. Garantindo, que aquele
+							sistema que gerencia sua barbearia ou que seu
+							e-commerce, saia com a qualidade esperada.
+						</CarrouselNodeContent>
+					</CarrouselNode>
+				</Carrousel>
+				<SectionTitle title="Orçamento" color="purple"></SectionTitle>
+				<SectionTitle title="Parceiros" color="blue">
+					Conheça quem confia na TecnoJr!
+				</SectionTitle>
 			</MaxWidthWrapper>
 		</div>
 	)
