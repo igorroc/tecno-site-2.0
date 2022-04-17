@@ -23,9 +23,9 @@
 ## 📝 Sumário
 
 -   [Getting Started](#getting_started)
+-   [Tests](#tests)
 -   [Deployment](#deployment)
 -   [Built Using](#built_using)
--   [Tests](#tests)
 -   [TODO](../TODO.md)
 -   [Authors](#authors)
 -   [Acknowledgments](#acknowledgement)
