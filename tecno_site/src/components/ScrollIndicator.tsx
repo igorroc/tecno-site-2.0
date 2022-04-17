@@ -5,9 +5,9 @@ const shadow = "0px 0px 5px #000"
 const rotation = "rotateZ(-90deg)"
 
 const slidingAnimation = keyframes({
-	"0%": { transform: `${rotation} translateX(10%)`},
-	"50%": { transform: `${rotation} translateX(-10%)`},
-	"100%": { transform: `${rotation} translateX(10%)`},
+	"0%": { transform: `${rotation} translateX(10%)` },
+	"50%": { transform: `${rotation} translateX(-10%)` },
+	"100%": { transform: `${rotation} translateX(10%)` },
 })
 
 const Div = styled("div", {
@@ -18,7 +18,7 @@ const Div = styled("div", {
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
-	gap: "0.5em",
+	gap: "2em",
 	color: "white",
 	textShadow: shadow,
 	fontSize: size,
@@ -49,7 +49,6 @@ export function ScrollIndicator() {
 		<Div>
 			<Arrow>
 				<i className="fa-solid fa-angle-left"></i>
-				<Line />
 			</Arrow>
 			Scroll
 		</Div>
