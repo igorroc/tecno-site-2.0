@@ -9,26 +9,7 @@ import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
 import { Footer } from "../components/Footer"
 import { Division } from "../components/Division"
-
-const WrapperContent = styled("div", {
-	position: "relative",
-	width: "100%",
-	display: "flex",
-	flexDirection: "column",
-	gap: "45px",
-
-	marginTop: "6em",
-
-	"& > h1": {
-		fontSize: "3em",
-		width: "max-content",
-	},
-
-	"& > p": {
-		fontSize: "1.2em",
-		maxWidth: "500px",
-	},
-})
+import { WrapperMainContent } from "../components/WrapperMainContent"
 
 function Projects() {
 	return (
@@ -36,62 +17,28 @@ function Projects() {
 			<Header active="Projetos"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
-				<WrapperContent>
+				<WrapperMainContent>
 					<h1>
 						Conheça alguns dos
 						<MainText>Sonhos e Soluções</MainText>
 						já implementados
 					</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Aspernatur sapiente mollitia id, excepturi
+						voluptates ad, veniam soluta dicta maxime, cumque porro.
+						Enim doloremque sapiente voluptatum! Consequuntur rerum
+						cumque animi. Veritatis.
+					</p>
 
 					<Button url="#">
 						Saiba mais
 						<i className="fa-solid fa-caret-down"></i>
 					</Button>
 					<ScrollIndicator />
-				</WrapperContent>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptate asperiores consectetur temporibus exercitationem
-					animi, nostrum repudiandae veniam id in minima magnam ullam
-					eius illum. Ea dignissimos autem vitae laborum beatae.
-				</p>
+				</WrapperMainContent>
 			</MaxWidthWrapper>
+			<Division height="normal" line={false} />
 			<Footer />
 		</div>
 	)
