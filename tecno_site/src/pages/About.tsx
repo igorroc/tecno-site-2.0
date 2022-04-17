@@ -23,7 +23,7 @@ import {
 import mainBg from "../assets/img/backgroundAbout.png"
 import membersInfo from "../common/membersInfo"
 import { IconName } from "@fortawesome/fontawesome-svg-core"
-
+import { Footer } from "../components/Footer"
 
 function About() {
 	return (
@@ -81,6 +81,7 @@ function About() {
 					})}
 				</MemberGrid>
 			</MaxWidthWrapper>
+			<Footer />
 		</div>
 	)
 }

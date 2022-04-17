@@ -17,6 +17,7 @@ import {
 } from "../components/Carrousel"
 import { SectionTitle } from "../components/SectionTitle"
 import { Icon } from "../components/Icon"
+import { Footer } from "../components/Footer"
 
 function Home() {
 	return (
@@ -66,7 +67,7 @@ function Home() {
 						</CarrouselNodeContent>
 					</CarrouselNode>
 					<CarrouselNode>
-						<Icon prefix="fas" iconName="eyes" />
+						<Icon prefix="fas" iconName="arrow-right" />
 						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
 						<CarrouselNodeContent>
 							Usamos das melhores tecnologias do mercado para
@@ -81,6 +82,7 @@ function Home() {
 					Conheça quem confia na TecnoJr!
 				</SectionTitle>
 			</MaxWidthWrapper>
+			<Footer />
 		</div>
 	)
 }
