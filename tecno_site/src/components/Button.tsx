@@ -28,7 +28,7 @@ const CustomButton = styled("button", {
 		backgroundPosition: "100% 0%",
 	},
 
-	"& i": {
+	"& svg": {
 		fontSize: "1.1em",
 	},
 })
