@@ -24,8 +24,8 @@
 
 -   [Getting Started](#getting_started)
 -   [Deployment](#deployment)
--   [Tests](#tests)
 -   [Built Using](#built_using)
+-   [Tests](#tests)
 -   [TODO](../TODO.md)
 -   [Authors](#authors)
 -   [Acknowledgments](#acknowledgement)
