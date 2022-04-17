@@ -1,13 +1,13 @@
 import { styled } from "@stitches/react"
 import { ButtonBorder } from "./ButtonBorder"
 import Logo from "../assets/icons/logo_nome_horizontal_white.svg?component"
+import { MaxWidthWrapper } from "./MaxWidthWrapper"
 
 const HeaderDiv = styled("header", {
 	backgroundColor: "#ffffff05",
-	width: "90%",
+	width: "100%",
 	display: "flex",
 	height: "80px",
-	padding: "0 5%",
 	alignItems: "center",
 	justifyContent: "center",
 	backdropFilter: "blur(10px)",
@@ -51,15 +51,15 @@ const HeaderDiv = styled("header", {
 			},
 		},
 	},
+
+	"& > div": {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "space-between",
+	},
 })
 
-const ContentWrapper = styled("div", {
-	display: "flex",
-	width: "100%",
-    maxWidth: "1400px",
-	alignItems: "center",
-	justifyContent: "space-between",
-})
+const ContentWrapper = styled("div", {})
 
 const LinkList = [
 	{ url: "/about", text: "Sobre" },
@@ -74,8 +74,8 @@ type HeaderProps = {
 
 export function Header(props: HeaderProps) {
 	return (
-		<HeaderDiv>
-			<ContentWrapper>
+		<HeaderDiv id="header">
+			<MaxWidthWrapper>
 				<a id="headerLogo" href="/">
 					<Logo />
 				</a>
@@ -97,7 +97,7 @@ export function Header(props: HeaderProps) {
 					})}
 				</ul>
 				<ButtonBorder text="Faça Login!" />
-			</ContentWrapper>
+			</MaxWidthWrapper>
 		</HeaderDiv>
 	)
 }

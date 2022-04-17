@@ -1,9 +1,8 @@
 import { styled } from "@stitches/react"
 
 const Wrapper = styled("div", {
-	fontSize: "1em",
 	width: "90%",
-	maxWidth: "1400px",
+	maxWidth: "1050px",
 	margin: "0 auto",
 	padding: "0px 5%",
 })
