@@ -35,7 +35,7 @@ const Paragraph = styled("p", {
 function PageNotFound() {
 	return (
 		<Wrapper>
-			<Header />
+			<Header active="404" />
 			<BackgroundImage image={img404} fullHeight />
 			<WrapperContent>
 				<MainText size="giant">404</MainText>
