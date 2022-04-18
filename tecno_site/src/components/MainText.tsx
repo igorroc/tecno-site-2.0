@@ -35,6 +35,7 @@ const Text = styled("span", {
 			},
 		},
 	},
+
 })
 
 type TextProps = {

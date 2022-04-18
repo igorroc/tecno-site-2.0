@@ -59,7 +59,7 @@ const HeaderDiv = styled("header", {
 		},
 	},
 
-	"& > div": {
+	"& > div > div": {
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "space-between",
@@ -100,7 +100,7 @@ const SideNav = styled("div", {
 	position: "fixed",
 	top: "0",
 	left: "0",
-	width: "100vw",
+	width: "100%",
 	height: "100vh",
 	backgroundColor: "#232323",
 	transform: "translateX(100%)",

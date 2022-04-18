@@ -1,10 +1,14 @@
 import { styled } from "@stitches/react"
 
 const Wrapper = styled("div", {
-	width: "90%",
+	width: "100%",
 	maxWidth: "1050px",
 	margin: "0 auto",
-	padding: "0px 5%",
+	
+	"& > div":{
+		width: "90%",
+		margin: "0 auto",
+	}
 })
 
 type WrapperProps = {
@@ -12,5 +16,9 @@ type WrapperProps = {
 }
 
 export function MaxWidthWrapper(props: WrapperProps) {
-	return <Wrapper>{props.children}</Wrapper>
+	return (
+		<Wrapper>
+			<div>{props.children}</div>
+		</Wrapper>
+	)
 }

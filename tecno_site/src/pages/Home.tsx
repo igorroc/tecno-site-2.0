@@ -18,10 +18,11 @@ import {
 import { SectionTitle } from "../components/SectionTitle"
 import { Icon } from "../components/Icon"
 import { Footer } from "../components/Footer"
+import GlobalDiv from "../components/GlobalDiv"
 
 function Home() {
 	return (
-		<div>
+		<GlobalDiv>
 			<Header active="Home"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
@@ -83,7 +84,7 @@ function Home() {
 				</SectionTitle>
 			</MaxWidthWrapper>
 			<Footer />
-		</div>
+		</GlobalDiv>
 	)
 }
 

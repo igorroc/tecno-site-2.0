@@ -43,6 +43,12 @@ const FooterDiv = styled("footer", {
 		textAlign: "center",
 		marginBottom: "50px",
 	},
+
+	"@small": {
+		"& #logoFooter": {
+			height: "2.5em",
+		}
+	}
 })
 
 const ContactDiv = styled("div", {
@@ -94,6 +100,14 @@ const ContactDiv = styled("div", {
 			top: "unset",
 			right: "unset",
 			bottom: "0",
+		},
+	},
+
+	"@small": {
+		fontSize: "12px",
+
+		"& > div > p": {
+			fontSize: "1.5em",
 		},
 	},
 })

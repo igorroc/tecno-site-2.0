@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react"
+import { styled } from "../stitches.config"
 
 const WrapperContent = styled("div", {
 	position: "relative",
@@ -9,14 +9,23 @@ const WrapperContent = styled("div", {
 	gap: "45px",
 
 	"& > h1": {
-		whiteSpace: "nowrap",
 		fontSize: "3em",
 		width: "max-content",
+		maxWidth: "300px",
+		
+		"& span": {
+			// maxWidth: "300px",
+			// display: "inline",
+		},
 	},
 
 	"& > p": {
 		fontSize: "1.2em",
 		maxWidth: "500px",
+	},
+
+	"@small": {
+		fontSize: "12px",
 	},
 })
 

@@ -9,6 +9,7 @@ import { WrapperMainContent } from "../components/WrapperMainContent"
 
 import { Form } from "../components/Form"
 import { Hexagon } from "../components/Hexagon"
+import GlobalDiv from "../components/GlobalDiv"
 
 const WrapperForm = styled("div", {
 	"& > div": {
@@ -18,18 +19,13 @@ const WrapperForm = styled("div", {
 	},
 })
 
-const OverFlowContainer = styled("div", {
-	width: "100vw",
-	overflow: "hidden",
-})
-
 function Contact() {
 	return (
-		<OverFlowContainer>
+		<GlobalDiv>
 			<Header active="Contato"></Header>
 			<BackgroundImage image={mainBg} fullHeight></BackgroundImage>
 			<MaxWidthWrapper>
-				<Hexagon />
+				{/* <Hexagon /> */}
 				<WrapperForm>
 					<WrapperMainContent>
 						<h1>
@@ -39,7 +35,7 @@ function Contact() {
 					</WrapperMainContent>
 				</WrapperForm>
 			</MaxWidthWrapper>
-		</OverFlowContainer>
+		</GlobalDiv>
 	)
 }
 

@@ -24,10 +24,11 @@ import mainBg from "../assets/img/backgroundAbout.png"
 import membersInfo from "../common/membersInfo"
 import { IconName } from "@fortawesome/fontawesome-svg-core"
 import { Footer } from "../components/Footer"
+import GlobalDiv from "../components/GlobalDiv"
 
 function About() {
 	return (
-		<div>
+		<GlobalDiv>
 			<Header active="Sobre"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
@@ -82,7 +83,7 @@ function About() {
 				</MemberGrid>
 			</MaxWidthWrapper>
 			<Footer />
-		</div>
+		</GlobalDiv>
 	)
 }
 

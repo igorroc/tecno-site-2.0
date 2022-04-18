@@ -10,18 +10,19 @@ import { ScrollIndicator } from "../components/ScrollIndicator"
 import { Footer } from "../components/Footer"
 import { Division } from "../components/Division"
 import { WrapperMainContent } from "../components/WrapperMainContent"
+import GlobalDiv from "../components/GlobalDiv"
 
 function Projects() {
 	return (
-		<div>
+		<GlobalDiv>
 			<Header active="Projetos"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
 				<WrapperMainContent>
 					<h1>
 						Conheça alguns dos
-						<MainText>Sonhos e Soluções</MainText>
-						já implementados
+						<MainText>sonhos</MainText>
+						já feitos!
 					</h1>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -40,7 +41,7 @@ function Projects() {
 			</MaxWidthWrapper>
 			<Division height="normal" line={false} />
 			<Footer />
-		</div>
+		</GlobalDiv>
 	)
 }
 
