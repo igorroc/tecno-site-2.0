@@ -1,12 +1,11 @@
-import { styled } from "@stitches/react"
 import { ButtonBorder } from "./ButtonBorder"
 import Logo from "../assets/icons/logo_nome_horizontal_white.svg?component"
 import { MaxWidthWrapper } from "./MaxWidthWrapper"
 import { Division } from "./Division"
 import { Button } from "./Button"
 import { Icon } from "./Icon"
-import FlexDiv from "./FlexDiv"
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
+import { styled } from "../stitches.config"
 
 const LinkList = [
 	{ url: "https://instagram.com/tecnojr", iconName: "house", prefix: "fas" },
@@ -79,11 +78,33 @@ const ContactDiv = styled("div", {
 			transform: "translateY(-50%) scale(1.068)",
 		},
 	},
+
+	"@large": {
+		width: "max-content",
+		flexDirection: "column",
+		textAlign: "center",
+		borderRadius: "20px",
+		justifyContent: "center",
+		alignItems: "center",
+		paddingBottom: "4em",
+		margin: "0 auto",
+
+		"& > button": {
+			transform: "translateY(50%)",
+			top: "unset",
+			right: "unset",
+			bottom: "0",
+		},
+	},
 })
 
 const SocialList = styled("ul", {
 	display: "flex",
 	gap: "5px",
+
+	"@medium": {
+		gap: "2em",
+	},
 })
 
 const SocialListIcon = styled("div", {
@@ -112,6 +133,11 @@ const SocialListIcon = styled("div", {
 		"& a": {
 			color: "#f25eff",
 		},
+	},
+
+	"@medium": {
+		width: "2em",
+		height: "2em",
 	},
 })
 
@@ -151,6 +177,41 @@ type FooterProps = {
 }
 
 export function Footer(props: FooterProps) {
+	const FlexDiv = styled("div", {
+		display: "flex",
+		gap: "50px",
+		variants: {
+			column: {
+				true: {
+					flexDirection: "column",
+				},
+			},
+			horizontalAlign: {
+				center: {
+					justifyContent: "center",
+				},
+				spaceAround: {
+					justifyContent: "space-around",
+				},
+				spaceBetween: {
+					justifyContent: "space-between",
+				},
+			},
+			verticalAlign: {
+				center: {
+					alignItems: "center",
+				},
+				down: {
+					alignItems: "end",
+				},
+			},
+		},
+
+		"@medium": {
+			flexDirection: "column",
+		},
+	})
+
 	return (
 		<FooterDiv id="footer">
 			<MaxWidthWrapper>
@@ -185,11 +246,7 @@ export function Footer(props: FooterProps) {
 					</a>
 				</FlexDiv>
 				<Division height="normal" line />
-				<FlexDiv
-					verticalAlign="center"
-					horizontalAlign="center"
-					gap="50px"
-				>
+				<FlexDiv verticalAlign="center" horizontalAlign="center">
 					<InfoItem href="mailto:tecnojr@uesc.br">
 						<div className="infoIcon">
 							<Icon prefix="fas" iconName="envelope" />

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { styled } from "@stitches/react"
+import { styled } from "../stitches.config"
 import { useState } from "react"
 
 const MyForm = styled("form", {
@@ -11,10 +11,13 @@ const MyForm = styled("form", {
 	"& > div": {
 		display: "flex",
 		gap: "1em",
+		alignContent: "flex-end",
+		flexWrap: "wrap",
 
 		"& > label": {
 			display: "flex",
 			flexDirection: "column",
+			justifyContent: "flex-end",
 			flex: "1",
 			fontSize: "1.4em",
 			fontWeight: "bold",
@@ -62,7 +65,7 @@ const MyForm = styled("form", {
 				border: "none",
 				borderBottom: "2px solid #fff4",
 				lineHeight: "2em",
-				height: "2em",
+				height: "4em",
 				minHeight: "2em",
 				maxHeight: "400px",
 				resize: "vertical",
@@ -105,6 +108,10 @@ const MyForm = styled("form", {
 		"& svg": {
 			fontSize: "1.2em",
 		},
+	},
+
+	"@large": {
+		width: "95%",
 	},
 })
 

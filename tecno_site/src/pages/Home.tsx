@@ -22,7 +22,7 @@ import { Footer } from "../components/Footer"
 function Home() {
 	return (
 		<div>
-			<Header></Header>
+			<Header active="Home"></Header>
 			<BackgroundImage image={mainBg}></BackgroundImage>
 			<MaxWidthWrapper>
 				{/* Main Section */}
