@@ -47,8 +47,8 @@ const FooterDiv = styled("footer", {
 	"@small": {
 		"& #logoFooter": {
 			height: "2.5em",
-		}
-	}
+		},
+	},
 })
 
 const ContactDiv = styled("div", {
@@ -133,6 +133,7 @@ const SocialListIcon = styled("div", {
 	backgroundColor: "#1e1e1e",
 	borderRadius: "100px",
 	transition: "background 200ms ease-in-out",
+	cursor: "pointer",
 
 	"& > a": {
 		color: "white",
@@ -185,47 +186,47 @@ const InfoItem = styled("a", {
 	},
 })
 
+const FlexDiv = styled("div", {
+	display: "flex",
+	gap: "50px",
+	variants: {
+		column: {
+			true: {
+				flexDirection: "column",
+			},
+		},
+		horizontalAlign: {
+			center: {
+				justifyContent: "center",
+			},
+			spaceAround: {
+				justifyContent: "space-around",
+			},
+			spaceBetween: {
+				justifyContent: "space-between",
+			},
+		},
+		verticalAlign: {
+			center: {
+				alignItems: "center",
+			},
+			down: {
+				alignItems: "end",
+			},
+		},
+	},
+
+	"@medium": {
+		flexDirection: "column",
+	},
+})
+
 type FooterProps = {
 	contactButton?: boolean
 	transition?: boolean
 }
 
 export function Footer(props: FooterProps) {
-	const FlexDiv = styled("div", {
-		display: "flex",
-		gap: "50px",
-		variants: {
-			column: {
-				true: {
-					flexDirection: "column",
-				},
-			},
-			horizontalAlign: {
-				center: {
-					justifyContent: "center",
-				},
-				spaceAround: {
-					justifyContent: "space-around",
-				},
-				spaceBetween: {
-					justifyContent: "space-between",
-				},
-			},
-			verticalAlign: {
-				center: {
-					alignItems: "center",
-				},
-				down: {
-					alignItems: "end",
-				},
-			},
-		},
-
-		"@medium": {
-			flexDirection: "column",
-		},
-	})
-
 	return (
 		<FooterDiv id="footer">
 			<MaxWidthWrapper>

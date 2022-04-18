@@ -19,6 +19,10 @@ const HeaderDiv = styled("header", {
 	backdropFilter: "blur(10px)",
 	zIndex: "10",
 
+	"@supports not (backdrop-filter: blur(10px))": {
+		backgroundColor: "#232323",
+	},
+
 	"& #headerLogo svg": {
 		fontSize: "1em",
 		height: "30px",
