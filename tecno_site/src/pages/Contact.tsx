@@ -7,7 +7,6 @@ import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { WrapperMainContent } from "../components/WrapperMainContent"
 
-import { Wrapper, Status } from "@googlemaps/react-wrapper"
 import { Form } from "../components/Form"
 import { Hexagon } from "../components/Hexagon"
 
