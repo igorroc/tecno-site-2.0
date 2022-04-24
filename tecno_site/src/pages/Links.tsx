@@ -130,18 +130,18 @@ const Background = styled("div", {
 
 const socialList = [
 	{
-		iconName: "home",
-		iconPrefix: "fas",
+		iconName: "instagram",
+		iconPrefix: "fab",
 		url: "https://instagram.com/tecnojr",
 	},
 	{
-		iconName: "home",
-		iconPrefix: "fas",
+		iconName: "linkedin",
+		iconPrefix: "fab",
 		url: "https://www.linkedin.com/company/tecnojr",
 	},
 	{
-		iconName: "home",
-		iconPrefix: "fas",
+		iconName: "facebook",
+		iconPrefix: "fab",
 		url: "https://www.facebook.com/tecnojr/",
 	},
 ]

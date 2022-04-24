@@ -8,11 +8,23 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { styled } from "../stitches.config"
 
 const LinkList = [
-	{ url: "https://instagram.com/tecnojr", iconName: "house", prefix: "fas" },
-	{ url: "https://facebook.com/tecnojr", iconName: "phone", prefix: "fas" },
-	{ url: "https://github.com/tecnojr", iconName: "zap", prefix: "fas" },
-	{ url: "https://linkedin.com/tecnojr", iconName: "eye", prefix: "fas" },
-	{ url: "https://behance.com/tecnojr", iconName: "wifi", prefix: "fas" },
+	{
+		url: "https://instagram.com/tecnojr",
+		iconName: "instagram",
+		prefix: "fab",
+	},
+	{
+		url: "https://facebook.com/tecnojr",
+		iconName: "facebook",
+		prefix: "fab",
+	},
+	{ url: "https://github.com/tecnojr", iconName: "github", prefix: "fab" },
+	{
+		url: "https://linkedin.com/tecnojr",
+		iconName: "linkedin",
+		prefix: "fab",
+	},
+	{ url: "https://behance.com/tecnojr", iconName: "behance", prefix: "fab" },
 ]
 
 const FooterDiv = styled("footer", {

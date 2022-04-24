@@ -7,8 +7,12 @@ const memberList = [
 		role: "Diretor de Projetos",
 		img: imgIgorRocha,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.github.com" },
-			{ icon: "house", prefix: "fas", url: "https://www.linkedin.com" },
+			{ icon: "github", prefix: "fab", url: "https://www.github.com" },
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com",
+			},
 		],
 	},
 	{
@@ -16,7 +20,11 @@ const memberList = [
 		role: "Diretora Presidente",
 		img: memberImg,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+			{
+				icon: "facebook",
+				prefix: "fab",
+				url: "https://www.facebook.com",
+			},
 		],
 	},
 	{
@@ -24,7 +32,11 @@ const memberList = [
 		role: "Diretor de Vendas",
 		img: memberImg,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+			{
+				icon: "facebook",
+				prefix: "fab",
+				url: "https://www.facebook.com",
+			},
 		],
 	},
 	{
@@ -32,8 +44,12 @@ const memberList = [
 		role: "Diretor de Projetos",
 		img: memberImg,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.github.com" },
-			{ icon: "house", prefix: "fas", url: "https://www.linkedin.com" },
+			{ icon: "github", prefix: "fab", url: "https://www.github.com" },
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com",
+			},
 		],
 	},
 	{
@@ -41,7 +57,11 @@ const memberList = [
 		role: "Diretora Presidente",
 		img: memberImg,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+			{
+				icon: "facebook",
+				prefix: "fab",
+				url: "https://www.facebook.com",
+			},
 		],
 	},
 	{
@@ -49,7 +69,11 @@ const memberList = [
 		role: "Diretor de Vendas",
 		img: memberImg,
 		links: [
-			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+			{
+				icon: "facebook",
+				prefix: "fab",
+				url: "https://www.facebook.com",
+			},
 		],
 	},
 ]

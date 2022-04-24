@@ -1,8 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-	IconLookup,
-	IconDefinition,
-	findIconDefinition,
 	IconPrefix,
 	IconName,
 } from "@fortawesome/fontawesome-svg-core"
