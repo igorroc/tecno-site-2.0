@@ -1,4 +1,4 @@
-import { IconName } from "@fortawesome/fontawesome-svg-core"
+import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { styled } from "@stitches/react"
 import { Link } from "react-router-dom"
 import { Icon } from "./Icon"
@@ -38,7 +38,7 @@ const ImgWrapper = styled("div", {
 	"& img": {
 		width: "100%",
 		height: "100%",
-        objectFit: "cover",
+		objectFit: "cover",
 		filter: "grayscale(1)",
 
 		transition: "all 100ms ease-in-out",
@@ -111,6 +111,7 @@ type ImageProps = {
 
 type LinkProps = {
 	icon: IconName
+	prefix: IconPrefix
 	url: string
 }
 
@@ -149,7 +150,7 @@ export function MemberLinksRow(props: hasChildren) {
 export function MemberLink(props: LinkProps) {
 	return (
 		<a href={props.url} className="memberLink" target="_blank">
-			<Icon iconName={props.icon} prefix="fab" />
+			<Icon iconName={props.icon} prefix={props.prefix} />
 		</a>
 	)
 }
