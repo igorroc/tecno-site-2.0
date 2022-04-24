@@ -32,6 +32,7 @@ const Card = styled("div", {
 
 const ImgWrapper = styled("div", {
 	width: "100%",
+	height: "100%",
 	borderRadius: "5px 5px 0 0",
 	overflow: "hidden",
 
