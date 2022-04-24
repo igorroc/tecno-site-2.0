@@ -30,16 +30,18 @@ const Text = styled("span", {
 			large: {
 				fontSize: "5em",
 			},
+			medium: {
+				fontSize: "2em",
+			},
 			normal: {
 				fontSize: "1em",
 			},
 		},
 	},
-
 })
 
 type TextProps = {
-	size?: "giant" | "large" | "normal" | undefined
+	size?: "giant" | "large" | "medium" | "normal" | undefined
 	className?: string
 	children?: React.ReactNode
 }
