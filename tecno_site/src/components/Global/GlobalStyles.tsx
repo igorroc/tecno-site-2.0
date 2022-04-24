@@ -11,6 +11,7 @@ const globalStyles = globalCss({
 		fontFamily: "Montserrat",
 		src: "url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');",
 	},
+
 	body: {
 		backgroundColor: "#1b1b1b",
 		color: "white",
@@ -51,6 +52,19 @@ const globalStyles = globalCss({
 				background: "none",
 			},
 		},
+	},
+
+	"::-webkit-scrollbar": {
+		width: "10px",
+	},
+
+	"::-webkit-scrollbar-track": {
+		background: "#0f0f0f",
+	},
+
+	"::-webkit-scrollbar-thumb": {
+		background: "linear-gradient(to bottom, #21cfda, #c548ff)",
+		borderRadius: "100px",
 	},
 })
 
