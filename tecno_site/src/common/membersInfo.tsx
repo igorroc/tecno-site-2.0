@@ -7,42 +7,50 @@ const memberList = [
 		role: "Diretor de Projetos",
 		img: imgIgorRocha,
 		links: [
-			{ icon: "github", url: "https://www.github.com" },
-			{ icon: "linkedin", url: "https://www.linkedin.com" },
+			{ icon: "house", prefix: "fas", url: "https://www.github.com" },
+			{ icon: "house", prefix: "fas", url: "https://www.linkedin.com" },
 		],
 	},
 	{
 		name: "Isabelle Cruz",
 		role: "Diretora Presidente",
 		img: memberImg,
-		links: [{ icon: "facebook", url: "https://www.facebook.com" }],
+		links: [
+			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+		],
 	},
 	{
 		name: "Thalles Cerqueira",
 		role: "Diretor de Vendas",
 		img: memberImg,
-		links: [{ icon: "facebook", url: "https://www.facebook.com" }],
+		links: [
+			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+		],
 	},
 	{
 		name: "Igor Lima Rocha Rocha",
 		role: "Diretor de Projetos",
 		img: memberImg,
 		links: [
-			{ icon: "github", url: "https://www.github.com" },
-			{ icon: "linkedin", url: "https://www.linkedin.com" },
+			{ icon: "house", prefix: "fas", url: "https://www.github.com" },
+			{ icon: "house", prefix: "fas", url: "https://www.linkedin.com" },
 		],
 	},
 	{
 		name: "Isabelle Cruz",
 		role: "Diretora Presidente",
 		img: memberImg,
-		links: [{ icon: "facebook", url: "https://www.facebook.com" }],
+		links: [
+			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+		],
 	},
 	{
 		name: "Thalles Cerqueira",
 		role: "Diretor de Vendas",
 		img: memberImg,
-		links: [{ icon: "facebook", url: "https://www.facebook.com" }],
+		links: [
+			{ icon: "house", prefix: "fas", url: "https://www.facebook.com" },
+		],
 	},
 ]
 
