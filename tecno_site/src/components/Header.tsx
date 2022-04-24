@@ -169,7 +169,6 @@ const LinkList = [
 	{ url: "/about", text: "Sobre" },
 	{ url: "/contact", text: "Contato" },
 	{ url: "/projects", text: "Projetos" },
-	{ url: "/404", text: "404" },
 ]
 
 type HeaderProps = {
