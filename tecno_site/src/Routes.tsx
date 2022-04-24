@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
+import Links from "./pages/Links"
 
 export function AppRoutes() {
 	return (
@@ -13,6 +14,7 @@ export function AppRoutes() {
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/projects" element={<Projects />} />
+				<Route path="/links" element={<Links />} />
 				<Route path="/404" element={<PageNotFound />} />
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
