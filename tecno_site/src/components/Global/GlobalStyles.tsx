@@ -19,6 +19,39 @@ const globalStyles = globalCss({
 	a: {
 		textDecoration: "none",
 	},
+	".centerCarrousel": {
+		"& .slick-slide > div > div": {
+			"& h3:after": {
+				backgroundColor: "#5A7BE7",
+			},
+
+			"&:after": {
+				content: "",
+				position: "absolute",
+				top: "0",
+				left: "0",
+				width: "100%",
+				height: "100%",
+
+				background: "linear-gradient(#0000 50%, #131313 95%)",
+			},
+		},
+		"& .slick-center > div > div": {
+			background: "linear-gradient(#5552DE, #2F34A0, 40%, #132A7D)",
+			maxHeight: "30em",
+
+			"&:after": {
+				content: "",
+				position: "absolute",
+				top: "0",
+				left: "0",
+				width: "100%",
+				height: "100%",
+
+				background: "none",
+			},
+		},
+	},
 })
 
 function SetGlobalStyle() {

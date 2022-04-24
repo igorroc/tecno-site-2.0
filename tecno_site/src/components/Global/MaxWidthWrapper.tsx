@@ -2,7 +2,7 @@ import { styled } from "@stitches/react"
 
 const Wrapper = styled("div", {
 	width: "100%",
-	maxWidth: "1050px",
+	maxWidth: "1150px",
 	margin: "0 auto",
 	
 	"& > div":{
