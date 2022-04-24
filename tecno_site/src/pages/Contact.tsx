@@ -3,13 +3,13 @@ import { Header } from "../components/Header"
 
 import mainBg from "../assets/img/backgroundContact.png"
 import { MainText } from "../components/MainText"
-import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
+import { MaxWidthWrapper } from "../components/Global/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { WrapperMainContent } from "../components/WrapperMainContent"
 
 import { Form } from "../components/Form"
 import { Hexagon } from "../components/Hexagon"
-import GlobalDiv from "../components/GlobalDiv"
+import GlobalDiv from "../components/Global/GlobalDiv"
 
 const WrapperForm = styled("div", {
 	"& > div": {

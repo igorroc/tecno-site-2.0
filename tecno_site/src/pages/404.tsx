@@ -1,7 +1,7 @@
 import { styled } from "@stitches/react"
 import { Header } from "../components/Header"
 import { CodeText } from "../components/CodeText"
-import { Button } from "../components/Button"
+import { Button } from "../components/Buttons/Button"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { MainText } from "../components/MainText"
 

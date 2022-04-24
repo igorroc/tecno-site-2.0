@@ -3,14 +3,14 @@ import { Header } from "../components/Header"
 
 import mainBg from "../assets/img/backgroundProjects.png"
 import { MainText } from "../components/MainText"
-import { Button } from "../components/Button"
-import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
+import { Button } from "../components/Buttons/Button"
+import { MaxWidthWrapper } from "../components/Global/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
 import { Footer } from "../components/Footer"
-import { Division } from "../components/Division"
+import { Division } from "../components/Global/Division"
 import { WrapperMainContent } from "../components/WrapperMainContent"
-import GlobalDiv from "../components/GlobalDiv"
+import GlobalDiv from "../components/Global/GlobalDiv"
 
 function Projects() {
 	return (

@@ -2,8 +2,8 @@ import { styled } from "@stitches/react"
 import { Header } from "../components/Header"
 
 import { MainText } from "../components/MainText"
-import { Button } from "../components/Button"
-import { MaxWidthWrapper } from "../components/MaxWidthWrapper"
+import { Button } from "../components/Buttons/Button"
+import { MaxWidthWrapper } from "../components/Global/MaxWidthWrapper"
 import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
 import { SectionTitle } from "../components/SectionTitle"
@@ -22,9 +22,9 @@ import {
 
 import mainBg from "../assets/img/backgroundAbout.png"
 import membersInfo from "../common/membersInfo"
-import { IconName } from "@fortawesome/fontawesome-svg-core"
+import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { Footer } from "../components/Footer"
-import GlobalDiv from "../components/GlobalDiv"
+import GlobalDiv from "../components/Global/GlobalDiv"
 
 function About() {
 	return (
@@ -72,6 +72,7 @@ function About() {
 											<MemberLink
 												key={index}
 												icon={link.icon as IconName}
+												prefix={link.prefix as IconPrefix}
 												url={link.url}
 											/>
 										)

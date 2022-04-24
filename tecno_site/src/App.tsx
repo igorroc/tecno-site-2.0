@@ -1,4 +1,4 @@
-import SetGlobalStyle from "./components/GlobalStyles"
+import SetGlobalStyle from "./components/Global/GlobalStyles"
 import { AppRoutes } from "./Routes"
 import fontAwesomeLib from "./common/iconLibrary"
 
