@@ -133,7 +133,7 @@ const SocialList = styled("ul", {
 	},
 })
 
-const SocialListIcon = styled("div", {
+const SocialListIcon = styled("a", {
 	width: "1.5em",
 	height: "1.5em",
 	padding: "5px",
@@ -144,22 +144,14 @@ const SocialListIcon = styled("div", {
 
 	backgroundColor: "#1e1e1e",
 	borderRadius: "100px",
-	transition: "background 200ms ease-in-out",
+	transition: "background 200ms ease-in-out, color 200ms ease-in-out",
 	cursor: "pointer",
-
-	"& > a": {
-		color: "white",
-		fontSize: "1em",
-
-		transition: "color 200ms ease-in-out",
-	},
+	color: "white",
+	fontSize: "1em",
 
 	"&:hover": {
 		backgroundColor: "#292929",
-
-		"& a": {
-			color: "#f25eff",
-		},
+		color: "#f25eff",
 	},
 
 	"@medium": {
@@ -253,13 +245,15 @@ export function Footer(props: FooterProps) {
 					<SocialList>
 						{LinkList.map((link, index) => {
 							return (
-								<SocialListIcon key={index}>
-									<a href={link.url} target="_blank">
-										<Icon
-											prefix={link.prefix as IconPrefix}
-											iconName={link.iconName as IconName}
-										/>
-									</a>
+								<SocialListIcon
+									key={index}
+									href={link.url}
+									target="_blank"
+								>
+									<Icon
+										prefix={link.prefix as IconPrefix}
+										iconName={link.iconName as IconName}
+									/>
 								</SocialListIcon>
 							)
 						})}

@@ -5,6 +5,15 @@ import { Icon } from "../components/Icon"
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { MainText } from "../components/MainText"
 
+const animationMeshGradient = keyframes({
+	"0%": {
+		backgroundPosition: "-100% -100%",
+	},
+	"100%": {
+		backgroundPosition: "100% 100%",
+	},
+})
+
 const LinksWrapper = styled("div", {
 	width: "100%",
 	maxWidth: "300px",
@@ -51,9 +60,19 @@ const SocialWrapper = styled("div", {
 
 	"& a": {
 		color: "#fff6",
+		transition: "color 200ms ease",
 
 		"&:hover": {
 			color: "white",
+		},
+
+		"& svg": {
+			fontSize: "1.5em",
+			transition: "font-size 200ms ease",
+
+			"&:hover": {
+				fontSize: "1.7em",
+			},
 		},
 	},
 })
@@ -77,19 +96,12 @@ const Section = styled("div", {
 		color: "white",
 		fontWeight: "500",
 		textAlign: "center",
+		transition: "background 200ms ease, letter-spacing 200ms ease",
 
 		"&:hover": {
 			background: "#fff2",
+			letterSpacing: "2px",
 		},
-	},
-})
-
-const animationMeshGradient = keyframes({
-	"0%": {
-		backgroundPosition: "-100% -100%",
-	},
-	"100%": {
-		backgroundPosition: "100% 100%",
 	},
 })
 
@@ -174,8 +186,8 @@ function Links() {
 					<h2>Empresa Júnior de Computação</h2>
 				</Header>
 				<SocialWrapper>
-					{socialList.map((social) => (
-						<a href={social.url}>
+					{socialList.map((social, index) => (
+						<a href={social.url} key={index}>
 							<Icon
 								iconName={social.iconName as IconName}
 								prefix={social.iconPrefix as IconPrefix}
@@ -183,16 +195,18 @@ function Links() {
 						</a>
 					))}
 				</SocialWrapper>
-				{linkList.map((link) => {
-					return (
-						<Section>
-							<MainText size="medium">{link.category}</MainText>
-							{link.links.map((l) => {
-								return <a href={l.url}>{l.title}</a>
-							})}
-						</Section>
-					)
-				})}
+				{linkList.map((link, index) => (
+					<Section key={index}>
+						<MainText size="medium">{link.category}</MainText>
+						{link.links.map((l, index) => {
+							return (
+								<a href={l.url} key={index}>
+									{l.title}
+								</a>
+							)
+						})}
+					</Section>
+				))}
 			</LinksWrapper>
 			<Background />
 		</GlobalDiv>
