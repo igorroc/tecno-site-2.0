@@ -13,14 +13,12 @@ type Props = {
 }
 
 export function Icon(props: Props) {
-	const iconLookup: IconLookup = {
-		prefix: props.prefix,
-		iconName: props.iconName,
-	}
+	// const iconLookup: IconLookup = {
+	// 	prefix: props.prefix,
+	// 	iconName: props.iconName,
+	// }
 
-	const iconDefinition: IconDefinition = findIconDefinition(iconLookup)
-
-	// console.log(props.prefix, props.iconName, iconLookup, iconDefinition)
+	// const iconDefinition: IconDefinition = findIconDefinition(iconLookup)
 
 	return <FontAwesomeIcon icon={[props.prefix, props.iconName]} />
 }
