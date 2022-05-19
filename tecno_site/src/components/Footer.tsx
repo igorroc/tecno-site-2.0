@@ -20,11 +20,11 @@ const LinkList = [
 	},
 	{ url: "https://github.com/tecnojr", iconName: "github", prefix: "fab" },
 	{
-		url: "https://linkedin.com/tecnojr",
+		url: "https://linkedin.com/company/tecnojr",
 		iconName: "linkedin",
 		prefix: "fab",
 	},
-	{ url: "https://behance.com/tecnojr", iconName: "behance", prefix: "fab" },
+	{ url: "https://wa.me/557336805389", iconName: "whatsapp", prefix: "fab" },
 ]
 
 const FooterDiv = styled("footer", {
@@ -285,12 +285,12 @@ export function Footer(props: FooterProps) {
 							km 16 S/N Bairro Salobrinho, Ilhéus
 						</p>
 					</InfoItem>
-					<InfoItem href="tel:55999999999">
+					<InfoItem href="tel:557336805389">
 						<div className="infoIcon">
 							<Icon prefix="fas" iconName="phone" />
 						</div>
 						<span>TELEFONE</span>
-						<p>+55 (73) 9 9999-9999</p>
+						<p>+55 (73) 3680-5389</p>
 					</InfoItem>
 				</FlexDiv>
 				<Division height="normal" line />
