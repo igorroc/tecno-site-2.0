@@ -214,7 +214,7 @@ function Links() {
 					</Section>
 				))}
 			</LinksWrapper>
-			<Background />
+			{/* <Background /> */}
 		</GlobalDiv>
 	)
 }
