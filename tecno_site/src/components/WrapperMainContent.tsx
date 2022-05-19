@@ -11,11 +11,11 @@ const WrapperContent = styled("div", {
 	"& > h1": {
 		fontSize: "3em",
 		width: "max-content",
-		maxWidth: "300px",
-		
+		maxWidth: "440px",
+
 		"& span": {
-			// maxWidth: "300px",
-			// display: "inline",
+			display: "inline-block",
+			margin: "0 0.2em",
 		},
 	},
 
