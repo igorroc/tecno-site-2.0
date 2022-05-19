@@ -1,6 +1,7 @@
 import SetGlobalStyle from "./components/Global/GlobalStyles"
 import { AppRoutes } from "./Routes"
 import fontAwesomeLib from "./common/iconLibrary"
+import "./app.css"
 
 fontAwesomeLib.init()
 
