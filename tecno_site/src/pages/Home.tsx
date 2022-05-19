@@ -1,4 +1,3 @@
-import { styled } from "@stitches/react"
 import { Header } from "../components/Header"
 
 import mainBg from "../assets/img/backgroundHome.png"
@@ -9,14 +8,12 @@ import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
 import { WrapperMainContent } from "../components/WrapperMainContent"
 import {
-	Carrousel,
 	CarrouselNode,
 	CarrouselNodeIcon,
 	CarrouselNodeTitle,
 	CarrouselNodeContent,
 } from "../components/Carrousel"
 import { SectionTitle } from "../components/SectionTitle"
-import { Icon } from "../components/Icon"
 import { Footer } from "../components/Footer"
 import GlobalDiv from "../components/Global/GlobalDiv"
 import "slick-carousel/slick/slick.css"
@@ -55,11 +52,28 @@ function Home() {
 		className: "centerCarrousel",
 		centerMode: true,
 		infinite: true,
-		centerPadding: "60px",
+		centerPadding: "0px",
 		slidesToShow: 3,
+		slidesToScroll: 3,
 		speed: 300,
 		focusOnSelect: true,
-		// beforeChange: carrouselOnChange,
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2,
+				},
+			},
+			{
+				breakpoint: 680,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	}
 
 	return (
@@ -124,6 +138,14 @@ function Home() {
 						</CarrouselNodeContent>
 					</CarrouselNode>
 					<CarrouselNode active={services[3].active}>
+						<CarrouselNodeIcon iconName="globe" prefix="fas" />
+						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
+						<CarrouselNodeContent>
+							Desenvolvemos desde uma página simples de portfólio,
+							até um site institucional com várias páginas.
+						</CarrouselNodeContent>
+					</CarrouselNode>
+					<CarrouselNode active={services[4].active}>
 						<CarrouselNodeIcon
 							iconName="mobile-button"
 							prefix="fas"
@@ -135,7 +157,7 @@ function Home() {
 							clientes e seu bolso.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[4].active}>
+					<CarrouselNode active={services[5].active}>
 						<CarrouselNodeIcon iconName="server" prefix="fas" />
 						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
 						<CarrouselNodeContent>

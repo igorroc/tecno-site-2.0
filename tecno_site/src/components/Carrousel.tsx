@@ -17,7 +17,7 @@ const Card = styled("div", {
 	position: "relative",
 	height: "max-content",
 	padding: "1em",
-	maxHeight: "11em",
+	maxHeight: "200px",
 	fontSize: "1em",
 	overflow: "hidden",
 	background: "linear-gradient(#3A3A3A, #272727, 20%, #131313)",

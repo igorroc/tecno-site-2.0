@@ -37,6 +37,11 @@ const globalStyles = globalCss({
 				background: "linear-gradient(#0000 50%, #131313 95%)",
 			},
 		},
+
+		"& .slick-slide > div": {
+			margin: "20px",
+		},
+
 		"& .slick-center > div > div": {
 			background: "linear-gradient(#5552DE, #2F34A0, 40%, #132A7D)",
 			maxHeight: "30em",
