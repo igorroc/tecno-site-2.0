@@ -156,13 +156,19 @@ const socialList = [
 		iconPrefix: "fab",
 		url: "https://www.facebook.com/tecnojr/",
 	},
+	{
+		iconName: "whatsapp",
+		iconPrefix: "fab",
+		url: "https://wa.me/557336805389",
+	},
 ]
 
 const linkList = [
 	{
 		category: "Importantes",
 		links: [
-			{ title: "PROSEL 2022.1", url: "http://prosel.tecnojr.com.br/" },
+			{ title: "TecnoWeek", url: "http://tecnoweek.tecnojr.com.br/" },
+			{ title: "CPU", url: "http://cpu.tecnojr.com.br/" },
 			{ title: "Tecno Site", url: "http://beta.tecnojr.com.br/" },
 		],
 	},
