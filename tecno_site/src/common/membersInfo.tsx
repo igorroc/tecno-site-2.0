@@ -63,15 +63,19 @@ const memberList = [
 		],
 	},
 	{
-		name: "Gabriella Zerbone",
+		name: "Gabriela Zerbone",
 		role: "Diretora de RH",
 		img: imgGabiZerbone,
 		links: [
-			{ icon: "github", prefix: "fab", url: "https://www.github.com" },
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/gzerbone_",
+			},
 			{
 				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.linkedin.com",
+				url: "https://www.linkedin.com/in/gabriela-zerbone-17651962/",
 			},
 		],
 	},
