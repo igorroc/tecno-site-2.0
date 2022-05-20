@@ -1,8 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-	IconPrefix,
-	IconName,
-} from "@fortawesome/fontawesome-svg-core"
+import { IconPrefix, IconName } from "@fortawesome/fontawesome-svg-core"
 
 type Props = {
 	prefix: IconPrefix
@@ -10,12 +7,5 @@ type Props = {
 }
 
 export function Icon(props: Props) {
-	// const iconLookup: IconLookup = {
-	// 	prefix: props.prefix,
-	// 	iconName: props.iconName,
-	// }
-
-	// const iconDefinition: IconDefinition = findIconDefinition(iconLookup)
-
 	return <FontAwesomeIcon icon={[props.prefix, props.iconName]} />
 }
