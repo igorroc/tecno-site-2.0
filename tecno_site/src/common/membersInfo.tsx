@@ -9,6 +9,12 @@ import imgDanielOliveira from "../assets/img/members/daniel_oliveira.png"
 import imgSamuel from "../assets/img/members/samuel.png"
 import imgIgorNascimento from "../assets/img/members/igor_nascimento.png"
 import imgEric from "../assets/img/members/eric.png"
+import imgJuliana from "../assets/img/members/juliana.png"
+import imgMarcus from "../assets/img/members/marcus.png"
+import imgBreno from "../assets/img/members/breno.png"
+import imgBrendon from "../assets/img/members/brendon.png"
+import imgAlanis from "../assets/img/members/alanis.png"
+import imgMatheus from "../assets/img/members/matheus.png"
 
 import memberImg from "../assets/img/members/photo.png"
 
@@ -63,9 +69,9 @@ const memberList = [
 		img: imgThalles,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/thalles-cerqueira-b43a571a1/",
 			},
 		],
 	},
@@ -89,14 +95,8 @@ const memberList = [
 	{
 		name: "Mateus Lisboa",
 		role: "Diretor Financeiro",
-		img: memberImg,
-		links: [
-			{
-				icon: "facebook",
-				prefix: "fab",
-				url: "https://www.facebook.com",
-			},
-		],
+		img: imgMatheus,
+		links: [],
 	},
 	{
 		name: "Evelyn Santos",
@@ -104,33 +104,33 @@ const memberList = [
 		img: imgEvelyn,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/evelyn-santos-3569881b7/",
 			},
 		],
 	},
 	{
 		name: "Marcus Vinicius",
 		role: "Conselheiro",
-		img: memberImg,
+		img: imgMarcus,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/marcus-vinicius-bitencourt-do-carmo-86bb2415b/",
 			},
 		],
 	},
 	{
 		name: "Brendon Wilyen",
 		role: "Membro",
-		img: memberImg,
+		img: imgBrendon,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/bwqsouza-dev/",
 			},
 		],
 	},
@@ -138,23 +138,17 @@ const memberList = [
 		name: "Jefferson Ferreira",
 		role: "Membro",
 		img: imgJefferson,
-		links: [
-			{
-				icon: "facebook",
-				prefix: "fab",
-				url: "https://www.facebook.com",
-			},
-		],
+		links: [],
 	},
 	{
 		name: "Juliana Midlej",
 		role: "Membro",
-		img: memberImg,
+		img: imgJuliana,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/juliana-midlej-do-esp%C3%ADrito-santo-a76b50160/",
 			},
 		],
 	},
@@ -164,9 +158,9 @@ const memberList = [
 		img: imgEric,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/eric-soares-130b441ab/",
 			},
 		],
 	},
@@ -174,13 +168,7 @@ const memberList = [
 		name: "Daniel Jackson",
 		role: "Membro",
 		img: memberImg,
-		links: [
-			{
-				icon: "facebook",
-				prefix: "fab",
-				url: "https://www.facebook.com",
-			},
-		],
+		links: [],
 	},
 	{
 		name: "Luca Sacramento",
@@ -188,21 +176,21 @@ const memberList = [
 		img: imgLuca,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/luca-sacramento-a9b3631a8/",
 			},
 		],
 	},
 	{
 		name: "Alanis Rodrigues",
 		role: "Membro",
-		img: memberImg,
+		img: imgAlanis,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/alanis-rodrigues-aaba4220b/",
 			},
 		],
 	},
@@ -226,12 +214,12 @@ const memberList = [
 	{
 		name: "Breno Vitório",
 		role: "Membro",
-		img: memberImg,
+		img: imgBreno,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/therealbrenu/",
 			},
 		],
 	},
@@ -258,9 +246,14 @@ const memberList = [
 		img: imgIgorNascimento,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/mr-igor-nascimento/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/mr-nascimento",
 			},
 		],
 	},
@@ -268,13 +261,7 @@ const memberList = [
 		name: "Yan Costa",
 		role: "Membro",
 		img: memberImg,
-		links: [
-			{
-				icon: "facebook",
-				prefix: "fab",
-				url: "https://www.facebook.com",
-			},
-		],
+		links: [],
 	},
 	{
 		name: "Victor José",
@@ -282,9 +269,9 @@ const memberList = [
 		img: memberImg,
 		links: [
 			{
-				icon: "facebook",
+				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.linkedin.com/in/victor-martins-02946610b/",
 			},
 		],
 	},
