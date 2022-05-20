@@ -162,6 +162,11 @@ const memberList = [
 				prefix: "fab",
 				url: "https://www.linkedin.com/in/eric-soares-130b441ab/",
 			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/ssilva.eric/",
+			},
 		],
 	},
 	{
