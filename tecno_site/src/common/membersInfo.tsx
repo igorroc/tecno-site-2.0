@@ -3,6 +3,13 @@ import imgEvelyn from "../assets/img/members/evelyn.png"
 import imgGabiZerbone from "../assets/img/members/gabi_zerbone.png"
 import imgIsabelle from "../assets/img/members/isabelle.png"
 import imgThalles from "../assets/img/members/thalles_cerqueira.png"
+import imgJefferson from "../assets/img/members/jefferson.png"
+import imgLuca from "../assets/img/members/luca.png"
+import imgDanielOliveira from "../assets/img/members/daniel_oliveira.png"
+import imgSamuel from "../assets/img/members/samuel.png"
+import imgIgorNascimento from "../assets/img/members/igor_nascimento.png"
+import imgEric from "../assets/img/members/eric.png"
+
 import memberImg from "../assets/img/members/photo.png"
 
 const memberList = [
@@ -130,7 +137,7 @@ const memberList = [
 	{
 		name: "Jefferson Ferreira",
 		role: "Membro",
-		img: memberImg,
+		img: imgJefferson,
 		links: [
 			{
 				icon: "facebook",
@@ -154,7 +161,7 @@ const memberList = [
 	{
 		name: "Eric Soares",
 		role: "Membro",
-		img: memberImg,
+		img: imgEric,
 		links: [
 			{
 				icon: "facebook",
@@ -178,7 +185,7 @@ const memberList = [
 	{
 		name: "Luca Sacramento",
 		role: "Membro",
-		img: memberImg,
+		img: imgLuca,
 		links: [
 			{
 				icon: "facebook",
@@ -200,6 +207,23 @@ const memberList = [
 		],
 	},
 	{
+		name: "Samuel Vasconcelos",
+		role: "Membro",
+		img: imgSamuel,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/samuel-vasconcelos-b196001ba/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/smvasconcelos",
+			},
+		],
+	},
+	{
 		name: "Breno Vitório",
 		role: "Membro",
 		img: memberImg,
@@ -214,19 +238,24 @@ const memberList = [
 	{
 		name: "Daniel Oliveira",
 		role: "Membro",
-		img: memberImg,
+		img: imgDanielOliveira,
 		links: [
 			{
-				icon: "facebook",
+				icon: "sheet-plastic",
+				prefix: "fas",
+				url: "http://lattes.cnpq.br/8179726948969845",
+			},
+			{
+				icon: "instagram",
 				prefix: "fab",
-				url: "https://www.facebook.com",
+				url: "https://www.instagram.com/oliveira4552/",
 			},
 		],
 	},
 	{
 		name: "Igor Nascimento",
 		role: "Membro",
-		img: memberImg,
+		img: imgIgorNascimento,
 		links: [
 			{
 				icon: "facebook",
