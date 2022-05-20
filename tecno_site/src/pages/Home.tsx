@@ -19,9 +19,8 @@ import GlobalDiv from "../components/Global/GlobalDiv"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import { useState } from "react"
-
-type Provider = { active: boolean }
+import SectionOrcamento from "../components/SectionOrcamento"
+import Orbit from "../components/Orbit"
 
 function Home() {
 	const settings = {
@@ -30,7 +29,7 @@ function Home() {
 		infinite: true,
 		centerPadding: "0px",
 		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		speed: 300,
 		focusOnSelect: true,
 		responsive: [
@@ -144,10 +143,16 @@ function Home() {
 						</CarrouselNodeContent>
 					</CarrouselNode>
 				</Slider>
+
+				{/* Orçamento */}
 				<SectionTitle title="Orçamento" color="purple"></SectionTitle>
+				<SectionOrcamento />
+
+				{/* Parceiros */}
 				<SectionTitle title="Parceiros" color="blue">
 					Conheça quem confia na TecnoJr!
 				</SectionTitle>
+				<Orbit />
 			</MaxWidthWrapper>
 
 			<Footer />
