@@ -21,6 +21,7 @@ const CardStyle = styled("div", {
 	"& .image": {
 		position: "relative",
 		width: "100%",
+		minHeight: "250px",
 		maxHeight: "250px",
 
 		"& img": {
@@ -71,12 +72,12 @@ const CardStyle = styled("div", {
 		gap: "10px",
 
 		"& h3": {
-			fontSize: "1.5em",
+			fontSize: "1.4em",
 		},
 
 		"& p": {
 			color: "#fffa",
-			fontSize: "1.2em",
+			fontSize: "1.1em",
 		},
 	},
 })
@@ -85,19 +86,23 @@ type CardProps = {
 	title: string
 	description: string
 	link: string
+	img: string
 }
 
 export function Card(props: CardProps) {
 	return (
 		<CardStyle>
 			<div className="image">
-				<img
-					src="https://blog.megajogos.com.br/wp-content/uploads/2018/07/no-image.jpg"
-					alt="Image PlaceHolder"
-				/>
-				<div className="link">
-					<a href={props.link}>Saiba mais</a>
-				</div>
+				<img src={props.img} alt="Image" />
+				{props.link ? (
+					<div className="link">
+						<a href={props.link} target="_blank">
+							Saiba mais
+						</a>
+					</div>
+				) : (
+					<></>
+				)}
 			</div>
 			<div className="content">
 				<h3>{props.title}</h3>
