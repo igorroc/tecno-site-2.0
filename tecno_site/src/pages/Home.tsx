@@ -24,30 +24,6 @@ import { useState } from "react"
 type Provider = { active: boolean }
 
 function Home() {
-	const [services, setServices] = useState<Provider[]>([
-		{ active: true },
-		{ active: false },
-		{ active: false },
-		{ active: false },
-		{ active: false },
-		{ active: false },
-	])
-
-	const carrouselOnChange = (velho: Number, novo: Number) => {
-		let newArray = []
-		newArray.push(...services)
-		newArray.map((i, index) => {
-			if (index === velho) {
-				i.active = false
-			}
-			if (index === novo) {
-				i.active = true
-			}
-		})
-
-		setServices([...newArray])
-	}
-
 	const settings = {
 		className: "centerCarrousel",
 		centerMode: true,
@@ -107,7 +83,7 @@ function Home() {
 					Conheça os nossos <strong>serviços</strong>!
 				</SectionTitle>
 				<Slider {...settings}>
-					<CarrouselNode active={services[0].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon iconName="globe" prefix="fas" />
 						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
 						<CarrouselNodeContent>
@@ -115,7 +91,7 @@ function Home() {
 							até um site institucional com várias páginas.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[1].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon
 							iconName="mobile-button"
 							prefix="fas"
@@ -127,7 +103,7 @@ function Home() {
 							clientes e seu bolso.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[2].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon iconName="server" prefix="fas" />
 						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
 						<CarrouselNodeContent>
@@ -137,7 +113,7 @@ function Home() {
 							e-commerce, saia com a qualidade esperada.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[3].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon iconName="globe" prefix="fas" />
 						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
 						<CarrouselNodeContent>
@@ -145,7 +121,7 @@ function Home() {
 							até um site institucional com várias páginas.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[4].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon
 							iconName="mobile-button"
 							prefix="fas"
@@ -157,7 +133,7 @@ function Home() {
 							clientes e seu bolso.
 						</CarrouselNodeContent>
 					</CarrouselNode>
-					<CarrouselNode active={services[5].active}>
+					<CarrouselNode>
 						<CarrouselNodeIcon iconName="server" prefix="fas" />
 						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
 						<CarrouselNodeContent>
