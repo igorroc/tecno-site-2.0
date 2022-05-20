@@ -1,5 +1,4 @@
 import { styled } from "@stitches/react"
-import { Link } from "react-router-dom"
 
 const CustomButton = styled("button", {
 	display: "flex",
@@ -11,7 +10,7 @@ const CustomButton = styled("button", {
 	width: "max-content",
 	height: "fit-content",
 	color: "white",
-	padding: "0.6em 1em",
+	padding: "0.6em 1.5em",
 	border: "none",
 	outline: "none",
 	borderRadius: "5em",
@@ -19,7 +18,7 @@ const CustomButton = styled("button", {
 	backgroundSize: "200% 100%",
 	backgroundRepeat: "repeat",
 	cursor: "pointer",
-	letterSpacing: "3px",
+	letterSpacing: "1px",
 
 	transition:
 		"transform 256ms ease-in-out, background-position 256ms ease-in-out",
