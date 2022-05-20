@@ -18,7 +18,11 @@ const LinkList = [
 		iconName: "facebook",
 		prefix: "fab",
 	},
-	{ url: "https://github.com/tecnojr", iconName: "github", prefix: "fab" },
+	{
+		url: "https://github.com/tecnojr-uesc",
+		iconName: "github",
+		prefix: "fab",
+	},
 	{
 		url: "https://linkedin.com/company/tecnojr",
 		iconName: "linkedin",
