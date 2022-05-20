@@ -11,6 +11,8 @@ import { Footer } from "../components/Footer"
 import { Division } from "../components/Global/Division"
 import { WrapperMainContent } from "../components/WrapperMainContent"
 import GlobalDiv from "../components/Global/GlobalDiv"
+import { SectionTitle } from "../components/SectionTitle"
+import CardsWrapper, { Card } from "../components/Card"
 
 function Projects() {
 	return (
@@ -38,6 +40,41 @@ function Projects() {
 					</Button>
 					<ScrollIndicator />
 				</WrapperMainContent>
+
+				{/* Projetos */}
+				<SectionTitle title="Projetos" color="blue"></SectionTitle>
+				<CardsWrapper>
+					<Card
+						title="GuiaServe"
+						description="Aplicativo/WebSite"
+						link="https://beta.tecnojr.com.br"
+					/>
+					<Card
+						title="UEPG"
+						description="WebSite"
+						link="https://beta.tecnojr.com.br"
+					/>
+					<Card
+						title="Partiu Dirigir"
+						description="Aplicativo"
+						link="https://beta.tecnojr.com.br"
+					/>
+					<Card
+						title="Observatório Social"
+						description="WebSite"
+						link="https://beta.tecnojr.com.br"
+					/>
+					<Card
+						title="Semana de Inovação"
+						description="WebSite"
+						link="https://beta.tecnojr.com.br"
+					/>
+					<Card
+						title="SIMMBRA"
+						description="WebSite"
+						link="https://beta.tecnojr.com.br"
+					/>
+				</CardsWrapper>
 			</MaxWidthWrapper>
 			<Division height="normal" line={false} />
 			<Footer />
