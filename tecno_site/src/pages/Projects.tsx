@@ -14,6 +14,48 @@ import GlobalDiv from "../components/Global/GlobalDiv"
 import { SectionTitle } from "../components/SectionTitle"
 import CardsWrapper, { Card } from "../components/Card"
 
+import imgSemanaInovacao from "../assets/img/projects/semana_inovacao.png"
+import imgPlaceHolder from "../assets/img/projects/placeholder.png"
+
+const projects = [
+	{
+		title: "Semana de Inovação",
+		description: "Website",
+		link: "https://semanadeinovacaoilheus.com.br/",
+		img: imgSemanaInovacao,
+	},
+	{
+		title: "GuiaServe",
+		description: "Aplicativo/WebSite",
+		link: "",
+		img: imgPlaceHolder,
+	},
+	{
+		title: "UEPG",
+		description: "WebSite",
+		link: "",
+		img: imgPlaceHolder,
+	},
+	{
+		title: "Partiu Dirigir",
+		description: "Aplicativo",
+		link: "",
+		img: imgPlaceHolder,
+	},
+	{
+		title: "Observatório Social",
+		description: "WebSite",
+		link: "",
+		img: imgPlaceHolder,
+	},
+	{
+		title: "SIMBRA",
+		description: "WebSite",
+		link: "",
+		img: imgPlaceHolder,
+	},
+]
+
 function Projects() {
 	return (
 		<GlobalDiv>
@@ -44,36 +86,17 @@ function Projects() {
 				{/* Projetos */}
 				<SectionTitle title="Projetos" color="blue"></SectionTitle>
 				<CardsWrapper>
-					<Card
-						title="GuiaServe"
-						description="Aplicativo/WebSite"
-						link="https://beta.tecnojr.com.br"
-					/>
-					<Card
-						title="UEPG"
-						description="WebSite"
-						link="https://beta.tecnojr.com.br"
-					/>
-					<Card
-						title="Partiu Dirigir"
-						description="Aplicativo"
-						link="https://beta.tecnojr.com.br"
-					/>
-					<Card
-						title="Observatório Social"
-						description="WebSite"
-						link="https://beta.tecnojr.com.br"
-					/>
-					<Card
-						title="Semana de Inovação"
-						description="WebSite"
-						link="https://beta.tecnojr.com.br"
-					/>
-					<Card
-						title="SIMMBRA"
-						description="WebSite"
-						link="https://beta.tecnojr.com.br"
-					/>
+					{projects.map((project, index) => {
+						return (
+							<Card
+								title={project.title}
+								description={project.description}
+								link={project.link}
+								img={project.img}
+								key={index}
+							/>
+						)
+					})}
 				</CardsWrapper>
 			</MaxWidthWrapper>
 			<Division height="normal" line={false} />
