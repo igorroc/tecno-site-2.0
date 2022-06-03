@@ -10,6 +10,8 @@ import { WrapperMainContent } from "../components/WrapperMainContent"
 import { Form } from "../components/Form"
 import { Hexagon } from "../components/Hexagon"
 import GlobalDiv from "../components/Global/GlobalDiv"
+import { useState } from "react"
+import { Button } from "../components/Buttons/Button"
 
 const WrapperForm = styled("div", {
 	"& > div": {
@@ -20,20 +22,45 @@ const WrapperForm = styled("div", {
 })
 
 function Contact() {
+	const [status, setStatus] = useState("erro")
+
 	return (
 		<GlobalDiv>
 			<Header active="Contato"></Header>
 			<BackgroundImage image={mainBg} fullHeight></BackgroundImage>
 			<MaxWidthWrapper>
-				{/* <Hexagon /> */}
-				<WrapperForm>
+				{status == "form" && (
+					<WrapperForm>
+						<WrapperMainContent>
+							<h1>
+								Entre em<MainText>contato</MainText>
+							</h1>
+							<Form n={status} setN={setStatus} />
+						</WrapperMainContent>
+					</WrapperForm>
+				)}
+				{status == "ok" && (
 					<WrapperMainContent>
 						<h1>
-							Entre em<MainText>contato</MainText>
+							Agradecemos seu <MainText>contato</MainText>
 						</h1>
-						<Form />
+						<Button url="/">
+							Início
+							<i className="fa-solid fa-home"></i>
+						</Button>
 					</WrapperMainContent>
-				</WrapperForm>
+				)}
+				{status == "erro" && (
+					<WrapperMainContent>
+						<h1>
+							Ocorreu um <MainText>erro</MainText>
+						</h1>
+						<Button url="mailto:contato@tecnojr.com.br">
+							Enviar email
+							<i className="fa-solid fa-envelope"></i>
+						</Button>
+					</WrapperMainContent>
+				)}
 			</MaxWidthWrapper>
 		</GlobalDiv>
 	)

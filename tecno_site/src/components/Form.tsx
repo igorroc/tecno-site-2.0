@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { styled } from "../stitches.config"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import emailjs from "emailjs-com"
 
 const MyForm = styled("form", {
@@ -116,7 +116,9 @@ const MyForm = styled("form", {
 	},
 })
 
-export function Form(this: any) {
+export function Form(this: any, props: any) {
+	const { n, setN } = props
+
 	const [inputs, setInputs] = useState({
 		sender_name: "",
 		sender_email: "",
@@ -139,13 +141,20 @@ export function Form(this: any) {
 		event.preventDefault()
 
 		emailjs
-			.sendForm("gmail", "template_6cgwv23", "#form", "3SUxxJFfEVzUfV6_Q")
+			.sendForm(
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				"#form",
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+			)
 			.then(
 				(result) => {
 					console.log(result.text)
+					setN("ok")
 					// window.location.reload() //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
 				},
 				(error) => {
+					setN("erro")
 					console.log(error.text)
 				}
 			)
