@@ -21,7 +21,7 @@ import memberImg from "../assets/img/members/photo.png"
 const memberList = [
 	{
 		name: "Isabelle Cruz",
-		role: "Diretora de Presidente",
+		role: "Diretora Presidente",
 		img: imgIsabelle,
 		links: [
 			{
