@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { styled } from "../stitches.config"
 import { useState } from "react"
+import emailjs from "emailjs-com"
 
 const MyForm = styled("form", {
 	width: "60%",
@@ -117,12 +118,12 @@ const MyForm = styled("form", {
 
 export function Form(this: any) {
 	const [inputs, setInputs] = useState({
-		name: "",
-		email: "",
-		phone: "",
-		findAboutUs: "",
-		subject: "",
-		message: "",
+		sender_name: "",
+		sender_email: "",
+		sender_phone: "",
+		sender_findAboutUs: "",
+		email_subject: "",
+		email_message: "",
 	})
 
 	const handleInputChange = (event: any) => {
@@ -136,18 +137,31 @@ export function Form(this: any) {
 	const handleSubmit = (event: any) => {
 		console.log(inputs)
 		event.preventDefault()
+
+		emailjs
+			.sendForm("gmail", "template_6cgwv23", "#form", "3SUxxJFfEVzUfV6_Q")
+			.then(
+				(result) => {
+					console.log(result.text)
+					// window.location.reload() //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+				},
+				(error) => {
+					console.log(error.text)
+				}
+			)
 	}
 
 	return (
-		<MyForm onSubmit={handleSubmit}>
+		<MyForm onSubmit={handleSubmit} id="form">
 			<div>
 				<label>
 					Nome Completo
 					<input
 						type="text"
-						name="name"
-						placeholder="Igor Rocha"
-						value={inputs.name}
+						name="sender_name"
+						id="sender_name"
+						placeholder="Seu nome"
+						value={inputs.sender_name}
 						onChange={handleInputChange}
 					/>
 				</label>
@@ -155,9 +169,10 @@ export function Form(this: any) {
 					Email
 					<input
 						type="email"
-						name="email"
-						placeholder="igor@tecnojr.com.br"
-						value={inputs.email}
+						name="sender_email"
+						id="sender_email"
+						placeholder="seu@email.com"
+						value={inputs.sender_email}
 						onChange={handleInputChange}
 					/>
 				</label>
@@ -167,9 +182,10 @@ export function Form(this: any) {
 					Telefone
 					<input
 						type="tel"
-						name="phone"
-						placeholder="(73) 9 8765-4321"
-						value={inputs.phone}
+						name="sender_phone"
+						id="sender_phone"
+						placeholder="(XX) X XXXX-XXXX"
+						value={inputs.sender_phone}
 						// pattern="([0-9]{2}) 9 [0-9]{4}-[0-9]{4}"
 						onChange={handleInputChange}
 					/>
@@ -177,8 +193,9 @@ export function Form(this: any) {
 				<label>
 					Como nos conheceu
 					<select
-						name="findAboutUs"
-						value={inputs.findAboutUs}
+						name="sender_findAboutUs"
+						id="sender_findAboutUs"
+						value={inputs.sender_findAboutUs}
 						onChange={handleInputChange}
 						placeholder="Selecione uma opção"
 					>
@@ -195,9 +212,10 @@ export function Form(this: any) {
 					Assunto
 					<input
 						type="text"
-						name="subject"
+						name="email_subject"
+						id="email_subject"
 						placeholder="Título do email"
-						value={inputs.subject}
+						value={inputs.email_subject}
 						onChange={handleInputChange}
 					/>
 				</label>
@@ -206,14 +224,15 @@ export function Form(this: any) {
 				<label>
 					Mensagem
 					<textarea
-						value={inputs.message}
-						name="message"
+						value={inputs.email_message}
+						name="email_message"
+						id="email_message"
 						placeholder="Fale mais sobre o que você quer nesse contato!"
 						onChange={handleInputChange}
 					/>
 				</label>
 			</div>
-			<button onClick={handleSubmit}>
+			<button>
 				<FontAwesomeIcon icon="envelope" />
 				Enviar
 			</button>
