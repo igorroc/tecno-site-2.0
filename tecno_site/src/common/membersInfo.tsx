@@ -20,6 +20,18 @@ import memberImg from "../assets/img/members/photo.png"
 
 const memberList = [
 	{
+		name: "Hélder Almeida",
+		role: "Coordenador",
+		img: memberImg,
+		links: [],
+	},
+	{
+		name: "Elinaldo Gomes",
+		role: "Coordenador",
+		img: memberImg,
+		links: [],
+	},
+	{
 		name: "Isabelle Cruz",
 		role: "Diretora Presidente",
 		img: imgIsabelle,
