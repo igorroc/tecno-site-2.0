@@ -84,7 +84,7 @@ function Projects() {
 				</WrapperMainContent>
 
 				{/* Projetos */}
-				<SectionTitle title="Projetos" color="blue"></SectionTitle>
+				<SectionTitle
 				<CardsWrapper>
 					{projects.map((project, index) => {
 						return (
