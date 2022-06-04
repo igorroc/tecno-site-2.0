@@ -25,6 +25,7 @@ import membersInfo from "../common/membersInfo"
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { Footer } from "../components/Footer"
 import GlobalDiv from "../components/Global/GlobalDiv"
+import HexIdeais, { WrapperHex } from "../components/HexIdeais"
 
 function About() {
 	return (
@@ -54,6 +55,24 @@ function About() {
 				<SectionTitle title="Ideais" color="blue">
 					Missão, Visão e Valores!
 				</SectionTitle>
+				<WrapperHex>
+					<HexIdeais
+						title="Missão"
+						description="Formar jovens empreendedores capazes de entregar projetos de qualidade, unindo o mercado de trabalho ao ambiente acadêmico, e impactando a sociedade."
+						icon="graduation-cap"
+					/>
+					<HexIdeais
+						title="Visão"
+						description="Figurar entre as melhores empresas juniores da Bahia, sendo referência em inovação tecnológica e excelência em prestação de serviços."
+						icon="eye"
+					/>
+					<HexIdeais
+						title="Valores"
+						description="Empreendedorismo, Inovação, Sinergia, Transparência, Pertencimento, Resiliência."
+						icon="scale-balanced"
+					/>
+				</WrapperHex>
+
 				<SectionTitle title="Membros" color="purple">
 					Conheça os devs da <strong>Tecno</strong>!
 				</SectionTitle>
