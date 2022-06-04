@@ -13,6 +13,7 @@ const globalStyles = globalCss({
 	},
 	html: {
 		scrollBehavior: "smooth",
+		scrollPaddingTop: "100px",
 	},
 
 	body: {
