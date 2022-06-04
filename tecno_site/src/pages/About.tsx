@@ -8,7 +8,6 @@ import { BackgroundImage } from "../components/BackgroundImage"
 import { ScrollIndicator } from "../components/ScrollIndicator"
 import { SectionTitle } from "../components/SectionTitle"
 import { WrapperMainContent } from "../components/WrapperMainContent"
-import { Icon } from "../components/Icon"
 import {
 	MemberGrid,
 	MemberCard,
@@ -73,7 +72,7 @@ function About() {
 					/>
 				</WrapperHex>
 
-				<SectionTitle title="Membros" color="purple">
+				<SectionTitle title="Membros" color="purple" id="membros">
 					Conheça os devs da <strong>Tecno</strong>!
 				</SectionTitle>
 				<MemberGrid>
@@ -91,7 +90,9 @@ function About() {
 											<MemberLink
 												key={index}
 												icon={link.icon as IconName}
-												prefix={link.prefix as IconPrefix}
+												prefix={
+													link.prefix as IconPrefix
+												}
 												url={link.url}
 											/>
 										)
