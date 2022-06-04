@@ -55,7 +55,7 @@ const globalStyles = globalCss({
 	},
 
 	"::-webkit-scrollbar-thumb": {
-		background: "linear-gradient(to bottom, #21cfda, #c548ff)",
+		background: "#fff",
 		borderRadius: "100px",
 	},
 })
