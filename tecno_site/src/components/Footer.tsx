@@ -279,7 +279,10 @@ export function Footer(props: FooterProps) {
 						<span>EMAIL</span>
 						<p>tecnojr@uesc.br</p>
 					</InfoItem>
-					<InfoItem href="https://goo.gl/maps/ivriShW6tUBzJNVa6">
+					<InfoItem
+						href="https://goo.gl/maps/ivriShW6tUBzJNVa6"
+						target="_blank"
+					>
 						<div className="infoIcon">
 							<Icon prefix="fas" iconName="location-dot" />
 						</div>
