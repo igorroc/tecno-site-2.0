@@ -30,7 +30,7 @@ const OrbitContainer = styled("div", {
 	position: "relative",
 	top: "25px",
 	right: "25px",
-	marginLeft: "auto",
+	margin: "0 auto",
 	width: "500px",
 	height: "500px",
 })
