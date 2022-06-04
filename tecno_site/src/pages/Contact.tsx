@@ -16,13 +16,13 @@ import { Button } from "../components/Buttons/Button"
 const WrapperForm = styled("div", {
 	"& > div": {
 		justifyContent: "start",
-		margin: "20vh 0",
+		margin: "20vh 0 0 0",
 		height: "max-content",
 	},
 })
 
 function Contact() {
-	const [status, setStatus] = useState("erro")
+	const [status, setStatus] = useState("form")
 
 	return (
 		<GlobalDiv>
