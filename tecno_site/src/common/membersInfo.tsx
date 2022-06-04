@@ -15,6 +15,7 @@ import imgBreno from "../assets/img/members/breno.png"
 import imgBrendon from "../assets/img/members/brendon.png"
 import imgAlanis from "../assets/img/members/alanis.png"
 import imgMatheus from "../assets/img/members/matheus.png"
+import imgYan from "../assets/img/members/yan.png"
 
 import memberImg from "../assets/img/members/photo.png"
 
@@ -26,7 +27,7 @@ const memberList = [
 		links: [],
 	},
 	{
-		name: "Elinaldo Gomes",
+		name: "Elinaldo Goes",
 		role: "Coordenador",
 		img: memberImg,
 		links: [],
@@ -277,7 +278,7 @@ const memberList = [
 	{
 		name: "Yan Costa",
 		role: "Membro",
-		img: memberImg,
+		img: imgYan,
 		links: [],
 	},
 	{
