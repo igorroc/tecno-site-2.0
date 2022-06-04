@@ -49,7 +49,7 @@ const projects = [
 		img: imgPlaceHolder,
 	},
 	{
-		title: "SIMBRA",
+		title: "SIMMBRA",
 		description: "WebSite",
 		link: "",
 		img: imgPlaceHolder,
