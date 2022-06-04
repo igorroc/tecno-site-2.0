@@ -1,8 +1,10 @@
 import { styled } from "@stitches/react"
 
 const Div = styled("div", {
+	position: "relative",
 	width: "100vw",
 	overflowX: "hidden",
+	minHeight: "100vh",
 })
 
 type Props = {
