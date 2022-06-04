@@ -104,7 +104,7 @@ function SectionOrcamento() {
 						elit. Maiores porro quis molestias facere repellat optio
 						perferendis velit?
 					</p>
-					<Button>
+					<Button url="/contact">
 						<Icon prefix="fas" iconName="envelope"></Icon>
 						Enviar Email
 					</Button>
