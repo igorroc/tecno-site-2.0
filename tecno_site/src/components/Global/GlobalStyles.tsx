@@ -22,6 +22,8 @@ const globalStyles = globalCss({
 	},
 	a: {
 		textDecoration: "none",
+		fontSize: "1em",
+		color: "#31e7ff",
 	},
 	".centerCarrousel": {
 		"& .slick-slide > div > div": {
