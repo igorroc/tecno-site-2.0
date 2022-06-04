@@ -10,7 +10,7 @@ import { WrapperMainContent } from "../components/WrapperMainContent"
 import { Form } from "../components/Form"
 import { Hexagon } from "../components/Hexagon"
 import GlobalDiv from "../components/Global/GlobalDiv"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "../components/Buttons/Button"
 
 const WrapperForm = styled("div", {
@@ -23,6 +23,8 @@ const WrapperForm = styled("div", {
 
 function Contact() {
 	const [status, setStatus] = useState("form")
+	const latitude = -14.796529895258624
+	const longitude = -39.170944442327475
 
 	return (
 		<GlobalDiv>
