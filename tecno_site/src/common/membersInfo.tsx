@@ -6,6 +6,7 @@ import imgThalles from "../assets/img/members/thalles_cerqueira.png"
 import imgJefferson from "../assets/img/members/jefferson.png"
 import imgLuca from "../assets/img/members/luca.png"
 import imgDanielOliveira from "../assets/img/members/daniel_oliveira.png"
+import imgDanielJackson from "../assets/img/members/daniel_jackson.png"
 import imgSamuel from "../assets/img/members/samuel.png"
 import imgIgorNascimento from "../assets/img/members/igor_nascimento.png"
 import imgEric from "../assets/img/members/eric.png"
@@ -185,7 +186,7 @@ const memberList = [
 	{
 		name: "Daniel Jackson",
 		role: "Membro",
-		img: memberImg,
+		img: imgDanielJackson,
 		links: [],
 	},
 	{
