@@ -104,9 +104,9 @@ function SectionOrcamento() {
 						elit. Maiores porro quis molestias facere repellat optio
 						perferendis velit?
 					</p>
-					<Button url="/contact">
-						<Icon prefix="fas" iconName="envelope"></Icon>
-						Enviar Email
+					<Button newTab url="https://wa.me/557336805389?text=Olá! Estou entrando em contato pelo site, gostaria de pedir um orçamento para ">
+						<Icon prefix="fab" iconName="whatsapp"></Icon>
+						Whatsapp
 					</Button>
 				</div>
 			</GroupMail>
