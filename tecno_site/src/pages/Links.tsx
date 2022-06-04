@@ -166,15 +166,18 @@ const socialList = [
 const linkList = [
 	{
 		category: "Importantes",
-		links: [
-			{ title: "TecnoWeek", url: "http://tecnoweek.tecnojr.com.br/" },
-			{ title: "CPU", url: "http://cpu.tecnojr.com.br/" },
-			{ title: "Tecno Site", url: "http://beta.tecnojr.com.br/" },
-		],
+		links: [{ title: "Tecno Site", url: "http://tecnojr.com.br/" }],
 	},
 	{
 		category: "Outros",
-		links: [{ title: "Tecno Board", url: "http://board.tecnojr.com.br/" }],
+		links: [
+			{ title: "Tecno Board", url: "http://board.tecnojr.com.br/" },
+			{
+				title: "TecnoWeek 2022.1",
+				url: "http://tecnoweek.tecnojr.com.br/",
+			},
+			{ title: "CPU 2022.1", url: "http://cpu.tecnojr.com.br/" },
+		],
 	},
 ]
 
