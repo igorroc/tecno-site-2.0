@@ -1,3 +1,5 @@
+import imgHelder from "../assets/img/members/helder.png"
+import imgElinaldo from "../assets/img/members/elinaldo.png"
 import imgIgorRocha from "../assets/img/members/igor_rocha.png"
 import imgEvelyn from "../assets/img/members/evelyn.png"
 import imgGabiZerbone from "../assets/img/members/gabi_zerbone.png"
@@ -24,14 +26,26 @@ const memberList = [
 	{
 		name: "Hélder Almeida",
 		role: "Coordenador",
-		img: memberImg,
-		links: [],
+		img: imgHelder,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/h%C3%A9lder-almeida-75407a34",
+			},
+		],
 	},
 	{
 		name: "Elinaldo Goes",
 		role: "Coordenador",
-		img: memberImg,
-		links: [],
+		img: imgElinaldo,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/elinaldojr",
+			},
+		],
 	},
 	{
 		name: "Isabelle Cruz",
@@ -137,73 +151,8 @@ const memberList = [
 		],
 	},
 	{
-		name: "Brendon Wilyen",
-		role: "Membro",
-		img: imgBrendon,
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/bwqsouza-dev/",
-			},
-		],
-	},
-	{
-		name: "Jefferson Ferreira",
-		role: "Membro",
-		img: imgJefferson,
-		links: [],
-	},
-	{
-		name: "Juliana Midlej",
-		role: "Membro",
-		img: imgJuliana,
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/juliana-midlej-do-esp%C3%ADrito-santo-a76b50160/",
-			},
-		],
-	},
-	{
-		name: "Eric Soares",
-		role: "Membro",
-		img: imgEric,
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/eric-soares-130b441ab/",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/ssilva.eric/",
-			},
-		],
-	},
-	{
-		name: "Daniel Jackson",
-		role: "Membro",
-		img: imgDanielJackson,
-		links: [],
-	},
-	{
-		name: "Luca Sacramento",
-		role: "Membro",
-		img: imgLuca,
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/luca-sacramento-a9b3631a8/",
-			},
-		],
-	},
-	{
 		name: "Alanis Rodrigues",
-		role: "Membro",
+		role: "Gerente de Marketing",
 		img: imgAlanis,
 		links: [
 			{
@@ -215,7 +164,7 @@ const memberList = [
 	},
 	{
 		name: "Samuel Vasconcelos",
-		role: "Membro",
+		role: "Gerente de Projetos",
 		img: imgSamuel,
 		links: [
 			{
@@ -227,6 +176,18 @@ const memberList = [
 				icon: "github",
 				prefix: "fab",
 				url: "https://github.com/smvasconcelos",
+			},
+		],
+	},
+	{
+		name: "Brendon Wilyen",
+		role: "Membro",
+		img: imgBrendon,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/bwqsouza-dev/",
 			},
 		],
 	},
@@ -260,6 +221,29 @@ const memberList = [
 		],
 	},
 	{
+		name: "Daniel Jackson",
+		role: "Membro",
+		img: imgDanielJackson,
+		links: [],
+	},
+	{
+		name: "Eric Soares",
+		role: "Membro",
+		img: imgEric,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/eric-soares-130b441ab/",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/ssilva.eric/",
+			},
+		],
+	},
+	{
 		name: "Igor Nascimento",
 		role: "Membro",
 		img: imgIgorNascimento,
@@ -277,10 +261,34 @@ const memberList = [
 		],
 	},
 	{
-		name: "Yan Costa",
+		name: "Jefferson Ferreira",
 		role: "Membro",
-		img: imgYan,
+		img: imgJefferson,
 		links: [],
+	},
+	{
+		name: "Juliana Midlej",
+		role: "Membro",
+		img: imgJuliana,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/juliana-midlej-do-esp%C3%ADrito-santo-a76b50160/",
+			},
+		],
+	},
+	{
+		name: "Luca Sacramento",
+		role: "Membro",
+		img: imgLuca,
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/luca-sacramento-a9b3631a8/",
+			},
+		],
 	},
 	{
 		name: "Victor José",
@@ -293,6 +301,12 @@ const memberList = [
 				url: "https://www.linkedin.com/in/victor-martins-02946610b/",
 			},
 		],
+	},
+	{
+		name: "Yan Costa",
+		role: "Membro",
+		img: imgYan,
+		links: [],
 	},
 ]
 
