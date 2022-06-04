@@ -82,6 +82,17 @@ function Home() {
 				</SectionTitle>
 				<Slider {...settings}>
 					<CarrouselNode>
+						<CarrouselNodeIcon iconName="server" prefix="fas" />
+						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
+						<CarrouselNodeContent>
+							Usamos das melhores tecnologias do mercado para
+							desenvolver sua aplicação. Garantindo, que aquele
+							sistema que gerencia sua barbearia ou que seu
+							e-commerce, saia com a qualidade esperada.
+						</CarrouselNodeContent>
+					</CarrouselNode>
+
+					<CarrouselNode>
 						<CarrouselNodeIcon iconName="globe" prefix="fas" />
 						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
 						<CarrouselNodeContent>
@@ -89,6 +100,7 @@ function Home() {
 							até um site institucional com várias páginas.
 						</CarrouselNodeContent>
 					</CarrouselNode>
+
 					<CarrouselNode>
 						<CarrouselNodeIcon
 							iconName="mobile-button"
@@ -99,46 +111,6 @@ function Home() {
 							Nós desenvolvemos aplicativos nativos de alta
 							performance para atender sua necessidade, seus
 							clientes e seu bolso.
-						</CarrouselNodeContent>
-					</CarrouselNode>
-					<CarrouselNode>
-						<CarrouselNodeIcon iconName="server" prefix="fas" />
-						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
-						<CarrouselNodeContent>
-							Usamos das melhores tecnologias do mercado para
-							desenvolver sua aplicação. Garantindo, que aquele
-							sistema que gerencia sua barbearia ou que seu
-							e-commerce, saia com a qualidade esperada.
-						</CarrouselNodeContent>
-					</CarrouselNode>
-					<CarrouselNode>
-						<CarrouselNodeIcon iconName="globe" prefix="fas" />
-						<CarrouselNodeTitle>Websites</CarrouselNodeTitle>
-						<CarrouselNodeContent>
-							Desenvolvemos desde uma página simples de portfólio,
-							até um site institucional com várias páginas.
-						</CarrouselNodeContent>
-					</CarrouselNode>
-					<CarrouselNode>
-						<CarrouselNodeIcon
-							iconName="mobile-button"
-							prefix="fas"
-						/>
-						<CarrouselNodeTitle>Aplicativos</CarrouselNodeTitle>
-						<CarrouselNodeContent>
-							Nós desenvolvemos aplicativos nativos de alta
-							performance para atender sua necessidade, seus
-							clientes e seu bolso.
-						</CarrouselNodeContent>
-					</CarrouselNode>
-					<CarrouselNode>
-						<CarrouselNodeIcon iconName="server" prefix="fas" />
-						<CarrouselNodeTitle>Sistemas Web</CarrouselNodeTitle>
-						<CarrouselNodeContent>
-							Usamos das melhores tecnologias do mercado para
-							desenvolver sua aplicação. Garantindo, que aquele
-							sistema que gerencia sua barbearia ou que seu
-							e-commerce, saia com a qualidade esperada.
 						</CarrouselNodeContent>
 					</CarrouselNode>
 				</Slider>
