@@ -41,7 +41,7 @@ const CardStyle = styled("div", {
 			justifyContent: "center",
 			alignItems: "center",
 			opacity: "0",
-			transition: "all 300ms ease-in-out",
+			transition: "all 300ms ease-out",
 
 			"& a": {
 				padding: "10px 20px",
