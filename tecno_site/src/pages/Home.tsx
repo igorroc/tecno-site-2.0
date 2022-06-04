@@ -152,6 +152,15 @@ function Home() {
 				<SectionTitle title="Parceiros" color="blue">
 					Conheça quem confia na TecnoJr!
 				</SectionTitle>
+				<p>
+					Ou acompanhe como estamos nos saindo pela{" "}
+					<a
+						href="https://portal.brasiljunior.org.br/ejs/tecnojr/perfil"
+						target="_blank"
+					>
+						BrasilJr
+					</a>
+				</p>
 				<Orbit />
 			</MaxWidthWrapper>
 
