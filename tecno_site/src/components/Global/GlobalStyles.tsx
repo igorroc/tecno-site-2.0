@@ -35,13 +35,13 @@ const globalStyles = globalCss({
 			"& > div > div": {
 				boxShadow: "unset",
 
-			"& h3:after": {
-				backgroundColor: "#5A7BE7",
+				"& h3:after": {
+					backgroundColor: "#5A7BE7",
+				},
 			},
-		},
 
 			"& > div": {
-			margin: "20px",
+				margin: "20px",
 			},
 		},
 	},
