@@ -85,7 +85,7 @@ function SectionOrcamento() {
 						Quer tirar sua ideia do papel? Não se preocupe, a Tecno
 						Jr não cobra pela avaliação da proposta.
 					</ItemLista>
-					<ItemLista title="Resposta em até 24hr">
+					<ItemLista title="Resposta em até 24h">
 						Obtenha resposta do que precisa em um prazo máximo de
 						24hr.
 					</ItemLista>
@@ -100,9 +100,8 @@ function SectionOrcamento() {
 				<h2>Entre em contato!</h2>
 				<div className="bottomWrapper">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Maiores porro quis molestias facere repellat optio
-						perferendis velit?
+						Precisa de uma solução para o seu negócio? Entre em
+						contato para receber um orçamento em até 72h.
 					</p>
 					<Button newTab url="https://wa.me/557336805389?text=Olá! Estou entrando em contato pelo site, gostaria de pedir um orçamento para ">
 						<Icon prefix="fab" iconName="whatsapp"></Icon>
