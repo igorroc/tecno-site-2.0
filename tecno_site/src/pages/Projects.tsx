@@ -66,17 +66,16 @@ function Projects() {
 					<h1>
 						Conheça alguns dos
 						<MainText>sonhos</MainText>
-						já feitos!
+						já desenvolvidos!
 					</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Aspernatur sapiente mollitia id, excepturi
-						voluptates ad, veniam soluta dicta maxime, cumque porro.
-						Enim doloremque sapiente voluptatum! Consequuntur rerum
-						cumque animi. Veritatis.
+						A TecnoJr investe fundo em capacitações de nossos
+						desenvolvedores para oferecer aos nossos clientes a
+						qualidade e confiança que eles precisam. Confira quem já
+						confiou em nossas soluções:
 					</p>
 
-					<Button url="#">
+					<Button url="#projetos">
 						Saiba mais
 						<i className="fa-solid fa-caret-down"></i>
 					</Button>
@@ -85,6 +84,10 @@ function Projects() {
 
 				{/* Projetos */}
 				<SectionTitle
+					title="Projetos"
+					color="blue"
+					id="projetos"
+				></SectionTitle>
 				<CardsWrapper>
 					{projects.map((project, index) => {
 						return (
