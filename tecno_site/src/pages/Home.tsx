@@ -65,14 +65,13 @@ function Home() {
 						<MainText>Sonhos e Soluções</MainText>
 					</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Aspernatur sapiente mollitia id, excepturi
-						voluptates ad, veniam soluta dicta maxime, cumque porro.
-						Enim doloremque sapiente voluptatum! Consequuntur rerum
-						cumque animi. Veritatis.
+						A nossa cultura é transformar qualquer ideia em um
+						projeto de qualidade. Aqui, fazemos de tudo para
+						garantir que as nossas soluções ofereçam segurança e
+						praticidade para a vida de nossos clientes.
 					</p>
-					<Button url="http://prosel.tecnojr.com.br/">
-						PROSEL
+					<Button url="/contact">
+						Contate-nos
 						<i className="fa-solid fa-arrow-right"></i>
 					</Button>
 					<ScrollIndicator />
