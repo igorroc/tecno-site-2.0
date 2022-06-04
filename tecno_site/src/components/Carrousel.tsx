@@ -15,43 +15,50 @@ const CarrouselWrapper = styled("div", {
 
 const Card = styled("div", {
 	position: "relative",
+	minHeight: "350px",
 	height: "max-content",
-	padding: "1em",
-	maxHeight: "200px",
+	padding: "2em",
 	fontSize: "1em",
 	overflow: "hidden",
-	background: "linear-gradient(#3A3A3A, #272727, 20%, #131313)",
-	borderRadius: "5px",
+	background: "linear-gradient(#3A3A3A, #272727,  #131313)",
+	backgroundSize: "100%",
+	backgroundPosition: "-100%",
+	borderRadius: "10px",
 	display: "flex",
 	flexDirection: "column",
+	alignItems: "center",
 	gap: "2em",
 	margin: "0 auto",
 
-	transition: "all 500ms ease-in",
-
-	variants: {
-		active: {
-			true: {
-				
-			},
-			false: {
-				
-			},
-		},
-	},
+	transition: "all 300ms ease-in",
 
 	"& h3": {
 		position: "relative",
 		fontSize: "2em",
+		textAlign: "center",
 
 		"&:after": {
 			content: "",
 			position: "absolute",
 			bottom: "-7px",
-			left: "0",
+			left: "50%",
+			transform: "translateX(-50%)",
 			width: "75px",
 			height: "3px",
 			backgroundColor: "#fff",
+			transition: "width 300ms ease-out",
+		},
+	},
+
+	"& p": {
+		textAlign: "center",
+	},
+
+	"&:hover": {
+		backgroundPosition: "200%",
+
+		"& h3:after": {
+			width: "125px",
 		},
 	},
 })
@@ -61,7 +68,7 @@ const NodeIcon = styled("div", {
 	height: "3em",
 	padding: "1em",
 	borderRadius: "50%",
-	backgroundColor: "#fff5",
+	backgroundColor: "#5a7be7",
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
@@ -72,7 +79,6 @@ const NodeIcon = styled("div", {
 })
 
 type NodeProps = {
-	active?: boolean | false
 	children?: React.ReactNode
 }
 
@@ -86,7 +92,7 @@ export function Carrousel(props: NodeProps) {
 }
 
 export function CarrouselNode(props: NodeProps) {
-	return <Card active={props.active || false}>{props.children}</Card>
+	return <Card>{props.children}</Card>
 }
 
 export function CarrouselNodeIcon(props: IconProps) {
