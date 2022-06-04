@@ -55,6 +55,12 @@ function Contact() {
 						<h1>
 							Ocorreu um <MainText>erro</MainText>
 						</h1>
+						<p>
+							Envie um email diretamente para{" "}
+							<a href="mailto:contato@tecnojr.com.br">
+								contato@tecnojr.com.br
+							</a>
+						</p>
 						<Button url="mailto:contato@tecnojr.com.br">
 							Enviar email
 							<i className="fa-solid fa-envelope"></i>
