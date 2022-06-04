@@ -18,6 +18,7 @@ import imgBreno from "../assets/img/members/breno.png"
 import imgBrendon from "../assets/img/members/brendon.png"
 import imgAlanis from "../assets/img/members/alanis.png"
 import imgMatheus from "../assets/img/members/matheus.png"
+import imgVictor from "../assets/img/members/victor.png"
 import imgYan from "../assets/img/members/yan.png"
 
 import memberImg from "../assets/img/members/photo.png"
@@ -293,7 +294,7 @@ const memberList = [
 	{
 		name: "Victor José",
 		role: "Membro",
-		img: memberImg,
+		img: imgVictor,
 		links: [
 			{
 				icon: "linkedin",
