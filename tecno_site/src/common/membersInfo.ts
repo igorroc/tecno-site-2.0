@@ -153,6 +153,11 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Gabriella Oliveira",
+		role: "Gerência de RH",
+		links: [],
+	},
+	{
 		name: "Samuel Vasconcelos",
 		role: "Gerência de Projetos",
 		img: "samuel.png",
@@ -172,7 +177,24 @@ export const memberList = [
 	{
 		name: "Beatriz Pereira",
 		role: "Membro",
-		links: [],
+		img: "beatriz.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/beatriz-pereira-81467317b/",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/beatriz.aragao.355?r=nametag",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:beatrizpereira.ar@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Breno Vitório",
@@ -190,7 +212,28 @@ export const memberList = [
 		name: "Bruno Felipe",
 		role: "Membro",
 		img: "bruno_felipe.png",
-		links: [],
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/brunofelipecoder",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/BrunoFelipeCoder",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/bruno.cic/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:bfspereira.cic@uesc.br",
+			},
+		],
 	},
 	{
 		name: "Bruno Silva",
@@ -232,11 +275,6 @@ export const memberList = [
 		],
 	},
 	{
-		name: "Gabriella Oliveira",
-		role: "Membro",
-		links: [],
-	},
-	{
 		name: "Igor Nascimento",
 		role: "Membro",
 		img: "igor_nascimento.png",
@@ -262,6 +300,7 @@ export const memberList = [
 	{
 		name: "Joabe Andrade",
 		role: "Membro",
+		img: "joabe_andrade.png",
 		links: [],
 	},
 	{
