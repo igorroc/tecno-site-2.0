@@ -55,7 +55,7 @@ function About() {
 						de desenvolvimento de sistemas e aproximando o mundo
 						acadêmico do empresarial, desenvolvendo o espírito
 						empreendedor de seus colaboradores. Atualmente é
-						constituida por 19 membros.
+						constituída por {roles.total} membros.
 					</p>
 					<Button url="#membros">
 						MEMBROS
