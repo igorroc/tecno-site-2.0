@@ -49,7 +49,7 @@ export default function MemberFilter(props: FilterProps) {
 	return (
 		<Div>
 			<Pill>
-				Coordenadores – {roles.coordenadores}
+				{roles.coordenadores} – Coordenadores
 				<input
 					type="checkbox"
 					value="coordenação"
@@ -57,7 +57,7 @@ export default function MemberFilter(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				Conselheiros – {roles.conselheiros}
+				{roles.conselheiros} – Conselheiros
 				<input
 					type="checkbox"
 					value="conselho"
@@ -65,7 +65,7 @@ export default function MemberFilter(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				Diretores – {roles.diretores}
+				{roles.diretores} – Diretores
 				<input
 					type="checkbox"
 					value="diretoria"
@@ -73,7 +73,7 @@ export default function MemberFilter(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				Gerentes – {roles.gerentes}
+				{roles.gerentes} – Gerentes
 				<input
 					type="checkbox"
 					value="gerência"
@@ -81,7 +81,7 @@ export default function MemberFilter(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				Desenvolvedores – {roles.membros}
+				{roles.membros} – Desenvolvedores
 				<input
 					type="checkbox"
 					value="membro"

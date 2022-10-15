@@ -90,7 +90,7 @@ function About() {
 				</SectionTitle>
 				<p>
 					Atualmente a TecnoJr é composta por{" "}
-					<strong>{roles.total} membros</strong>.
+					<strong>{roles.total} membros</strong>, sendo:
 				</p>
 				<MemberFilter functionChange={filterChange} />
 				<MemberGrid>
