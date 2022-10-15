@@ -1,7 +1,7 @@
 {
 	"name": "tecno_site",
-	"version": "0.0.0",
-	"homepage": "http://beta.tecnojr.com.br/",
+	"version": "1.0.0",
+	"homepage": "https://tecnojr.com.br/",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
