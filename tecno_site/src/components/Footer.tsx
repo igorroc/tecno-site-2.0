@@ -304,7 +304,11 @@ export function Footer(props: FooterProps) {
 				<p id="copy">
 					©2022 All rights reserved.
 					<br />
-					Desenvolvido com muito ❤ ️e ☕ pela TecnoJr.
+					Desenvolvido com muito ❤ ️e ☕ pela{" "}
+					<a href="https://tecnojr.com.br" target="_blank">
+						TecnoJr
+					</a>
+					.
 				</p>
 			</MaxWidthWrapper>
 		</FooterDiv>

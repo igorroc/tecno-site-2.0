@@ -15,9 +15,26 @@ import { SectionTitle } from "../components/SectionTitle"
 import CardsWrapper, { Card } from "../components/Card"
 
 import imgSemanaInovacao from "../assets/img/projects/semana_inovacao.png"
+import imgSimmbra from "../assets/img/projects/simmbra.png"
+import imgAfusc from "../assets/img/projects/afusc.png"
+import imgSpaceTerra from "../assets/img/projects/spaceterra.jpg"
+import imgNasaApps from "../assets/img/projects/nasaapps.png"
+import imgNasaSalvador from "../assets/img/projects/appssalvador.png"
 import imgPlaceHolder from "../assets/img/projects/placeholder.png"
 
 const projects = [
+	{
+		title: "NASA Space Terra",
+		description: "Website",
+		link: "https://spaceterra.org/",
+		img: imgSpaceTerra,
+	},
+	{
+		title: "NASA Space Apps",
+		description: "Website",
+		link: "https://nasa.spaceterra.org/",
+		img: imgNasaApps,
+	},
 	{
 		title: "Semana de Inovação",
 		description: "Website",
@@ -25,10 +42,22 @@ const projects = [
 		img: imgSemanaInovacao,
 	},
 	{
-		title: "GuiaServe",
-		description: "Aplicativo/WebSite",
-		link: "",
-		img: imgPlaceHolder,
+		title: "SIMMBRA",
+		description: "WebSite",
+		link: "https://simmbra.com.br",
+		img: imgSimmbra,
+	},
+	{
+		title: "NASA Space Apps Salvador",
+		description: "Website",
+		link: "https://salvador.spaceterra.org/",
+		img: imgNasaSalvador,
+	},
+	{
+		title: "Afusc",
+		description: "WebSite",
+		link: "https://afuscuesc.com",
+		img: imgAfusc,
 	},
 	{
 		title: "UEPG",
@@ -44,12 +73,6 @@ const projects = [
 	},
 	{
 		title: "Observatório Social",
-		description: "WebSite",
-		link: "",
-		img: imgPlaceHolder,
-	},
-	{
-		title: "SIMMBRA",
 		description: "WebSite",
 		link: "",
 		img: imgPlaceHolder,

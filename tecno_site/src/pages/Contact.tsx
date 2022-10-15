@@ -8,9 +8,8 @@ import { BackgroundImage } from "../components/BackgroundImage"
 import { WrapperMainContent } from "../components/WrapperMainContent"
 
 import { Form } from "../components/Form"
-import { Hexagon } from "../components/Hexagon"
 import GlobalDiv from "../components/Global/GlobalDiv"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Button } from "../components/Buttons/Button"
 
 const WrapperForm = styled("div", {

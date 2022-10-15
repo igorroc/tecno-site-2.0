@@ -30,6 +30,7 @@ function Home() {
 		centerPadding: "0px",
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		initialSlide: 1,
 		speed: 300,
 		focusOnSelect: true,
 		responsive: [
@@ -38,7 +39,7 @@ function Home() {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-					initialSlide: 2,
+					initialSlide: 1,
 				},
 			},
 			{

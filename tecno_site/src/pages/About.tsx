@@ -1,4 +1,3 @@
-import { styled } from "@stitches/react"
 import { Header } from "../components/Header"
 
 import { MainText } from "../components/MainText"
