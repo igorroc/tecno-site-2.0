@@ -45,7 +45,7 @@ type FilterProps = {
 	functionChange: (ev: any) => void
 }
 
-export default function MemberFilter(props: FilterProps) {
+export default function FilterPill(props: FilterProps) {
 	return (
 		<Div>
 			<Pill>

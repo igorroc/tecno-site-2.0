@@ -24,14 +24,13 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { Footer } from "../components/Footer"
 import GlobalDiv from "../components/Global/GlobalDiv"
 import HexIdeais, { WrapperHex } from "../components/HexIdeais"
-import MemberFilter from "../components/MemberFilter"
+import FilterPill from "../components/FilterPill"
 import { useState } from "react"
 
 function About() {
 	const [filter, setFilter] = useState<Array<string>>([])
 
 	function filterChange(ev: any) {
-		console.log(ev.target.value)
 		if (filter.includes(ev.target.value)) {
 			setFilter(filter.filter((item) => item !== ev.target.value))
 		} else {
@@ -92,7 +91,7 @@ function About() {
 					Atualmente a TecnoJr é composta por{" "}
 					<strong>{roles.total} membros</strong>, sendo:
 				</p>
-				<MemberFilter functionChange={filterChange} />
+				<FilterPill functionChange={filterChange} />
 				<MemberGrid>
 					{memberList.map((usr, index) => {
 						let role = usr.role.toLowerCase().split(" ")[0]
