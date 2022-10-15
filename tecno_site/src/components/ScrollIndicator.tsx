@@ -30,6 +30,7 @@ const Div = styled("div", {
 	textShadow: shadow,
 	fontSize: size,
 	animation: `${slidingAnimation} 2s infinite ease-in-out`,
+	cursor: "pointer",
 
 	"& svg": {
 		fontSize: "1em",
@@ -68,8 +69,16 @@ const Div = styled("div", {
 })
 
 export function ScrollIndicator() {
+	// Create a react function that when the user click on div with id="scroll", scroll the page 100px down
+	const scrollDown = () => {
+		window.scrollTo({
+			top: window.innerHeight - 50,
+			behavior: "smooth",
+		})
+	}
+
 	return (
-		<Div>
+		<Div onClick={scrollDown}>
 			<Icon prefix="fas" iconName="angle-left" />
 			<span className="largeScreen">Scroll</span>
 			<span className="smallScreen">Swipe</span>
