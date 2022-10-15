@@ -165,7 +165,7 @@ const SideNav = styled("div", {
 })
 
 const LinkList = [
-	{ url: "/", text: "Home" },
+	{ url: "/", text: "Início" },
 	{ url: "/about", text: "Sobre" },
 	{ url: "/contact", text: "Contato" },
 	{ url: "/projects", text: "Projetos" },
