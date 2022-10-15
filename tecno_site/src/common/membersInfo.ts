@@ -337,7 +337,32 @@ export const memberList = [
   {
     name: "João P. Norberto",
     role: "Membro",
-    links: [],
+    img: "joão_pedro_noberto.png",
+    links: [
+      {
+        icon: "linkedin",
+        prefix: "fab",
+        url: "https://www.linkedin.com/in/jo%C3%A3o-pedro-correia-da-silva-noberto-028940236/",
+      },
+
+      {
+        icon: "github",
+        prefix: "fab",
+        url: "https://github.com/oJorta",
+      },
+
+      {
+        icon: "instagram",
+        prefix: "fab",
+        url: "https://www.instagram.com/jorta___/",
+      },
+
+      {
+        icon: "envelope",
+        prefix: "fas",
+        url: "mailto:jpcsnoberto@gmail.com",
+      },
+    ],
   },
   {
     name: "João V. Leite",
