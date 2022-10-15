@@ -1,5 +1,3 @@
-import memberImg from "../assets/img/members/photo.png"
-
 export const memberList = [
 	{
 		name: "Hélder Almeida",
@@ -238,7 +236,23 @@ export const memberList = [
 	{
 		name: "Bruno Silva",
 		role: "Membro",
-		links: [],
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/bruno-s-araujo/"
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/BrunoSilva96"
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:brunosilvabrait@gmail.com"
+			}
+		],
 	},
 	{
 		name: "Daniel Oliveira",

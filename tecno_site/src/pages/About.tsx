@@ -100,7 +100,7 @@ function About() {
 							show = false
 						}
 						return (
-							<MemberCard key={index} show={show}>
+							<MemberCard key={index} show={show} >
 								<MemberImage img={"/members/" + usr.img} />
 								<MemberBox>
 									<MemberName>{usr.name}</MemberName>
