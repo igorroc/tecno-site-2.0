@@ -1,31 +1,10 @@
-import imgHelder from "../assets/img/members/helder.png"
-import imgElinaldo from "../assets/img/members/elinaldo.png"
-import imgIgorRocha from "../assets/img/members/igor_rocha.png"
-import imgEvelyn from "../assets/img/members/evelyn.png"
-import imgGabiZerbone from "../assets/img/members/gabi_zerbone.png"
-import imgIsabelle from "../assets/img/members/isabelle.png"
-import imgThalles from "../assets/img/members/thalles_cerqueira.png"
-import imgJefferson from "../assets/img/members/jefferson.png"
-import imgDanielOliveira from "../assets/img/members/daniel_oliveira.png"
-import imgSamuel from "../assets/img/members/samuel.png"
-import imgIgorNascimento from "../assets/img/members/igor_nascimento.png"
-import imgEric from "../assets/img/members/eric.png"
-import imgJuliana from "../assets/img/members/juliana.png"
-import imgMarcus from "../assets/img/members/marcus.png"
-import imgBreno from "../assets/img/members/breno.png"
-import imgBrendon from "../assets/img/members/brendon.png"
-import imgAlanis from "../assets/img/members/alanis.png"
-import imgMatheus from "../assets/img/members/matheus.png"
-import imgVictor from "../assets/img/members/victor.png"
-import imgYan from "../assets/img/members/yan.png"
-
 import memberImg from "../assets/img/members/photo.png"
 
 const memberList = [
 	{
 		name: "Hélder Almeida",
 		role: "Coordenador",
-		img: imgHelder,
+		img: "helder.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -37,7 +16,7 @@ const memberList = [
 	{
 		name: "Elinaldo Goes",
 		role: "Coordenador",
-		img: imgElinaldo,
+		img: "elinaldo.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -47,9 +26,21 @@ const memberList = [
 		],
 	},
 	{
+		name: "Katia Vaskys",
+		role: "Conselheira",
+		img: "katia.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/katia-vaskys",
+			},
+		],
+	},
+	{
 		name: "Isabelle Cruz",
 		role: "Diretora Presidente",
-		img: imgIsabelle,
+		img: "isabelle.png",
 		links: [
 			{
 				icon: "instagram",
@@ -66,7 +57,7 @@ const memberList = [
 	{
 		name: "Igor Rocha",
 		role: "Diretor de Projetos",
-		img: imgIgorRocha,
+		img: "igor_rocha.png",
 		links: [
 			{
 				icon: "globe",
@@ -93,7 +84,7 @@ const memberList = [
 	{
 		name: "Thalles Cerqueira",
 		role: "Diretor de Vendas",
-		img: imgThalles,
+		img: "thalles_cerqueira.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -105,7 +96,7 @@ const memberList = [
 	{
 		name: "Gabriela Zerbone",
 		role: "Diretora de RH",
-		img: imgGabiZerbone,
+		img: "gabi_zerbone.png",
 		links: [
 			{
 				icon: "instagram",
@@ -122,13 +113,13 @@ const memberList = [
 	{
 		name: "Mateus Lisboa",
 		role: "Diretor Financeiro",
-		img: imgMatheus,
+		img: "matheus.png",
 		links: [],
 	},
 	{
 		name: "Evelyn Santos",
 		role: "Conselheira",
-		img: imgEvelyn,
+		img: "evelyn.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -140,7 +131,7 @@ const memberList = [
 	{
 		name: "Marcus Vinicius",
 		role: "Conselheiro",
-		img: imgMarcus,
+		img: "marcus.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -152,7 +143,7 @@ const memberList = [
 	{
 		name: "Alanis Rodrigues",
 		role: "Gerente de Marketing",
-		img: imgAlanis,
+		img: "alanis.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -164,7 +155,7 @@ const memberList = [
 	{
 		name: "Samuel Vasconcelos",
 		role: "Gerente de Projetos",
-		img: imgSamuel,
+		img: "samuel.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -181,7 +172,7 @@ const memberList = [
 	{
 		name: "Brendon Wilyen",
 		role: "Membro",
-		img: imgBrendon,
+		img: "brendon.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -193,7 +184,7 @@ const memberList = [
 	{
 		name: "Breno Vitório",
 		role: "Membro",
-		img: imgBreno,
+		img: "breno.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -205,7 +196,7 @@ const memberList = [
 	{
 		name: "Daniel Oliveira",
 		role: "Membro",
-		img: imgDanielOliveira,
+		img: "daniel_oliveira.png",
 		links: [
 			{
 				icon: "sheet-plastic",
@@ -222,7 +213,7 @@ const memberList = [
 	{
 		name: "Eric Soares",
 		role: "Membro",
-		img: imgEric,
+		img: "eric.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -239,7 +230,7 @@ const memberList = [
 	{
 		name: "Igor Nascimento",
 		role: "Membro",
-		img: imgIgorNascimento,
+		img: "igor_nascimento.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -256,13 +247,13 @@ const memberList = [
 	{
 		name: "Jefferson Ferreira",
 		role: "Membro",
-		img: imgJefferson,
+		img: "jefferson.png",
 		links: [],
 	},
 	{
 		name: "Juliana Midlej",
 		role: "Membro",
-		img: imgJuliana,
+		img: "juliana.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -274,7 +265,7 @@ const memberList = [
 	{
 		name: "Victor José",
 		role: "Membro",
-		img: imgVictor,
+		img: "victor.png",
 		links: [
 			{
 				icon: "linkedin",
@@ -286,7 +277,7 @@ const memberList = [
 	{
 		name: "Yan Costa",
 		role: "Membro",
-		img: imgYan,
+		img: "yan.png",
 		links: [],
 	},
 ]
