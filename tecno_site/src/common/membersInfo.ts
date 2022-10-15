@@ -1,9 +1,9 @@
 import memberImg from "../assets/img/members/photo.png"
 
-const memberList = [
+export const memberList = [
 	{
 		name: "Hélder Almeida",
-		role: "Coordenador",
+		role: "Coordenação",
 		img: "helder.png",
 		links: [
 			{
@@ -15,7 +15,7 @@ const memberList = [
 	},
 	{
 		name: "Elinaldo Goes",
-		role: "Coordenador",
+		role: "Coordenação",
 		img: "elinaldo.png",
 		links: [
 			{
@@ -27,7 +27,7 @@ const memberList = [
 	},
 	{
 		name: "Katia Vaskys",
-		role: "Conselheira",
+		role: "Conselho",
 		img: "katia.png",
 		links: [
 			{
@@ -39,7 +39,7 @@ const memberList = [
 	},
 	{
 		name: "Isabelle Cruz",
-		role: "Diretora Presidente",
+		role: "Diretoria Presidente",
 		img: "isabelle.png",
 		links: [
 			{
@@ -56,7 +56,7 @@ const memberList = [
 	},
 	{
 		name: "Igor Rocha",
-		role: "Diretor de Projetos",
+		role: "Diretoria de Projetos",
 		img: "igor_rocha.png",
 		links: [
 			{
@@ -83,7 +83,7 @@ const memberList = [
 	},
 	{
 		name: "Thalles Cerqueira",
-		role: "Diretor de Vendas",
+		role: "Diretoria de Vendas",
 		img: "thalles_cerqueira.png",
 		links: [
 			{
@@ -95,7 +95,7 @@ const memberList = [
 	},
 	{
 		name: "Gabriela Zerbone",
-		role: "Diretora de RH",
+		role: "Diretoria de RH",
 		img: "gabi_zerbone.png",
 		links: [
 			{
@@ -112,13 +112,13 @@ const memberList = [
 	},
 	{
 		name: "Mateus Lisboa",
-		role: "Diretor Financeiro",
+		role: "Diretoria Financeira",
 		img: "matheus.png",
 		links: [],
 	},
 	{
 		name: "Evelyn Santos",
-		role: "Conselheira",
+		role: "Conselho",
 		img: "evelyn.png",
 		links: [
 			{
@@ -130,7 +130,7 @@ const memberList = [
 	},
 	{
 		name: "Marcus Vinicius",
-		role: "Conselheiro",
+		role: "Conselho",
 		img: "marcus.png",
 		links: [
 			{
@@ -142,7 +142,7 @@ const memberList = [
 	},
 	{
 		name: "Alanis Rodrigues",
-		role: "Gerente de Marketing",
+		role: "Gerência de Marketing",
 		img: "alanis.png",
 		links: [
 			{
@@ -154,7 +154,7 @@ const memberList = [
 	},
 	{
 		name: "Samuel Vasconcelos",
-		role: "Gerente de Projetos",
+		role: "Gerência de Projetos",
 		img: "samuel.png",
 		links: [
 			{
@@ -170,18 +170,6 @@ const memberList = [
 		],
 	},
 	{
-		name: "Brendon Wilyen",
-		role: "Membro",
-		img: "brendon.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/bwqsouza-dev/",
-			},
-		],
-	},
-	{
 		name: "Breno Vitório",
 		role: "Membro",
 		img: "breno.png",
@@ -192,6 +180,12 @@ const memberList = [
 				url: "https://www.linkedin.com/in/therealbrenu/",
 			},
 		],
+	},
+	{
+		name: "Bruno Felipe",
+		role: "Membro",
+		img: "bruno_felipe.png",
+		links: [],
 	},
 	{
 		name: "Daniel Oliveira",
@@ -251,16 +245,10 @@ const memberList = [
 		links: [],
 	},
 	{
-		name: "Juliana Midlej",
+		name: "Solana Ametista",
 		role: "Membro",
-		img: "juliana.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/juliana-midlej-do-esp%C3%ADrito-santo-a76b50160/",
-			},
-		],
+		img: "solana.png",
+		links: [],
 	},
 	{
 		name: "Victor José",
