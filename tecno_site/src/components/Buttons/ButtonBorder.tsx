@@ -8,7 +8,8 @@ const animation = keyframes({
 		backgroundPosition: "400% 0",
 	},
 })
-const Button = styled("button", {
+
+const Button = styled("a", {
 	position: "relative",
 	outline: "none",
 	border: "2px solid transparent",
@@ -44,12 +45,30 @@ const Button = styled("button", {
 	"&:hover": {
 		border: "2px solid #27f2ff",
 	},
+
+	"&.mobile": {
+		width: "unset",
+		height: "unset",
+		lineHeight: "unset",
+		padding: "0.6em 1.6em",
+		borderRadius: "20px",
+
+		"&::before, &::after": {
+			width: "unset",
+			height: "unset",
+		},
+	},
 })
 
 type ButtonProps = {
 	text: string
 	url?: string
+	small?: boolean
 }
 export function ButtonBorder(props: ButtonProps) {
-	return <Button>{props.text}</Button>
+	return (
+		<Button href={props.url} className={props.small ? "mobile" : ""}>
+			{props.text}
+		</Button>
+	)
 }
