@@ -282,4 +282,18 @@ const memberList = [
 	},
 ]
 
-export default memberList
+export const roles = {
+	coordenadores: memberList.filter((member) =>
+		member.role.includes("Coordenação")
+	).length,
+	conselheiros: memberList.filter((member) =>
+		member.role.includes("Conselho")
+	).length,
+	diretores: memberList.filter((member) => member.role.includes("Diretoria"))
+		.length,
+	gerentes: memberList.filter((member) => member.role.includes("Gerência"))
+		.length,
+	membros: memberList.filter((member) => member.role.includes("Membro"))
+		.length,
+	total: memberList.length,
+}
