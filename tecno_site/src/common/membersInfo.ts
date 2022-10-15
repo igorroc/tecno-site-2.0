@@ -173,6 +173,12 @@ export const memberList = [
     ],
   },
   {
+    name: "Alice Valero",
+    role: "Membro",
+    img: "alice.png",
+    links: [],
+  },
+  {
     name: "Beatriz Pereira",
     role: "Membro",
     img: "beatriz.png",
@@ -236,6 +242,7 @@ export const memberList = [
   {
     name: "Bruno Silva",
     role: "Membro",
+    img: "bruno_silva.png",
     links: [
       {
         icon: "linkedin",
@@ -350,6 +357,7 @@ export const memberList = [
   {
     name: "Maria Eduarda",
     role: "Membro",
+    img: "maria_guedes.png",
     links: [
       {
         icon: "github",
@@ -387,6 +395,7 @@ export const memberList = [
   {
     name: "Thompson Raul",
     role: "Membro",
+    img: "thompson.png",
     links: [
       {
         icon: "linkedin",
