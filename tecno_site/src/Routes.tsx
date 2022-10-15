@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Links from "./pages/Links"
 import WpAdmin from "./pages/WpAdmin"
+import Login from "./pages/Login"
 
 export function AppRoutes() {
 	return (
@@ -18,6 +19,7 @@ export function AppRoutes() {
 				<Route path="/links" element={<Links />} />
 				<Route path="/404" element={<PageNotFound />} />
 				<Route path="/wp-admin" element={<WpAdmin />} />
+				<Route path="/login" element={<Login />} />
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
 		</Router>

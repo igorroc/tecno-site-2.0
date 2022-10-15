@@ -210,12 +210,12 @@ export function Header(props: HeaderProps) {
 								)
 							})}
 						</ul>
-						<ButtonBorder text="Faça Login!" />
+						<ButtonBorder text="Faça Login!" url="/login" />
 					</MaxWidthWrapper>
 				) : (
 					<MaxWidthWrapper>
 						<a id="headerLogo" href="/">
-							<SmallLogo />
+							<Logo />
 						</a>
 						<SideNav
 							id="sideNav"
@@ -237,7 +237,11 @@ export function Header(props: HeaderProps) {
 										</a>
 									)
 								})}
-								<button>Faça Login!</button>
+								<ButtonBorder
+									text="Faça Login!"
+									url="/login"
+									small
+								/>
 							</ul>
 							<button id="menuButton" onClick={handleMenuClick}>
 								<Icon prefix="fas" iconName="x" />
