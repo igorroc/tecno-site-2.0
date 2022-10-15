@@ -1,6 +1,5 @@
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { styled } from "@stitches/react"
-import { Link } from "react-router-dom"
 import { Icon } from "./Icon"
 
 const Grid = styled("div", {

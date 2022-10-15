@@ -78,7 +78,7 @@ function About() {
 					{membersInfo.map((usr, index) => {
 						return (
 							<MemberCard key={index}>
-								<MemberImage img={usr.img} />
+								<MemberImage img={"/members/"+usr.img} />
 								<MemberBox>
 									<MemberName>{usr.name}</MemberName>
 									<MemberRole>{usr.role}</MemberRole>
