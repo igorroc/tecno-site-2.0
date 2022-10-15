@@ -6,6 +6,12 @@ import { Button } from "./Buttons/Button"
 import { Icon } from "./Icon"
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { styled } from "../stitches.config"
+import { keyframes } from "@stitches/react"
+
+const Animation = keyframes({
+	"0%": { backgroundPositionX: "-100%" },
+	"100%": { backgroundPositionX: "100%" },
+})
 
 const LinkList = [
 	{
@@ -46,8 +52,12 @@ const FooterDiv = styled("footer", {
 
 	"& #goBack": {
 		display: "flex",
+		alignItems: "center",
+		justifyContent: "right",
 		gap: "10px",
 		color: "white",
+		width: "190px",
+		textAlign: "center",
 
 		transition: "letter-spacing 400ms ease-in-out",
 
@@ -58,11 +68,67 @@ const FooterDiv = styled("footer", {
 	"& #copy": {
 		textAlign: "center",
 		marginBottom: "50px",
+
+		a: {
+			position: "relative",
+			zIndex: 1,
+			display: "inline-block",
+			width: "fit-content",
+			color: "#5aeb73",
+			transition: "all 300ms ease-out",
+
+			"&:after": {
+				content: "",
+				position: "absolute",
+				zIndex: -1,
+				left: 0,
+				bottom: "-1px",
+				width: "100%",
+				height: "1px",
+				background: "linear-gradient(90deg, #5aeb73,#0000, #5aeb73)",
+				backgroundSize: "200% 100%",
+				animation: `${Animation} 1s ease-in-out infinite reverse`,
+			},
+
+			"&:before": {
+				content: "",
+				position: "absolute",
+				zIndex: -1,
+				left: 0,
+				bottom: "-1px",
+				width: "100%",
+				height: "1px",
+				backgroundColor: "#5aeb73",
+				opacity: 0,
+				transition: "all 300ms ease-out",
+			},
+
+			"&:hover": {
+				color: "white",
+				fontWeight: "bold",
+				padding: "0 5px",
+
+				"&:after": {
+					animationPlayState: "paused",
+				},
+				"&:before": {
+					bottom: "0",
+					opacity: 1,
+					height: "100%",
+				},
+			},
+		},
 	},
 
 	"@small": {
 		"& #logoFooter": {
 			height: "2.5em",
+		},
+	},
+
+	"@medium": {
+		"& #goBack": {
+			justifyContent: "center",
 		},
 	},
 })
@@ -304,11 +370,10 @@ export function Footer(props: FooterProps) {
 				<p id="copy">
 					©2022 All rights reserved.
 					<br />
-					Desenvolvido com muito ❤ ️e ☕ pela{" "}
-					<a href="https://tecnojr.com.br" target="_blank">
-						TecnoJr
+					Desenvolvido com muito ❤ ️e ☕ por{" "}
+					<a href="https://ilrocha.com" target="_blank">
+						Igor Rocha
 					</a>
-					.
 				</p>
 			</MaxWidthWrapper>
 		</FooterDiv>
