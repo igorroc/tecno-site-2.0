@@ -38,7 +38,7 @@ const GroupMail = styled("div", {
 	flexDirection: "column",
 	justifyContent: "space-between",
 	alignItems: "center",
-	borderRadius: "10px",
+	borderRadius: "15px",
 
 	"& h2": {
 		position: "relative",
