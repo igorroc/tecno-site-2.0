@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react"
+import { styled } from "../stitches.config"
 import { Button } from "./Buttons/Button"
 import { Icon } from "./Icon"
 import Lista, { ItemLista } from "./Lista"
@@ -28,6 +28,10 @@ const Group = styled("div", {
 			fontSize: "1em",
 			color: "#FF71E0",
 		},
+	},
+
+	"@small": {
+		minWidth: "unset",
 	},
 })
 
@@ -103,7 +107,10 @@ function SectionOrcamento() {
 						Precisa de uma solução para o seu negócio? Entre em
 						contato para receber um orçamento em até 72h.
 					</p>
-					<Button newTab url="https://wa.me/557336805389?text=Olá! Estou entrando em contato pelo site, gostaria de pedir um orçamento para ">
+					<Button
+						newTab
+						url="https://wa.me/557336805389?text=Olá! Estou entrando em contato pelo site, gostaria de pedir um orçamento para "
+					>
 						<Icon prefix="fab" iconName="whatsapp"></Icon>
 						Whatsapp
 					</Button>
