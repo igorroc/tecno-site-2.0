@@ -54,7 +54,7 @@ function Home() {
 
 	return (
 		<GlobalDiv>
-			<Header active="Home"></Header>
+			<Header active="Início"></Header>
 
 			<BackgroundImage image={mainBg}></BackgroundImage>
 
