@@ -142,7 +142,13 @@ export function MemberCard(props: CardProps) {
 export function MemberImage(props: ImageProps) {
 	return (
 		<ImgWrapper>
-			<img src={props.img} />
+			<img
+				src={props.img}
+				onError={(e) => {
+					let el = e.target as HTMLImageElement
+					el.src = "/members/photo.png"
+				}}
+			/>
 		</ImgWrapper>
 	)
 }
