@@ -4,8 +4,11 @@ import { roles } from "../common/membersInfo"
 
 const Div = styled("form", {
 	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
 	gap: "1em",
-	margin: "20px 0",
+	flexWrap: "wrap",
+	margin: "20px auto",
 })
 
 const Pill = styled("label", {
@@ -44,7 +47,7 @@ type FilterProps = {
 
 export default function MemberFilter(props: FilterProps) {
 	return (
-		<Div id="filter">
+		<Div>
 			<Pill>
 				Coordenadores – {roles.coordenadores}
 				<input

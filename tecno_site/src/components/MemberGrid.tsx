@@ -22,7 +22,7 @@ const Card = styled("div", {
 			drop-shadow(0 2px 2px rgba(0,0,0,0.10))
 			drop-shadow(0 4px 4px rgba(0,0,0,0.15))
 			drop-shadow(0 8px 8px rgba(0,0,0,0.20))`,
-	transition: "all 125ms ease-out",
+	transition: "all 300ms ease-out",
 
 	"&:hover img": {
 		filter: "grayscale(0)",
@@ -50,7 +50,7 @@ const ImgWrapper = styled("div", {
 		objectFit: "cover",
 		filter: "grayscale(1)",
 
-		transition: "all 100ms ease-in-out",
+		transition: "all 200ms ease-out",
 	},
 })
 
