@@ -170,6 +170,11 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Beatriz Pereira",
+		role: "Membro",
+		links: [],
+	},
+	{
 		name: "Breno Vitório",
 		role: "Membro",
 		img: "breno.png",
@@ -185,6 +190,11 @@ export const memberList = [
 		name: "Bruno Felipe",
 		role: "Membro",
 		img: "bruno_felipe.png",
+		links: [],
+	},
+	{
+		name: "Bruno Silva",
+		role: "Membro",
 		links: [],
 	},
 	{
@@ -222,6 +232,11 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Gabriella Oliveira",
+		role: "Membro",
+		links: [],
+	},
+	{
 		name: "Igor Nascimento",
 		role: "Membro",
 		img: "igor_nascimento.png",
@@ -245,9 +260,69 @@ export const memberList = [
 		links: [],
 	},
 	{
+		name: "Joabe Andrade",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Joabe Ferreira",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "João P. Del Rey",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "João P. Norberto",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "João V. Leite",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Larissa de Brito",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Luiz Felipe",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Maria Eduarda",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Murilo Maia",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Pedro Elias",
+		role: "Membro",
+		links: [],
+	},
+	{
 		name: "Solana Ametista",
 		role: "Membro",
 		img: "solana.png",
+		links: [],
+	},
+	{
+		name: "Thompson Raul",
+		role: "Membro",
+		links: [],
+	},
+	{
+		name: "Valcírio III",
+		role: "Membro",
 		links: [],
 	},
 	{
