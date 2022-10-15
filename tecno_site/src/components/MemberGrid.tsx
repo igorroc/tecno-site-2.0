@@ -22,10 +22,19 @@ const Card = styled("div", {
 			drop-shadow(0 2px 2px rgba(0,0,0,0.10))
 			drop-shadow(0 4px 4px rgba(0,0,0,0.15))
 			drop-shadow(0 8px 8px rgba(0,0,0,0.20))`,
+	transition: "all 125ms ease-out",
 
 	"&:hover img": {
 		filter: "grayscale(0)",
 		transform: "scale(1.3) rotateZ(10deg)",
+	},
+
+	"&.hide": {
+		// transform: "scale(0)",
+		// overflow: "hidden",
+		// width: "0",
+		// height: "0",
+		display: "none",
 	},
 })
 
@@ -101,6 +110,11 @@ const LinksRow = styled("div", {
 	},
 })
 
+type CardProps = {
+	children?: React.ReactNode
+	show: boolean
+}
+
 type hasChildren = {
 	children?: React.ReactNode
 }
@@ -119,8 +133,10 @@ export function MemberGrid(props: hasChildren) {
 	return <Grid>{props.children}</Grid>
 }
 
-export function MemberCard(props: hasChildren) {
-	return <Card>{props.children}</Card>
+export function MemberCard(props: CardProps) {
+	return (
+		<Card className={props.show ? "show" : "hide"}>{props.children}</Card>
+	)
 }
 
 export function MemberImage(props: ImageProps) {

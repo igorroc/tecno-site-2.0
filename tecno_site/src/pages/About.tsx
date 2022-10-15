@@ -19,13 +19,27 @@ import {
 } from "../components/MemberGrid"
 
 import mainBg from "../assets/img/backgroundAbout.png"
-import membersInfo from "../common/membersInfo"
+import { memberList, roles } from "../common/membersInfo"
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { Footer } from "../components/Footer"
 import GlobalDiv from "../components/Global/GlobalDiv"
 import HexIdeais, { WrapperHex } from "../components/HexIdeais"
+import MemberFilter from "../components/MemberFilter"
+import { useState } from "react"
 
 function About() {
+	const [filter, setFilter] = useState<Array<string>>([])
+
+	function filterChange(ev: any) {
+		console.log(ev.target.value)
+		if (filter.includes(ev.target.value)) {
+			setFilter(filter.filter((item) => item !== ev.target.value))
+		} else {
+			setFilter([...filter, ev.target.value])
+		}
+		return null
+	}
+
 	return (
 		<GlobalDiv>
 			<Header active="Sobre"></Header>
@@ -74,11 +88,21 @@ function About() {
 				<SectionTitle title="Membros" color="purple" id="membros">
 					Conheça os devs da <strong>Tecno</strong>!
 				</SectionTitle>
+				<p>
+					Atualmente a TecnoJr é composta por{" "}
+					<strong>{roles.total} membros</strong>.
+				</p>
+				<MemberFilter functionChange={filterChange} />
 				<MemberGrid>
-					{membersInfo.map((usr, index) => {
+					{memberList.map((usr, index) => {
+						let role = usr.role.toLowerCase().split(" ")[0]
+						let show = true
+						if (filter.length > 0 && !filter.includes(role)) {
+							show = false
+						}
 						return (
-							<MemberCard key={index}>
-								<MemberImage img={"/members/"+usr.img} />
+							<MemberCard key={index} show={show}>
+								<MemberImage img={"/members/" + usr.img} />
 								<MemberBox>
 									<MemberName>{usr.name}</MemberName>
 									<MemberRole>{usr.role}</MemberRole>
