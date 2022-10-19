@@ -331,7 +331,29 @@ export const memberList = [
 	{
 		name: "Isaac Lima",
 		role: "Membro",
-		links: [],
+		img: "isaac_lima.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/inlima11",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/inlima",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/i.n.lima/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:inlima@hotmail.com",
+			},
+		],
 	},
 	{
 		name: "Jefferson Ferreira",
