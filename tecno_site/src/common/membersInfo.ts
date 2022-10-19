@@ -176,7 +176,23 @@ export const memberList = [
 		name: "Alice Valero",
 		role: "Membro",
 		img: "alice.png",
-		links: [],
+		links: [
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/Alimva",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/lili__valero/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:alicia.mar.val@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Beatriz Pereira",
@@ -313,6 +329,11 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Isaac Lima",
+		role: "Membro",
+		links: [],
+	},
+	{
 		name: "Jefferson Ferreira",
 		role: "Membro",
 		img: "jefferson.png",
@@ -327,7 +348,29 @@ export const memberList = [
 	{
 		name: "Joabe Ferreira",
 		role: "Membro",
-		links: [],
+		img: "joabe_ferreira.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/joabe-ferreira-156b07215/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/GannJobs",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/jobs.017/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "linksyamato@gmail.com",
+			},
+		],
 	},
 	{
 		name: "João P. Del Rey",
@@ -367,12 +410,68 @@ export const memberList = [
 	{
 		name: "João V. Leite",
 		role: "Membro",
-		links: [],
+		img: "joao_victor_leite.png",
+		links: [
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/Joao-Victor-Leite",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/jv_milk/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:jvldsa10@hotmail.com",
+			},
+		],
+	},
+	{
+		name: "João Rupp",
+		role: "Membro",
+		img: "joao_rupp.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/joao-victor-r-20aa34122/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/jvrupp",
+			},
+		],
 	},
 	{
 		name: "Larissa de Brito",
 		role: "Membro",
-		links: [],
+		img: "larissa_brito.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/larissa-brit0/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/laribrito",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/tnlaris/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:lary.29.ds@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Luiz Felipe",
@@ -404,11 +503,24 @@ export const memberList = [
 	{
 		name: "Murilo Maia",
 		role: "Membro",
-		links: [],
+		img: "murilo_maia.png",
+		links: [
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/murilo.maiia/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:murilo.maiia@outlook.com",
+			},
+		],
 	},
 	{
 		name: "Pedro Elias",
 		role: "Membro",
+		img: "pedro_elias.png",
 		links: [],
 	},
 	{
