@@ -25,7 +25,7 @@ export const memberList = [
 	},
 	{
 		name: "Katia Vaskys",
-		role: "Conselho",
+		role: "Conselho Executivo",
 		img: "katia.png",
 		links: [
 			{
@@ -408,6 +408,23 @@ export const memberList = [
 		],
 	},
 	{
+		name: "João Rupp",
+		role: "Membro",
+		img: "joao_rupp.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/joao-victor-r-20aa34122/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/jvrupp",
+			},
+		],
+	},
+	{
 		name: "João V. Leite",
 		role: "Membro",
 		img: "joao_victor_leite.png",
@@ -426,23 +443,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:jvldsa10@hotmail.com",
-			},
-		],
-	},
-	{
-		name: "João Rupp",
-		role: "Membro",
-		img: "joao_rupp.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/joao-victor-r-20aa34122/",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/jvrupp",
 			},
 		],
 	},
