@@ -312,6 +312,11 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Guilherme Almeida",
+		role: "Membro",
+		links: [],
+	},
+	{
 		name: "Igor Nascimento",
 		role: "Membro",
 		img: "igor_nascimento.png",
@@ -496,9 +501,31 @@ export const memberList = [
 		],
 	},
 	{
-		name: "Luiz Felipe",
+		name: "Luiz Rosário",
 		role: "Membro",
-		links: [],
+		img: "luiz_rosario.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/luizzrosario/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/luizzrosario/",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/luizzrosario/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:luizfeliper57@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Maria Eduarda",
