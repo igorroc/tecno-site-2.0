@@ -21,6 +21,7 @@ import imgSpaceTerra from "../assets/img/projects/spaceterra.jpg"
 import imgNasaApps from "../assets/img/projects/nasaapps.png"
 import imgNasaSalvador from "../assets/img/projects/appssalvador.png"
 import imgDatabaseUesc from "../assets/img/projects/databaseuesc.png"
+import imgCalculadoraNotas from "../assets/img/projects/calculadoranotas.png"
 import imgPlaceHolder from "../assets/img/projects/placeholder.png"
 
 const externalProjects = [
@@ -84,8 +85,14 @@ const internalProjects = [
 	{
 		title: "Database UESC",
 		author: "Igor Rocha",
-		link: "https://uesc.ilrocha.com",
+		link: "https://uesc.ilrocha.com/emails",
 		img: imgDatabaseUesc,
+	},
+	{
+		title: "Calculadora de Notas",
+		author: "Igor Rocha",
+		link: "https://igorroc.github.io/finalcountdown/",
+		img: imgCalculadoraNotas,
 	},
 ]
 
@@ -121,6 +128,14 @@ function Projects() {
 					color="blue"
 					id="projetosExternos"
 				></SectionTitle>
+				<p
+					style={{
+						marginBottom: "2rem",
+					}}
+				>
+					Os <b>sonhos</b> que estão sendo{" "}
+					<b>realizados pela Tecno</b> para <b>nossos clientes</b>.
+				</p>
 				<CardsWrapper>
 					{externalProjects.map((project, index) => {
 						return (
@@ -140,6 +155,14 @@ function Projects() {
 					color="purple"
 					id="projetosInternos"
 				></SectionTitle>
+				<p
+					style={{
+						marginBottom: "2rem",
+					}}
+				>
+					Fique por dentro dos projetos que <b>nossos membros</b>{" "}
+					estão desenvolvendo.
+				</p>
 				<CardsWrapper>
 					{internalProjects.map((project, index) => {
 						return (
