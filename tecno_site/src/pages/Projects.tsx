@@ -20,9 +20,10 @@ import imgAfusc from "../assets/img/projects/afusc.png"
 import imgSpaceTerra from "../assets/img/projects/spaceterra.jpg"
 import imgNasaApps from "../assets/img/projects/nasaapps.png"
 import imgNasaSalvador from "../assets/img/projects/appssalvador.png"
+import imgDatabaseUesc from "../assets/img/projects/databaseuesc.png"
 import imgPlaceHolder from "../assets/img/projects/placeholder.png"
 
-const projects = [
+const externalProjects = [
 	{
 		title: "NASA Space Terra",
 		description: "Website",
@@ -79,6 +80,15 @@ const projects = [
 	},
 ]
 
+const internalProjects = [
+	{
+		title: "Database UESC",
+		author: "Igor Rocha",
+		link: "https://uesc.ilrocha.com",
+		img: imgDatabaseUesc,
+	},
+]
+
 function Projects() {
 	return (
 		<GlobalDiv>
@@ -98,7 +108,7 @@ function Projects() {
 						confiou em nossas soluções:
 					</p>
 
-					<Button url="#projetos">
+					<Button url="#projetosExternos">
 						Saiba mais
 						<i className="fa-solid fa-caret-down"></i>
 					</Button>
@@ -107,16 +117,35 @@ function Projects() {
 
 				{/* Projetos */}
 				<SectionTitle
-					title="Projetos"
+					title="Projetos Externos"
 					color="blue"
-					id="projetos"
+					id="projetosExternos"
 				></SectionTitle>
 				<CardsWrapper>
-					{projects.map((project, index) => {
+					{externalProjects.map((project, index) => {
 						return (
 							<Card
 								title={project.title}
 								description={project.description}
+								link={project.link}
+								img={project.img}
+								key={index}
+							/>
+						)
+					})}
+				</CardsWrapper>
+
+				<SectionTitle
+					title="Projetos Internos"
+					color="purple"
+					id="projetosInternos"
+				></SectionTitle>
+				<CardsWrapper>
+					{internalProjects.map((project, index) => {
+						return (
+							<Card
+								title={project.title}
+								description={project.author}
 								link={project.link}
 								img={project.img}
 								key={index}
