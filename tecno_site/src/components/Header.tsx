@@ -83,6 +83,12 @@ const HeaderDiv = styled("header", {
 				drop-shadow(0 4px 4px rgba(0,0,0,0.6))
 				drop-shadow(0 6px 6px rgba(0,0,0,0.4))
 				drop-shadow(0 8px 8px rgba(0,0,0,0.2))`,
+
+		transition: "all 300ms ease-out",
+	},
+
+	"&:hover::before": {
+		backgroundColor: "#fff6",
 	},
 
 	"& #menuButton": {
