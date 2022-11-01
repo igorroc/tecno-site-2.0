@@ -11,7 +11,7 @@ const Hex = styled("div", {
 	flexDirection: "column",
 	justifyContent: "center",
 	alignItems: "center",
-	transition: "background 300ms ease-out",
+	transition: "background 600ms ease-out",
 	clipPath: "polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)",
 
 	"& .wrapperTitle": {
@@ -22,7 +22,7 @@ const Hex = styled("div", {
 		alignItems: "center",
 		width: "100%",
 		height: "100%",
-		transition: "margin 300ms ease",
+		transition: "margin 600ms ease-out",
 
 		"& .wrapperIcon": {
 			width: "100px",
