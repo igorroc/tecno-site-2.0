@@ -151,6 +151,33 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Bruno Felipe",
+		role: "Gerência de Projetos",
+		img: "bruno_felipe.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/brunofelipecoder",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/BrunoFelipeCoder",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/bruno.cic/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:bfspereira.cic@uesc.br",
+			},
+		],
+	},
+	{
 		name: "Gabriella Oliveira",
 		role: "Gerência de RH",
 		links: [],
@@ -225,33 +252,6 @@ export const memberList = [
 				icon: "linkedin",
 				prefix: "fab",
 				url: "https://www.linkedin.com/in/therealbrenu/",
-			},
-		],
-	},
-	{
-		name: "Bruno Felipe",
-		role: "Membro",
-		img: "bruno_felipe.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/brunofelipecoder",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/BrunoFelipeCoder",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/bruno.cic/",
-			},
-			{
-				icon: "envelope",
-				prefix: "fas",
-				url: "mailto:bfspereira.cic@uesc.br",
 			},
 		],
 	},
