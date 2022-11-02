@@ -49,13 +49,14 @@ function About() {
 						Quem é a<MainText>TecnoJr?</MainText>
 					</h1>
 					<p>
-						Fundada em 2002, a Empresa TecnoJr é voltada para o
-						curso de Ciência da Computação da Universidade Estadual
-						de Santa Cruz (UESC). Desde então, vem atuando na área
-						de desenvolvimento de sistemas e aproximando o mundo
-						acadêmico do empresarial, desenvolvendo o espírito
-						empreendedor de seus colaboradores. Atualmente é
-						constituída por {roles.total} membros.
+						Fundada em 2002, a Empresa TecnoJr foi criada como um
+						projeto de extensão do curso de Ciência da Computação da
+						Universidade Estadual de Santa Cruz (UESC). Desde então,
+						vem atuando na área de desenvolvimento de sistemas e
+						aproximando o mundo acadêmico do empresarial,
+						desenvolvendo o espírito empreendedor de seus
+						colaboradores. Atualmente é constituída por{" "}
+						{roles.total} membros.
 					</p>
 					<Button url="#membros">
 						MEMBROS
@@ -100,8 +101,13 @@ function About() {
 							show = false
 						}
 						return (
-							<MemberCard key={index} show={show} >
-								<MemberImage img={"/members/" + usr.img} />
+							<MemberCard key={index} show={show}>
+								<MemberImage
+									img={
+										"/img/members/" +
+										(usr.img || "photo.png")
+									}
+								/>
 								<MemberBox>
 									<MemberName>{usr.name}</MemberName>
 									<MemberRole>{usr.role}</MemberRole>

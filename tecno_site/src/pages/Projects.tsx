@@ -14,70 +14,57 @@ import GlobalDiv from "../components/Global/GlobalDiv"
 import { SectionTitle } from "../components/SectionTitle"
 import CardsWrapper, { Card } from "../components/Card"
 
-import imgSemanaInovacao from "../assets/img/projects/semana_inovacao.png"
-import imgSimmbra from "../assets/img/projects/simmbra.png"
-import imgAfusc from "../assets/img/projects/afusc.png"
-import imgSpaceTerra from "../assets/img/projects/spaceterra.jpg"
-import imgNasaApps from "../assets/img/projects/nasaapps.png"
-import imgNasaSalvador from "../assets/img/projects/appssalvador.png"
-import imgDatabaseUesc from "../assets/img/projects/databaseuesc.png"
-import imgCalculadoraNotas from "../assets/img/projects/calculadoranotas.png"
-import imgPlaceHolder from "../assets/img/projects/placeholder.png"
-
 const externalProjects = [
 	{
 		title: "NASA Space Terra",
 		description: "Website",
 		link: "https://spaceterra.org/",
-		img: imgSpaceTerra,
+		img: "spaceterra.jpg",
 	},
 	{
 		title: "NASA Space Apps",
 		description: "Website",
 		link: "https://nasa.spaceterra.org/",
-		img: imgNasaApps,
+		img: "nasaapps.png",
 	},
 	{
 		title: "Semana de Inovação",
 		description: "Website",
 		link: "https://semanadeinovacaoilheus.com.br/",
-		img: imgSemanaInovacao,
+		img: "semana_inovacao.png",
 	},
 	{
 		title: "SIMMBRA",
 		description: "WebSite",
 		link: "https://simmbra.com.br",
-		img: imgSimmbra,
+		img: "simmbra.png",
 	},
 	{
 		title: "NASA Space Apps Salvador",
 		description: "Website",
 		link: "https://salvador.spaceterra.org/",
-		img: imgNasaSalvador,
+		img: "appssalvador.png",
 	},
 	{
 		title: "Afusc",
 		description: "WebSite",
 		link: "https://afuscuesc.com",
-		img: imgAfusc,
+		img: "afusc.png",
 	},
 	{
 		title: "UEPG",
 		description: "WebSite",
 		link: "",
-		img: imgPlaceHolder,
 	},
 	{
 		title: "Partiu Dirigir",
 		description: "Aplicativo",
 		link: "",
-		img: imgPlaceHolder,
 	},
 	{
 		title: "Observatório Social",
 		description: "WebSite",
 		link: "",
-		img: imgPlaceHolder,
 	},
 ]
 
@@ -86,13 +73,19 @@ const internalProjects = [
 		title: "Database UESC",
 		author: "Igor Rocha",
 		link: "https://uesc.ilrocha.com/emails",
-		img: imgDatabaseUesc,
+		img: "databaseuesc.png",
 	},
 	{
 		title: "Calculadora de Notas",
 		author: "Igor Rocha",
 		link: "https://igorroc.github.io/finalcountdown/",
-		img: imgCalculadoraNotas,
+		img: "calculadoranotas.png",
+	},
+	{
+		title: "Wiki de Suporte (LOL)",
+		author: "Murilo Maia",
+		link: "https://murilopmaia.github.io/projeto_final/",
+		img: "wikilol.jpg",
 	},
 ]
 
@@ -143,7 +136,10 @@ function Projects() {
 								title={project.title}
 								description={project.description}
 								link={project.link}
-								img={project.img}
+								img={
+									"/img/projects/" +
+									(project.img || "placeholder.png")
+								}
 								key={index}
 							/>
 						)
@@ -170,7 +166,10 @@ function Projects() {
 								title={project.title}
 								description={project.author}
 								link={project.link}
-								img={project.img}
+								img={
+									"/img/projects/" +
+									(project.img || "placeholder.png")
+								}
 								key={index}
 							/>
 						)

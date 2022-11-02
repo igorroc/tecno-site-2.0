@@ -14,7 +14,7 @@ const CardStyle = styled("div", {
 	flexDirection: "column",
 	gap: "20px",
 	flexWrap: "wrap",
-	maxWidth: "300px",
+	width: "300px",
 	borderRadius: "10px",
 	overflow: "hidden",
 
