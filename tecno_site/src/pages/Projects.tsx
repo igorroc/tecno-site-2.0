@@ -87,6 +87,12 @@ const internalProjects = [
 		link: "https://murilopmaia.github.io/projeto_final/",
 		img: "wikilol.jpg",
 	},
+	{
+		title: "Estarolas",
+		author: "Joabe Ferreira",
+		link: "https://gannjobs.github.io/ProjetoWebTecno/",
+		img: "estarolas.jpg",
+	},
 ]
 
 function Projects() {
