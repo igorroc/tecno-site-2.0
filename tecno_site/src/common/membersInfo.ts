@@ -151,6 +151,28 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Beatriz Pereira",
+		role: "Gerência de Projetos",
+		img: "beatriz.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/beatriz-pereira-81467317b/",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/beatriz.aragao.355?r=nametag",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:beatrizpereira.ar@gmail.com",
+			},
+		],
+	},
+	{
 		name: "Bruno Felipe",
 		role: "Gerência de Projetos",
 		img: "bruno_felipe.png",
@@ -218,28 +240,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:alicia.mar.val@gmail.com",
-			},
-		],
-	},
-	{
-		name: "Beatriz Pereira",
-		role: "Membro",
-		img: "beatriz.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/beatriz-pereira-81467317b/",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/beatriz.aragao.355?r=nametag",
-			},
-			{
-				icon: "envelope",
-				prefix: "fas",
-				url: "mailto:beatrizpereira.ar@gmail.com",
 			},
 		],
 	},
