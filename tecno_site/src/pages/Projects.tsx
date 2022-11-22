@@ -93,6 +93,12 @@ const internalProjects = [
 		link: "https://gannjobs.github.io/ProjetoWebTecno/",
 		img: "estarolas.jpg",
 	},
+	{
+		title: "Pokedex",
+		author: "Solana Ametista",
+		link: "http://solana-ametista.github.io",
+		img: "pokedex.jpg",
+	},
 ]
 
 function Projects() {
