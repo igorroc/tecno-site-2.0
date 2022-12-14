@@ -7,6 +7,7 @@ import Projects from "./pages/Projects"
 import Links from "./pages/Links"
 import WpAdmin from "./pages/WpAdmin"
 import Login from "./pages/Login"
+import PressKit from "./pages/PressKit"
 
 export function AppRoutes() {
 	return (
@@ -16,6 +17,7 @@ export function AppRoutes() {
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/projects" element={<Projects />} />
+				<Route path="/press-kit" element={<PressKit />} />
 				<Route path="/links" element={<Links />} />
 				<Route path="/404" element={<PageNotFound />} />
 				<Route path="/wp-admin" element={<WpAdmin />} />
