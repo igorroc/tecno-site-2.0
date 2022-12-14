@@ -16,6 +16,7 @@ const Wrapper = styled("div", {
 		width: "100%",
 		height: "100%",
 		objectFit: "cover",
+		objectPosition: "bottom"
 	},
 
 	variants: {
