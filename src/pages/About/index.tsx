@@ -153,7 +153,10 @@ export default function About() {
 											</MemberBox>
 											<MemberLinksRow>
 												{usr.links.map(
-													(link, index) => {
+													(
+														link: any,
+														index: number
+													) => {
 														return (
 															<MemberLink
 																key={index}
