@@ -71,7 +71,10 @@ export default function About() {
 			transition={{ duration: 0.3 }}
 		>
 			<GlobalDiv>
-				<BackgroundImage image={mainBg}></BackgroundImage>
+				<BackgroundImage
+					image={mainBg}
+					blurHash="o65F2?DN?daJtMWE9abcD*kXM|og?bRO-;V?xuadE4WVE2bcRkbI-;aJ-;RNx]ae9Zf,ItRhj{f+"
+				/>
 				<MaxWidthWrapper>
 					<WrapperMainContent>
 						<h1>
@@ -142,6 +145,7 @@ export default function About() {
 													"/img/members/" +
 													(usr.img || "photo.png")
 												}
+												blur={usr.blurhash}
 											/>
 											<MemberBox>
 												<MemberName>

@@ -129,7 +129,10 @@ function PressKit() {
 			transition={{ duration: 0.3 }}
 		>
 			<GlobalDiv>
-				<BackgroundImage image={mainBg}></BackgroundImage>
+				<BackgroundImage
+					image={mainBg}
+					blurHash="o87mar5M?KnlkQn+D,btIVbcRjf+%Lni%LjEtQadD+kWIVf,RjkC-.ni%Ladt7adIVW=IVkDRjkC"
+				/>
 
 				<MaxWidthWrapper>
 					{/* Main Section */}

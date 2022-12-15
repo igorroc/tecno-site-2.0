@@ -35,7 +35,11 @@ export default function Contact() {
 			transition={{ duration: 0.3 }}
 		>
 			<GlobalDiv>
-				<BackgroundImage image={mainBg} fullHeight></BackgroundImage>
+				<BackgroundImage
+					image={mainBg}
+					fullHeight
+					blurHash="o866[v1V=RJynnbE$,NXsrW-f8fiS0oNWUjuj[WUayj[a{jua{juaxjvWnoNWToNR%s;WTo3bEjv"
+				/>
 				<MaxWidthWrapper>
 					{status == "form" && (
 						<WrapperForm>

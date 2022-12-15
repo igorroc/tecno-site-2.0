@@ -22,7 +22,12 @@ export const Card = styled("div", {
 			drop-shadow(0 8px 8px rgba(0,0,0,0.20))`,
 	transition: "all 300ms ease-out",
 
-	"&:hover img": {
+	"&:hover .imgWrapper img.loaded": {
+		filter: "grayscale(0)",
+		transform: "scale(1.3) rotateZ(10deg)",
+	},
+	
+	"&:hover .imgWrapper div": {
 		filter: "grayscale(0)",
 		transform: "scale(1.3) rotateZ(10deg)",
 	},
@@ -35,6 +40,15 @@ export const ImgWrapper = styled("div", {
 	overflow: "hidden",
 
 	"& img": {
+		width: "100%",
+		height: "100%",
+		objectFit: "cover",
+		filter: "grayscale(1)",
+
+		transition: "all 200ms ease-out",
+	},
+	
+	"& div": {
 		width: "100%",
 		height: "100%",
 		objectFit: "cover",

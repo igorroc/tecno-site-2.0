@@ -70,7 +70,10 @@ export default function Home() {
 			transition={{ duration: 0.3 }}
 		>
 			<GlobalDiv>
-				<BackgroundImage image={mainBg}></BackgroundImage>
+				<BackgroundImage
+					image={mainBg}
+					blurHash="oNB2jb0]-at6NXssRWX3V_WVafj]X2xIotjJocaxRlWnRlbaWDj[t3n,t6aeofaxRkbHRkkCWBj]"
+				></BackgroundImage>
 
 				<MaxWidthWrapper>
 					{/* Main Section */}

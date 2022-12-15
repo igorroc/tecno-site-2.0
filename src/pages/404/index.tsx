@@ -10,7 +10,11 @@ import img404 from "/src/assets/img/background404.png"
 export default function PageNotFound() {
 	return (
 		<Wrapper>
-			<BackgroundImage image={img404} fullHeight />
+			<BackgroundImage
+				image={img404}
+				fullHeight
+				blurHash="o52G1~Map3j;adkDo$W9adohackDogWBjsj]axj]ogadj]j[ayj[kDadkDawj]axj]axj]ayj[fR"
+			/>
 			<WrapperContent>
 				<MainText size="giant">404</MainText>
 				<Paragraph>

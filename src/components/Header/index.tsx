@@ -128,4 +128,5 @@ export function Header(props: HeaderProps) {
 				</HeaderDiv>
 			</div>
 		)
+	else return null
 }

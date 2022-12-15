@@ -1,6 +1,8 @@
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 import { Icon } from "../Icon"
 import { Grid, Card, ImgWrapper, Box, LinksRow } from "./styles"
+import { Blurhash } from "react-blurhash"
+import { useState } from "react"
 
 type CardProps = {
 	children?: React.ReactNode
@@ -13,6 +15,7 @@ type hasChildren = {
 
 type ImageProps = {
 	img: string
+	blur?: any
 }
 
 type LinkProps = {
@@ -26,20 +29,35 @@ export function MemberGrid(props: hasChildren) {
 }
 
 export function MemberCard(props: CardProps) {
-	return (
-		<Card>{props.children}</Card>
-	)
+	return <Card>{props.children}</Card>
 }
 
 export function MemberImage(props: ImageProps) {
+	const [loaded, setLoaded] = useState(false)
+
 	return (
-		<ImgWrapper>
+		<ImgWrapper className="imgWrapper">
+			{props.blur && !loaded && (
+				<div>
+					<Blurhash
+						hash={props.blur}
+						width={300}
+						height={300}
+						resolutionX={32}
+						resolutionY={32}
+						punch={1}
+					/>
+				</div>
+			)}
+
 			<img
 				src={props.img}
 				onError={(e) => {
 					let el = e.target as HTMLImageElement
 					el.src = "/members/photo.png"
 				}}
+				className={loaded ? "loaded" : ""}
+				onLoad={() => setLoaded(true)}
 			/>
 		</ImgWrapper>
 	)

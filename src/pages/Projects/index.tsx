@@ -117,7 +117,10 @@ export default function Projects() {
 			transition={{ duration: 0.3 }}
 		>
 			<GlobalDiv>
-				<BackgroundImage image={mainBg}></BackgroundImage>
+				<BackgroundImage
+					image={mainBg}
+					blurHash="oH9a2u00-@a$V?ohxyRNkCjva_ayISxwWBW9ogaxtARhohWBoeWCRio#WAa$j?a#ahj@j]axazof"
+				/>
 				<MaxWidthWrapper>
 					<WrapperMainContent>
 						<h1>
