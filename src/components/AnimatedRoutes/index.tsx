@@ -10,10 +10,13 @@ import Projects from "../../pages/Projects"
 import WpAdmin from "../../pages/WpAdmin"
 
 import { AnimatePresence } from "framer-motion"
+import { useEffect } from "react"
 
 export function AnimatedRoutes() {
 	const location = useLocation()
-
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [location])
 	return (
 		<AnimatePresence exitBeforeEnter>
 			<Routes location={location} key={location.pathname}>
