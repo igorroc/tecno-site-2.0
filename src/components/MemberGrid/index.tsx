@@ -4,7 +4,7 @@ import { Grid, Card, ImgWrapper, Box, LinksRow } from "./styles"
 
 type CardProps = {
 	children?: React.ReactNode
-	show: boolean
+	show?: boolean
 }
 
 type hasChildren = {
@@ -27,7 +27,7 @@ export function MemberGrid(props: hasChildren) {
 
 export function MemberCard(props: CardProps) {
 	return (
-		<Card className={props.show ? "show" : "hide"}>{props.children}</Card>
+		<Card>{props.children}</Card>
 	)
 }
 

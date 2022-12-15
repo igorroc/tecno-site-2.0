@@ -19,7 +19,7 @@ export const LinksWrapper = styled("div", {
 	gap: "50px",
 })
 
-export const Header = styled("header", {
+export const CustomHeader = styled("header", {
 	width: "100vw",
 	height: "max-content",
 	display: "flex",

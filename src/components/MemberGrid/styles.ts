@@ -26,14 +26,6 @@ export const Card = styled("div", {
 		filter: "grayscale(0)",
 		transform: "scale(1.3) rotateZ(10deg)",
 	},
-
-	"&.hide": {
-		// transform: "scale(0)",
-		// overflow: "hidden",
-		// width: "0",
-		// height: "0",
-		display: "none",
-	},
 })
 
 export const ImgWrapper = styled("div", {

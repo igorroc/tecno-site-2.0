@@ -42,16 +42,15 @@ export const HeaderDiv = styled("header", {
 			"&.headerActiveItem": {
 				fontWeight: "bold",
 				letterSpacing: "1px",
-			},
 
-			"&.headerActiveItem::after": {
-				content: "",
-				position: "absolute",
-				width: "100%",
-				height: "5px",
-				backgroundColor: "white",
-				transform: "translate(-100%, 0)",
-				bottom: "0",
+				".activeTab": {
+					position: "absolute",
+					left: 0,
+					right: 0,
+					bottom: -1,
+					height: 2,
+					backgroundColor: "white",
+				},
 			},
 		},
 	},

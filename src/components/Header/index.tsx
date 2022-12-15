@@ -1,11 +1,13 @@
 import { ButtonBorder } from "../Buttons/ButtonBorder"
 import Logo from "../../assets/icons/logo_nome_horizontal_white.svg?component"
-import SmallLogo from "../../assets/icons/logo_white.svg?component"
 import { MaxWidthWrapper } from "../Global/MaxWidthWrapper"
 import useWindowDimensions from "../../hooks/useWindowDimentions"
 import { Icon } from "../Icon"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { HeaderDiv, SideNav } from "./styles"
+import { Link, useLocation } from "react-router-dom"
+
+import { motion } from "framer-motion"
 
 const LinkList = [
 	{ url: "/", text: "Início" },
@@ -23,9 +25,14 @@ export function Header(props: HeaderProps) {
 	const { height, width } = useWindowDimensions()
 	const [toggle, setToggle] = useState(false)
 	const breakpointMobile = 800
+	const location = useLocation()
 
 	const handleMenuClick = () => {
 		setToggle((prevToggle) => !prevToggle)
+	}
+
+	const handleMobileClick = () => {
+		setToggle(false)
 	}
 
 	return (
@@ -33,23 +40,29 @@ export function Header(props: HeaderProps) {
 			<HeaderDiv id="header">
 				{width > breakpointMobile ? (
 					<MaxWidthWrapper>
-						<a id="headerLogo" href="/">
+						<Link id="headerLogo" to="/">
 							<Logo />
-						</a>
+						</Link>
 						<ul>
 							{LinkList.map((link, index) => {
 								return (
-									<a
-										href={link.url}
+									<Link
+										to={link.url}
 										key={index}
 										className={
-											link.text == props.active
+											link.url == location.pathname
 												? "headerActiveItem"
 												: ""
 										}
 									>
 										{link.text}
-									</a>
+										{link.url == location.pathname && (
+											<motion.div
+												className="activeTab"
+												layoutId="underline"
+											></motion.div>
+										)}
+									</Link>
 								)
 							})}
 						</ul>
@@ -57,9 +70,9 @@ export function Header(props: HeaderProps) {
 					</MaxWidthWrapper>
 				) : (
 					<MaxWidthWrapper>
-						<a id="headerLogo" href="/">
+						<Link id="headerLogo" to="/">
 							<Logo />
-						</a>
+						</Link>
 						<SideNav
 							id="sideNav"
 							className={toggle ? "active" : ""}
@@ -67,17 +80,18 @@ export function Header(props: HeaderProps) {
 							<ul>
 								{LinkList.map((link, index) => {
 									return (
-										<a
-											href={link.url}
+										<Link
+											to={link.url}
 											key={index}
 											className={
-												link.text == props.active
+												link.url == location.pathname
 													? "headerActiveItem"
 													: ""
 											}
+											onClick={handleMobileClick}
 										>
 											{link.text}
-										</a>
+										</Link>
 									)
 								})}
 								<ButtonBorder

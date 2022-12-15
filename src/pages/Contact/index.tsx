@@ -13,55 +13,70 @@ import { Form } from "../../components/Form"
 import GlobalDiv from "../../components/Global/GlobalDiv"
 import { Button } from "../../components/Buttons/Button"
 
+import { motion } from "framer-motion"
+
+const animations = {
+	initial: { opacity: 0, y: -50 },
+	animate: { opacity: 1, y: 0 },
+	exit: { opacity: 0, y: -50 },
+}
+
 export default function Contact() {
 	const [status, setStatus] = useState("form")
 	const latitude = -14.796529895258624
 	const longitude = -39.170944442327475
 
 	return (
-		<GlobalDiv>
-			<Header active="Contato"></Header>
-			<BackgroundImage image={mainBg} fullHeight></BackgroundImage>
-			<MaxWidthWrapper>
-				{status == "form" && (
-					<WrapperForm>
+		<motion.div
+			variants={animations}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+			transition={{ duration: 0.3 }}
+		>
+			<GlobalDiv>
+				<BackgroundImage image={mainBg} fullHeight></BackgroundImage>
+				<MaxWidthWrapper>
+					{status == "form" && (
+						<WrapperForm>
+							<WrapperMainContent>
+								<h1>
+									Entre em<MainText>contato</MainText>
+								</h1>
+								<Form n={status} setN={setStatus} />
+							</WrapperMainContent>
+						</WrapperForm>
+					)}
+					{status == "ok" && (
 						<WrapperMainContent>
 							<h1>
-								Entre em<MainText>contato</MainText>
+								Agradecemos seu <MainText>contato</MainText>
 							</h1>
-							<Form n={status} setN={setStatus} />
+							<Button url="/">
+								Início
+								<i className="fa-solid fa-home"></i>
+							</Button>
 						</WrapperMainContent>
-					</WrapperForm>
-				)}
-				{status == "ok" && (
-					<WrapperMainContent>
-						<h1>
-							Agradecemos seu <MainText>contato</MainText>
-						</h1>
-						<Button url="/">
-							Início
-							<i className="fa-solid fa-home"></i>
-						</Button>
-					</WrapperMainContent>
-				)}
-				{status == "erro" && (
-					<WrapperMainContent>
-						<h1>
-							Ocorreu um <MainText>erro</MainText>
-						</h1>
-						<p>
-							Envie um email diretamente para{" "}
-							<a href="mailto:contato@tecnojr.com.br">
-								contato@tecnojr.com.br
-							</a>
-						</p>
-						<Button url="mailto:contato@tecnojr.com.br">
-							Enviar email
-							<i className="fa-solid fa-envelope"></i>
-						</Button>
-					</WrapperMainContent>
-				)}
-			</MaxWidthWrapper>
-		</GlobalDiv>
+					)}
+					{status == "erro" && (
+						<WrapperMainContent>
+							<h1>
+								Ocorreu um <MainText>erro</MainText>
+							</h1>
+							<p>
+								Envie um email diretamente para{" "}
+								<a href="mailto:contato@tecnojr.com.br">
+									contato@tecnojr.com.br
+								</a>
+							</p>
+							<Button url="mailto:contato@tecnojr.com.br">
+								Enviar email
+								<i className="fa-solid fa-envelope"></i>
+							</Button>
+						</WrapperMainContent>
+					)}
+				</MaxWidthWrapper>
+			</GlobalDiv>
+		</motion.div>
 	)
 }

@@ -13,6 +13,8 @@ import GlobalDiv from "../../components/Global/GlobalDiv"
 import { SectionTitle } from "../../components/SectionTitle"
 import CardsWrapper, { Card } from "../../components/Card"
 
+import { motion } from "framer-motion"
+
 const externalProjects = [
 	{
 		title: "NASA Space Terra",
@@ -100,95 +102,108 @@ const internalProjects = [
 	},
 ]
 
+const animations = {
+	initial: { opacity: 0, y: -50 },
+	animate: { opacity: 1, y: 0 },
+	exit: { opacity: 0, y: -50 },
+}
 export default function Projects() {
 	return (
-		<GlobalDiv>
-			<Header active="Projetos"></Header>
-			<BackgroundImage image={mainBg}></BackgroundImage>
-			<MaxWidthWrapper>
-				<WrapperMainContent>
-					<h1>
-						Conheça alguns dos
-						<MainText>sonhos</MainText>
-						já desenvolvidos!
-					</h1>
-					<p>
-						A TecnoJr investe fundo em capacitações de nossos
-						desenvolvedores para oferecer aos nossos clientes a
-						qualidade e confiança que eles precisam. Confira quem já
-						confiou em nossas soluções:
+		<motion.div
+			variants={animations}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+			transition={{ duration: 0.3 }}
+		>
+			<GlobalDiv>
+				<BackgroundImage image={mainBg}></BackgroundImage>
+				<MaxWidthWrapper>
+					<WrapperMainContent>
+						<h1>
+							Conheça alguns dos
+							<MainText>sonhos</MainText>
+							já desenvolvidos!
+						</h1>
+						<p>
+							A TecnoJr investe fundo em capacitações de nossos
+							desenvolvedores para oferecer aos nossos clientes a
+							qualidade e confiança que eles precisam. Confira
+							quem já confiou em nossas soluções:
+						</p>
+
+						<Button url="#projetosExternos">
+							Saiba mais
+							<i className="fa-solid fa-caret-down"></i>
+						</Button>
+						<ScrollIndicator />
+					</WrapperMainContent>
+
+					{/* Projetos */}
+					<SectionTitle
+						title="Projetos Externos"
+						color="blue"
+						id="projetosExternos"
+					></SectionTitle>
+					<p
+						style={{
+							marginBottom: "2rem",
+						}}
+					>
+						Os <b>sonhos</b> que estão sendo{" "}
+						<b>realizados pela Tecno</b> para <b>nossos clientes</b>
+						.
 					</p>
+					<CardsWrapper>
+						{externalProjects.map((project, index) => {
+							return (
+								<Card
+									title={project.title}
+									description={project.description}
+									link={project.link}
+									img={
+										"/img/projects/" +
+										(project.img || "placeholder.png")
+									}
+									key={index}
+								/>
+							)
+						})}
+					</CardsWrapper>
 
-					<Button url="#projetosExternos">
-						Saiba mais
-						<i className="fa-solid fa-caret-down"></i>
-					</Button>
-					<ScrollIndicator />
-				</WrapperMainContent>
-
-				{/* Projetos */}
-				<SectionTitle
-					title="Projetos Externos"
-					color="blue"
-					id="projetosExternos"
-				></SectionTitle>
-				<p
-					style={{
-						marginBottom: "2rem",
-					}}
-				>
-					Os <b>sonhos</b> que estão sendo{" "}
-					<b>realizados pela Tecno</b> para <b>nossos clientes</b>.
-				</p>
-				<CardsWrapper>
-					{externalProjects.map((project, index) => {
-						return (
-							<Card
-								title={project.title}
-								description={project.description}
-								link={project.link}
-								img={
-									"/img/projects/" +
-									(project.img || "placeholder.png")
-								}
-								key={index}
-							/>
-						)
-					})}
-				</CardsWrapper>
-
-				<SectionTitle
-					title="Projetos Internos"
-					color="purple"
-					id="projetosInternos"
-				></SectionTitle>
-				<p
-					style={{
-						marginBottom: "2rem",
-					}}
-				>
-					Fique por dentro dos projetos que <b>nossos membros</b>{" "}
-					estão desenvolvendo.
-				</p>
-				<CardsWrapper>
-					{internalProjects.map((project, index) => {
-						return (
-							<Card
-								title={project.title}
-								description={project.author}
-								link={project.link}
-								img={
-									"/img/projects/" +
-									(project.img || "placeholder.png")
-								}
-								key={index}
-							/>
-						)
-					})}
-				</CardsWrapper>
-			</MaxWidthWrapper>
-			<Division height="normal" line={false} />
-			<Footer />
-		</GlobalDiv>
+					<SectionTitle
+						title="Projetos Internos"
+						color="purple"
+						id="projetosInternos"
+					></SectionTitle>
+					<p
+						style={{
+							marginBottom: "2rem",
+						}}
+					>
+						Fique por dentro dos projetos que <b>nossos membros</b>{" "}
+						estão desenvolvendo.
+					</p>
+					<CardsWrapper>
+						{internalProjects.map((project, index) => {
+							return (
+								<Card
+									title={project.title}
+									description={project.author}
+									link={project.link}
+									img={
+										"/img/projects/" +
+										(project.img || "placeholder.png")
+									}
+									key={index}
+								/>
+							)
+						})}
+					</CardsWrapper>
+				</MaxWidthWrapper>
+				<Division height="normal" line={false} />
+				<Footer />
+			</GlobalDiv>
+		</motion.div>
 	)
 }

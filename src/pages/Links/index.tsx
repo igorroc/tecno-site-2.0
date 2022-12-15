@@ -1,4 +1,4 @@
-import { LinksWrapper, Header, Section, SocialWrapper } from "./styles"
+import { LinksWrapper, CustomHeader, Section, SocialWrapper } from "./styles"
 
 import SmallLogo from "../../assets/icons/logo_white.svg?component"
 
@@ -53,7 +53,7 @@ export default function Links() {
 	return (
 		<GlobalDiv>
 			<LinksWrapper>
-				<Header>
+				<CustomHeader>
 					<a href="http://beta.tecnojr.com.br/">
 						<SmallLogo className="logo" />
 					</a>
@@ -61,7 +61,7 @@ export default function Links() {
 						<h1>TecnoJr</h1>
 					</a>
 					<h2>Empresa Júnior de Computação</h2>
-				</Header>
+				</CustomHeader>
 				<SocialWrapper>
 					{socialList.map((social, index) => (
 						<a href={social.url} key={index}>

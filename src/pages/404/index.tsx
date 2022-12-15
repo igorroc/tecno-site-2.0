@@ -10,7 +10,6 @@ import img404 from "/src/assets/img/background404.png"
 export default function PageNotFound() {
 	return (
 		<Wrapper>
-			<Header active="404" />
 			<BackgroundImage image={img404} fullHeight />
 			<WrapperContent>
 				<MainText size="giant">404</MainText>
