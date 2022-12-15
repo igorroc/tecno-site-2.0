@@ -135,7 +135,7 @@ function PressKit() {
 					</p>
 					<Button url="#logo">
 						Saiba mais
-						<i className="fa-solid fa-arrow-right"></i>
+						<i className="fa-solid fa-caret-down"></i>
 					</Button>
 					<ScrollIndicator />
 				</WrapperMainContent>
@@ -149,9 +149,10 @@ function PressKit() {
 				</Description>
 
 				<WrapperDivs>
-					{FullLogos.map((logo) => (
+					{FullLogos.map((logo, index) => (
 						<WrapperTransparente
 							className={logo.inverted ? "inverted" : ""}
+							key={index}
 						>
 							<img src={logo.path + ".png"} alt={logo.name} />
 							<div className="links">
@@ -178,9 +179,10 @@ function PressKit() {
 				<Title>Ícones</Title>
 
 				<WrapperDivs>
-					{Icons.map((icon) => (
+					{Icons.map((icon, index) => (
 						<WrapperTransparente
 							className={icon.inverted ? "inverted" : ""}
+							key={index}
 						>
 							<img src={icon.path + ".png"} alt={icon.name} />
 							<div className="links">
@@ -204,9 +206,10 @@ function PressKit() {
 				</Description>
 
 				<WrapperDivs>
-					{Typos.map((typo) => (
+					{Typos.map((typo, index) => (
 						<WrapperTransparente
 							className={typo.inverted ? "inverted" : ""}
+							key={index}
 						>
 							<img src={typo.path + ".png"} alt={typo.name} />
 							<div className="links">
@@ -226,8 +229,9 @@ function PressKit() {
 				</SectionTitle>
 
 				<WrapperDivs>
-					{Colors.map((color) => (
+					{Colors.map((color, index) => (
 						<CardColor
+							key={index}
 							style={{
 								backgroundColor: color.hex,
 								color: color.textColor || "#fff",
