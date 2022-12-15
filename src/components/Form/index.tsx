@@ -27,6 +27,19 @@ export function Form(this: any, props: any) {
 		console.log(inputs)
 		event.preventDefault()
 
+		if (
+			inputs.sender_name == "" ||
+			inputs.sender_email == "" ||
+			inputs.sender_findAboutUs == "" ||
+			inputs.email_subject == "" ||
+			inputs.email_message == ""
+		) {
+			setN("erro")
+			console.log("erro")
+			alert("Ocorreu um erro ao enviar sua mensagem.")
+			return
+		}
+
 		emailjs
 			.sendForm(
 				import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -59,6 +72,7 @@ export function Form(this: any, props: any) {
 						placeholder="Seu nome"
 						value={inputs.sender_name}
 						onChange={handleInputChange}
+						required
 					/>
 				</label>
 				<label>
@@ -70,6 +84,7 @@ export function Form(this: any, props: any) {
 						placeholder="seu@email.com"
 						value={inputs.sender_email}
 						onChange={handleInputChange}
+						required
 					/>
 				</label>
 			</div>
@@ -94,6 +109,7 @@ export function Form(this: any, props: any) {
 						value={inputs.sender_findAboutUs}
 						onChange={handleInputChange}
 						placeholder="Selecione uma opção"
+						required
 					>
 						<option value="default">Selecione uma opção</option>
 						<option value="uesc">UESC</option>
@@ -113,6 +129,7 @@ export function Form(this: any, props: any) {
 						placeholder="Título do email"
 						value={inputs.email_subject}
 						onChange={handleInputChange}
+						required
 					/>
 				</label>
 			</div>
@@ -125,6 +142,7 @@ export function Form(this: any, props: any) {
 						id="email_message"
 						placeholder="Fale mais sobre o que você quer nesse contato!"
 						onChange={handleInputChange}
+						required
 					/>
 				</label>
 			</div>
