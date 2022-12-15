@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"homepage": "https://tecnojr.com.br/",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --host",
 		"build": "tsc && vite build",
 		"serve": "npm run build && vite preview"
 	},
