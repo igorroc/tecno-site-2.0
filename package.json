@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite --host",
 		"build": "tsc && vite build",
-		"serve": "npm run build && vite preview"
+		"serve": "npm run build && vite preview  --host"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome": "^1.1.8",

@@ -59,7 +59,11 @@ export default function WpAdmin() {
 							<input type="checkbox" />
 							Lembrar-me
 						</label>
-						<button>Acessar</button>
+						<a href="/" style={{ cursor: "pointer" }}>
+							<button style={{ cursor: "pointer" }}>
+								Acessar
+							</button>
+						</a>
 					</div>
 				</div>
 
