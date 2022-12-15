@@ -23,8 +23,4 @@ export const WrapperContent = styled("div", {
 		fontSize: "1.2em",
 		maxWidth: "500px",
 	},
-
-	"@small": {
-		fontSize: "12px",
-	},
 })
