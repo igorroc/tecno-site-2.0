@@ -1,5 +1,18 @@
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+body {
+	background-color: #1b1b1b;
+	color: white;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1em;
+	color: #31e7ff;
 }
 
 ::-moz-selection {
@@ -10,4 +23,17 @@ html {
 ::selection {
 	color: #fff;
 	background: #3550bb;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 100px;
 }
