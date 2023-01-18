@@ -35,7 +35,11 @@ const LinkList = [
 		iconName: "linkedin",
 		prefix: "fab",
 	},
-	{ url: "https://wa.me/557336805389", iconName: "whatsapp", prefix: "fab" },
+	{
+		url: "https://wa.me/557399301800?text=Olá! Estou entrando em contato pelo site da *Tecno*, gostaria de pedir um orçamento para ",
+		iconName: "whatsapp",
+		prefix: "fab",
+	},
 ]
 
 type FooterProps = {

@@ -231,7 +231,26 @@ export const memberList = [
 	{
 		name: "Gabriella Oliveira",
 		role: "Gerência de RH",
-		links: [],
+		blurhash:
+			"oEC$1S?a0~nj-At6~W%MOYsAWBNupItR-poyS1a#%g%M%MxaxZW;-;xvxusmjskC%MxuxuR*WBoL",
+		img: "gabriella_oliveira.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/gabriella-oliveira-00832a183",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/Gabriella0Oliveira",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:maria0gabriella@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Samuel Vasconcelos",
@@ -356,25 +375,6 @@ export const memberList = [
 		name: "Guilherme Almeida",
 		role: "Membro",
 		links: [],
-	},
-	{
-		name: "Igor Nascimento",
-		role: "Membro",
-		blurhash:
-			"yPFrSD-=u6S4xbRiROs;ozxvs:kDRjay9Zf6MxWAofWAkCxvayt8oMV@j[o0oMj[WAWBWBj@WBV?ayayWVogaxogogofofWVWBkCWU",
-		img: "igor_nascimento.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/mr-igor-nascimento/",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/mr-nascimento",
-			},
-		],
 	},
 	{
 		name: "Isaac Lima",
@@ -634,14 +634,6 @@ export const memberList = [
 		blurhash:
 			"yUE{CF_4x]o}%g.8%g={j]oej[WYW=kCRiV@ofoLWAV@aes+oJWXj]jsWBWBV[WBWWofayRjaet7ofWBWBjZoLj]j?ayWVj[ofj[WC",
 		img: "pedro_elias.png",
-		links: [],
-	},
-	{
-		name: "Solana Ametista",
-		role: "Membro",
-		blurhash:
-			"ySEyMdJB?wkWxa%LD*KR$$OFV@adM|n$NGRkxDjZM|WXt7WBX8n$oyRjs:kCa~s.RkWBt5WCbHxuV[R+jZj[kBj[aej[f5j[WBj@j]",
-		img: "solana.png",
 		links: [],
 	},
 	{

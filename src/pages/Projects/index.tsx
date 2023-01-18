@@ -71,6 +71,12 @@ const externalProjects = [
 
 const internalProjects = [
 	{
+		title: "COLCIC",
+		author: "Igor Rocha",
+		link: "https://colcic.uesc.br",
+		img: "colcic.png",
+	},
+	{
 		title: "Database UESC",
 		author: "Igor Rocha",
 		link: "https://uesc.ilrocha.com/emails",
@@ -184,8 +190,8 @@ export default function Projects() {
 							marginBottom: "2rem",
 						}}
 					>
-						Fique por dentro dos projetos que <b>nossos membros</b>{" "}
-						estão desenvolvendo.
+						Fique por dentro dos projetos pessoais que{" "}
+						<b>nossos membros</b> estão desenvolvendo.
 					</p>
 					<CardsWrapper>
 						{internalProjects.map((project, index) => {

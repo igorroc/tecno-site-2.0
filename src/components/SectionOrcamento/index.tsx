@@ -35,7 +35,7 @@ function SectionOrcamento() {
 					</p>
 					<Button
 						newTab
-						url="https://wa.me/557336805389?text=Olá! Estou entrando em contato pelo site, gostaria de pedir um orçamento para "
+						url="https://wa.me/557399301800?text=Olá! Estou entrando em contato pelo site da *Tecno*, gostaria de pedir um orçamento para "
 					>
 						<Icon prefix="fab" iconName="whatsapp"></Icon>
 						Whatsapp
