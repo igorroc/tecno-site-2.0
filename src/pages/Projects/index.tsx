@@ -59,8 +59,9 @@ const externalProjects = [
 	},
 	{
 		title: "Partiu Dirigir",
-		description: "Aplicativo",
-		link: "",
+		description: "Sistema Web",
+		link: "https://partiu.tecnojr.com.br",
+		img: "partiu.png",
 	},
 	{
 		title: "Observatório Social",
