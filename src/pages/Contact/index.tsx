@@ -47,7 +47,7 @@ export default function Contact() {
 								<h1>
 									Entre em<MainText>contato</MainText>
 								</h1>
-								<Form n={status} setN={setStatus} />
+								<Form setStatus={setStatus} />
 							</WrapperMainContent>
 						</WrapperForm>
 					)}
@@ -73,7 +73,7 @@ export default function Contact() {
 									contato@tecnojr.com.br
 								</a>
 							</p>
-							<Button url="mailto:contato@tecnojr.com.br">
+							<Button url="mailto:contato@tecnojr.com.br" newTab>
 								Enviar email
 								<i className="fa-solid fa-envelope"></i>
 							</Button>
