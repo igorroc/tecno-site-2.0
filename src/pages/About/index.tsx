@@ -120,8 +120,8 @@ export default function About() {
 						Conheça os devs da <strong>Tecno</strong>!
 					</SectionTitle>
 					<p>
-						Atualmente a TecnoJr é composta por{" "}
-						<strong>{roles.total} membros</strong>, sendo:
+						Atualmente a <b>TecnoJr</b> é composta por{" "}
+						<b>{roles.total} membros</b>, sendo:
 					</p>
 					<FilterPill functionChange={filterChange} />
 					<MemberGrid>

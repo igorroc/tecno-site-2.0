@@ -45,27 +45,8 @@ export const memberList = [
 		],
 	},
 	{
-		name: "Isabelle Cruz",
-		role: "Diretoria Presidente",
-		blurhash:
-			"yHH-Pzrq0~D%9Z0LNb00tmD$?a%2nhsSKk0K~CjFWBxut700-poJIpkDt6js-:smbbIoRj%2R*M{oft7IokDoJWBoyxuRjbbRjofRj",
-		img: "isabelle.png",
-		links: [
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://instagram.com/iamisabellec",
-			},
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/isabellesscruz",
-			},
-		],
-	},
-	{
 		name: "Igor Rocha",
-		role: "Diretoria de Projetos",
+		role: "Diretor Presidente",
 		blurhash:
 			"y8D]9,D$00^+}s00E1*Is,}[I=0La0xa0ef9}tt79ZRj%M=|D*4.%1%MX5%1RPofR*Ioxu%MRjnhxuS5In-pxuE1D%s:xuD*og%MIU",
 		img: "igor_rocha.png",
@@ -93,91 +74,56 @@ export const memberList = [
 		],
 	},
 	{
-		name: "Thalles Cerqueira",
-		role: "Diretoria de Vendas",
+		name: "Isaac Lima",
+		role: "Diretoria de Projetos",
 		blurhash:
-			"yEE.@ZD*DgM_xwIBcFWODiO]xuxURPo#I7RP_4R*tSWEr:pLxurpIUS%WCnis=NFsAM_NsROt8tSSixZM_s8Rjj]jCRPS%t7X9oLM{",
-		img: "thalles_cerqueira.png",
+			"yWHmfEX9=voJxZ$%s.}=WXI;f6NdS4azf6s.R+WDj@WWoeI=WWs.j[j?jsayR*WVs.s.ayWCWWs.j@WWjtWVWVoLjZayj[j[WWR+az",
+		img: "isaac_lima.png",
 		links: [
 			{
 				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.linkedin.com/in/thalles-cerqueira-b43a571a1/",
+				url: "https://www.linkedin.com/in/inlima11",
 			},
-		],
-	},
-	{
-		name: "Gabriela Zerbone",
-		role: "Diretoria de RH",
-		blurhash:
-			"yCDbc*,HEf9[oyWXI:~oIV={azNHWVayFv5R-U^QoLayxa%1t7ELoexaxas:xaxaNHRjofoeWCxtofSgsoxGoKoL%1$*t6I:Rks:oK",
-		img: "gabi_zerbone.png",
-		links: [
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/inlima",
+			},
 			{
 				icon: "instagram",
 				prefix: "fab",
-				url: "https://www.instagram.com/gzerbone_",
+				url: "https://www.instagram.com/i.n.lima/",
 			},
 			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/gabriela-zerbone-17651962/",
-			},
-		],
-	},
-	{
-		name: "Mateus Lisboa",
-		role: "Diretoria Financeira",
-		blurhash:
-			"yPG[ThD%ysIVs9j?MxIoWBsmfkt7kCWCI=ofw^ofM{aebIofWBoLf6R*WBoft7ofaeofNGWBt7NHWBs:o0WVWBbIbIofj@fkaeaykC",
-		img: "matheus.png",
-		links: [],
-	},
-	{
-		name: "Evelyn Santos",
-		role: "Conselho",
-		blurhash:
-			"yQG[Wj00t-M{^+IUo}KPi^%2V?NGj@V@~pE1-pxuIUogaz%MaKNHNGs:jFR*-:ofM{xuRPWCoLofkCjZoLWAoKRkofxaM{ofjtRjof",
-		img: "evelyn.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/evelyn-santos-3569881b7/",
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:inlima@hotmail.com",
 			},
 		],
 	},
 	{
-		name: "Marcus Vinicius",
-		role: "Conselho",
+		name: "João Rupp",
+		role: "Diretoria de Vendas",
 		blurhash:
-			"yHFX^:4T.T9F-;M|X8L1Myx]V@%LNGxu0LpIiwozs:e.xu%LaLozoLNbfloKg3t7s,W=fPkVR*NIoexZj[s:xGbHX9e.xan%S2W;jZ",
-		img: "marcus.png",
+			"ygJkQ100?^r=ofRkRPE1t7t6NGxujYR*IoofsoR*j?kCoLW:aes:bHWBayays:kCR*jZbGj@WVWBWBoLaza}oeWVkCofoLa{WBj[ay",
+		img: "joao_rupp.png",
 		links: [
 			{
 				icon: "linkedin",
 				prefix: "fab",
-				url: "https://www.linkedin.com/in/marcus-vinicius-bitencourt-do-carmo-86bb2415b/",
+				url: "https://www.linkedin.com/in/joao-victor-r-20aa34122/",
 			},
-		],
-	},
-	{
-		name: "Alanis Rodrigues",
-		role: "Gerência de Marketing",
-		blurhash:
-			"ynIO5}ROyDEL%2xat7~qWBxuofWBofayo~tRs9%LM{WVayxufRRjWVWBRjoLxua}RjaefjRkazf+ofRje.kCayj[t6oLWBRkofoLof",
-		img: "alanis.png",
-		links: [
 			{
-				icon: "linkedin",
+				icon: "github",
 				prefix: "fab",
-				url: "https://www.linkedin.com/in/alanis-rodrigues-aaba4220b/",
+				url: "https://github.com/jvrupp",
 			},
 		],
 	},
 	{
 		name: "Beatriz Pereira",
-		role: "Gerência de Projetos",
+		role: "Diretoria de RH",
 		blurhash:
 			"yID+Vl9t57xa-9j?I;~VI:Ri%2Rjj[R+57Rj=xxuELt7soX8M{xGS5WUxaR+%MWBaxW=aes.WpShs:n$j]j[WBWBt6RkNGkCxaaeR*",
 		img: "beatriz.png",
@@ -196,6 +142,82 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:beatrizpereira.ar@gmail.com",
+			},
+		],
+	},
+	{
+		name: "Gabriella Oliveira",
+		role: "Diretoria de Marketing",
+		blurhash:
+			"oEC$1S?a0~nj-At6~W%MOYsAWBNupItR-poyS1a#%g%M%MxaxZW;-;xvxusmjskC%MxuxuR*WBoL",
+		img: "gabriella_oliveira.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/gabriella-oliveira-00832a183",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/Gabriella0Oliveira",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:maria0gabriella@gmail.com",
+			},
+		],
+	},
+	{
+		name: "Daniel Oliveira",
+		role: "Diretoria Financeira",
+		blurhash:
+			"yBKme4%hCSxt.8xC~W004ni[56?GtRj?0KtS={%14:Rj4o-;4:?boJV[nhRkNGIUxa-oEMNd-V^*tRRkIoM|NFt7-:soWXNGs;I;%1",
+		img: "daniel_oliveira.png",
+		links: [
+			{
+				icon: "sheet-plastic",
+				prefix: "fas",
+				url: "http://lattes.cnpq.br/8179726948969845",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/oliveira4552/",
+			},
+		],
+	},
+	{
+		name: "Gabriela Zerbone",
+		role: "Conselho",
+		blurhash:
+			"yCDbc*,HEf9[oyWXI:~oIV={azNHWVayFv5R-U^QoLayxa%1t7ELoexaxas:xaxaNHRjofoeWCxtofSgsoxGoKoL%1$*t6I:Rks:oK",
+		img: "gabi_zerbone.png",
+		links: [
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/gzerbone_",
+			},
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/gabriela-zerbone-17651962/",
+			},
+		],
+	},
+	{
+		name: "Thalles Cerqueira",
+		role: "Conselho",
+		blurhash:
+			"yEE.@ZD*DgM_xwIBcFWODiO]xuxURPo#I7RP_4R*tSWEr:pLxurpIUS%WCnis=NFsAM_NsROt8tSSixZM_s8Rjj]jCRPS%t7X9oLM{",
+		img: "thalles_cerqueira.png",
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/thalles-cerqueira-b43a571a1/",
 			},
 		],
 	},
@@ -225,49 +247,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:bfspereira.cic@uesc.br",
-			},
-		],
-	},
-	{
-		name: "Gabriella Oliveira",
-		role: "Gerência de RH",
-		blurhash:
-			"oEC$1S?a0~nj-At6~W%MOYsAWBNupItR-poyS1a#%g%M%MxaxZW;-;xvxusmjskC%MxuxuR*WBoL",
-		img: "gabriella_oliveira.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/gabriella-oliveira-00832a183",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/Gabriella0Oliveira",
-			},
-			{
-				icon: "envelope",
-				prefix: "fas",
-				url: "mailto:maria0gabriella@gmail.com",
-			},
-		],
-	},
-	{
-		name: "Samuel Vasconcelos",
-		role: "Gerência de Projetos",
-		blurhash:
-			"yMHxTq9FyXoz-pt7xa~V9FNHIA?HD*of00IoniIUxuRjRjJ9%M^*%fE1%MM|E1%MadR*NGM{xuIUWBRPM{WWRj%2NHoz%2xtWVa}t7",
-		img: "samuel.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/samuel-vasconcelos-b196001ba/",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/smvasconcelos",
 			},
 		],
 	},
@@ -334,25 +313,6 @@ export const memberList = [
 		],
 	},
 	{
-		name: "Daniel Oliveira",
-		role: "Membro",
-		blurhash:
-			"yBKme4%hCSxt.8xC~W004ni[56?GtRj?0KtS={%14:Rj4o-;4:?boJV[nhRkNGIUxa-oEMNd-V^*tRRkIoM|NFt7-:soWXNGs;I;%1",
-		img: "daniel_oliveira.png",
-		links: [
-			{
-				icon: "sheet-plastic",
-				prefix: "fas",
-				url: "http://lattes.cnpq.br/8179726948969845",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/oliveira4552/",
-			},
-		],
-	},
-	{
 		name: "Eric Soares",
 		role: "Membro",
 		blurhash:
@@ -375,35 +335,6 @@ export const memberList = [
 		name: "Guilherme Almeida",
 		role: "Membro",
 		links: [],
-	},
-	{
-		name: "Isaac Lima",
-		role: "Membro",
-		blurhash:
-			"yWHmfEX9=voJxZ$%s.}=WXI;f6NdS4azf6s.R+WDj@WWoeI=WWs.j[j?jsayR*WVs.s.ayWCWWs.j@WWjtWVWVoLjZayj[j[WWR+az",
-		img: "isaac_lima.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/inlima11",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/inlima",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/i.n.lima/",
-			},
-			{
-				icon: "envelope",
-				prefix: "fas",
-				url: "mailto:inlima@hotmail.com",
-			},
-		],
 	},
 	{
 		name: "Jefferson Ferreira",
@@ -481,25 +412,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:jpcsnoberto@gmail.com",
-			},
-		],
-	},
-	{
-		name: "João Rupp",
-		role: "Membro",
-		blurhash:
-			"ygJkQ100?^r=ofRkRPE1t7t6NGxujYR*IoofsoR*j?kCoLW:aes:bHWBayays:kCR*jZbGj@WVWBWBoLaza}oeWVkCofoLa{WBj[ay",
-		img: "joao_rupp.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/joao-victor-r-20aa34122/",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/jvrupp",
 			},
 		],
 	},
@@ -608,6 +520,14 @@ export const memberList = [
 				url: "mailto:mariaguedes44.me@gmail.com",
 			},
 		],
+	},
+	{
+		name: "Mateus Lisboa",
+		role: "Membro",
+		blurhash:
+			"yPG[ThD%ysIVs9j?MxIoWBsmfkt7kCWCI=ofw^ofM{aebIofWBoLf6R*WBoft7ofaeofNGWBt7NHWBs:o0WVWBbIbIofj@fkaeaykC",
+		img: "matheus.png",
+		links: [],
 	},
 	{
 		name: "Murilo Maia",
@@ -722,8 +642,10 @@ export const roles = {
 	conselheiros: memberList.filter((member) =>
 		member.role.includes("Conselho")
 	).length,
-	diretores: memberList.filter((member) => member.role.includes("Diretoria"))
-		.length,
+	diretores: memberList.filter(
+		(member) =>
+			member.role.includes("Diretoria") || member.role.includes("Diretor")
+	).length,
 	gerentes: memberList.filter((member) => member.role.includes("Gerência"))
 		.length,
 	membros: memberList.filter((member) => member.role.includes("Membro"))
