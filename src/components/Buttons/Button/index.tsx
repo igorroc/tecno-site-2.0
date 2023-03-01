@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { CustomButton } from "./styles"
+import { CustomButton, CustomLink } from "./styles"
 
 type ButtonProps = {
 	url?: string
@@ -9,6 +9,7 @@ type ButtonProps = {
 
 export function Button(props: ButtonProps) {
 	const navigate = useNavigate()
+
 	function linkToPage() {
 		if (props.url) {
 			if (props.newTab) {
@@ -20,5 +21,16 @@ export function Button(props: ButtonProps) {
 			}
 		}
 	}
-	return <CustomButton onClick={linkToPage}>{props.children}</CustomButton>
+
+	if (props.url && !props.url.startsWith("/") && !props.url.startsWith("#")) {
+		return (
+			<CustomLink href={props.url} target={props.newTab ? "_blank" : ""}>
+				{props.children}
+			</CustomLink>
+		)
+	} else {
+		return (
+			<CustomButton onClick={linkToPage}>{props.children}</CustomButton>
+		)
+	}
 }
