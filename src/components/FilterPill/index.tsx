@@ -10,7 +10,8 @@ export default function FilterPill(props: FilterProps) {
 	return (
 		<Div>
 			<Pill>
-				{roles.coordenadores} - Coordenadores
+				{roles.coordenadores} -{" "}
+				{roles.coordenadores > 1 ? "Coordenadores" : "Coordenador"}
 				<input
 					type="checkbox"
 					value="coordenação"
@@ -18,7 +19,8 @@ export default function FilterPill(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				{roles.conselheiros} - Conselheiros
+				{roles.conselheiros} -{" "}
+				{roles.conselheiros > 1 ? "Conselheiros" : "Conselheiro"}
 				<input
 					type="checkbox"
 					value="conselho"
@@ -26,7 +28,8 @@ export default function FilterPill(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				{roles.diretores} - Diretores
+				{roles.diretores} -{" "}
+				{roles.diretores > 1 ? "Diretores" : "Diretor"}
 				<input
 					type="checkbox"
 					value="diretoria"
@@ -34,7 +37,7 @@ export default function FilterPill(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				{roles.gerentes} - Gerentes
+				{roles.gerentes} - {roles.gerentes > 1 ? "Gerentes" : "Gerente"}
 				<input
 					type="checkbox"
 					value="gerência"
@@ -42,7 +45,8 @@ export default function FilterPill(props: FilterProps) {
 				/>
 			</Pill>
 			<Pill>
-				{roles.membros} - Desenvolvedores
+				{roles.membros} -{" "}
+				{roles.membros > 1 ? "Desenvolvedores" : "Desenvolvedor"}
 				<input
 					type="checkbox"
 					value="membro"
