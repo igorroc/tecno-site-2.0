@@ -10,7 +10,7 @@ export const HeaderDiv = styled("header", {
 	alignItems: "center",
 	justifyContent: "center",
 	backdropFilter: "blur(10px)",
-	zIndex: "10",
+	zIndex: "99",
 
 	"@supports not (backdrop-filter: blur(10px))": {
 		backgroundColor: "#232323",
