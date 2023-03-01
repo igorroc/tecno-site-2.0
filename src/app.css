@@ -1,3 +1,13 @@
+:root {
+	--primary-color: hsl(228, 56%, 47%);
+	--primary-color-light: hsl(228, 56%, 57%);
+	--primary-color-dark: hsl(228, 56%, 37%);
+
+	--secondary-color: hsl(264, 79%, 63%);
+	--secondary-color-light: hsl(264, 79%, 73%);
+	--secondary-color-dark: hsl(264, 79%, 53%);
+}
+
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 100px;
