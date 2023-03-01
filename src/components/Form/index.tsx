@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 import emailjs from "emailjs-com"
-import { MyForm } from "./styles"
+import { MyForm, CustomTextField, CustomFormControl } from "./styles"
+import { InputLabel, MenuItem, Select } from "@mui/material"
 
 export function Form(this: any, props: any) {
-	const { n, setN } = props
+	const { setStatus } = props
 
 	const [inputs, setInputs] = useState({
 		sender_name: "",
@@ -16,7 +17,7 @@ export function Form(this: any, props: any) {
 	})
 
 	const handleInputChange = (event: any) => {
-		event.persist()
+		// event.persist()
 		setInputs((inp: any) => ({
 			...inp,
 			[event.target.name]: event.target.value,
@@ -34,7 +35,7 @@ export function Form(this: any, props: any) {
 			inputs.email_subject == "" ||
 			inputs.email_message == ""
 		) {
-			setN("erro")
+			setStatus("erro")
 			console.log("erro")
 			alert("Ocorreu um erro ao enviar sua mensagem.")
 			return
@@ -50,11 +51,11 @@ export function Form(this: any, props: any) {
 			.then(
 				(result) => {
 					console.log(result.text)
-					setN("ok")
+					setStatus("ok")
 					// window.location.reload() //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
 				},
 				(error) => {
-					setN("erro")
+					setStatus("erro")
 					console.log(error.text)
 				}
 			)
@@ -63,94 +64,94 @@ export function Form(this: any, props: any) {
 	return (
 		<MyForm onSubmit={handleSubmit} id="form">
 			<div>
-				<label>
-					Nome Completo
-					<input
-						type="text"
-						name="sender_name"
-						id="sender_name"
-						placeholder="Seu nome"
-						value={inputs.sender_name}
-						onChange={handleInputChange}
-						required
-					/>
-				</label>
-				<label>
-					Email
-					<input
-						type="email"
-						name="sender_email"
-						id="sender_email"
-						placeholder="seu@email.com"
-						value={inputs.sender_email}
-						onChange={handleInputChange}
-						required
-					/>
-				</label>
+				<CustomTextField
+					label="Nome completo"
+					placeholder="Igor Rocha"
+					variant="standard"
+					value={inputs.sender_name}
+					onChange={handleInputChange}
+					type="text"
+					name="sender_name"
+					id="sender_name"
+					required
+				/>
+				<CustomTextField
+					label="Email"
+					placeholder="igor@tecnojr.com.br"
+					variant="standard"
+					value={inputs.sender_email}
+					onChange={handleInputChange}
+					type="email"
+					name="sender_email"
+					id="sender_email"
+					required
+				/>
 			</div>
 			<div>
-				<label>
-					Telefone
-					<input
-						type="tel"
-						name="sender_phone"
-						id="sender_phone"
-						placeholder="(XX) X XXXX-XXXX"
-						value={inputs.sender_phone}
-						// pattern="([0-9]{2}) 9 [0-9]{4}-[0-9]{4}"
-						onChange={handleInputChange}
-					/>
-				</label>
-				<label>
-					Como nos conheceu
-					<select
-						name="sender_findAboutUs"
+				<CustomTextField
+					label="Telefone"
+					placeholder="(XX) X XXXX-XXXX"
+					variant="standard"
+					value={inputs.sender_phone}
+					onChange={handleInputChange}
+					type="tel"
+					name="sender_phone"
+					id="sender_phone"
+					required
+				/>
+				<CustomFormControl variant="standard" sx={{ flex: 1 }}>
+					<InputLabel id="sender_findAboutUs_label">
+						Como nos conheceu?
+					</InputLabel>
+					<Select
 						id="sender_findAboutUs"
+						name="sender_findAboutUs"
+						labelId="sender_findAboutUs_label"
 						value={inputs.sender_findAboutUs}
 						onChange={handleInputChange}
-						placeholder="Selecione uma opção"
 						required
 					>
-						<option value="default">Selecione uma opção</option>
-						<option value="uesc">UESC</option>
-						<option value="ej">Outra EJ</option>
-						<option value="instagram">Instagram</option>
-						<option value="outro">Outro</option>
-					</select>
-				</label>
+						<MenuItem value="" disabled>
+							Escolha uma opção
+						</MenuItem>
+						<MenuItem value="uesc">UESC</MenuItem>
+						<MenuItem value="ej">Outra EJ</MenuItem>
+						<MenuItem value="insta">Instagram</MenuItem>
+						<MenuItem value="outro">Outro</MenuItem>
+					</Select>
+				</CustomFormControl>
 			</div>
 			<div>
-				<label>
-					Assunto
-					<input
-						type="text"
-						name="email_subject"
-						id="email_subject"
-						placeholder="Título do email"
-						value={inputs.email_subject}
-						onChange={handleInputChange}
-						required
-					/>
-				</label>
+				<CustomTextField
+					label="Assunto"
+					placeholder="Título do email"
+					variant="standard"
+					value={inputs.email_subject}
+					onChange={handleInputChange}
+					type="text"
+					name="email_subject"
+					id="email_subject"
+					required
+				/>
 			</div>
 			<div>
-				<label>
-					Mensagem
-					<textarea
-						value={inputs.email_message}
-						name="email_message"
-						id="email_message"
-						placeholder="Fale mais sobre o que você quer nesse contato!"
-						onChange={handleInputChange}
-						required
-					/>
-				</label>
+				<CustomTextField
+					label="Mensagem"
+					placeholder="Fale mais sobre o que você quer nesse contato!"
+					variant="standard"
+					value={inputs.email_message}
+					onChange={handleInputChange}
+					type="text"
+					multiline
+					name="email_message"
+					id="email_message"
+					required
+				/>
 			</div>
 			<button>
 				<FontAwesomeIcon icon="envelope" />
 				Enviar
 			</button>
-			{/* <input type="submit" value="Enviar" /> */}
 		</MyForm>
 	)
 }

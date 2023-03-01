@@ -1,4 +1,7 @@
+import { FormControl } from "@mui/material"
 import { styled } from "../../stitches.config"
+import { styled as muiStyled } from "@mui/material/styles"
+import { TextField } from "@mui/material"
 
 export const MyForm = styled("form", {
 	width: "60%",
@@ -110,5 +113,56 @@ export const MyForm = styled("form", {
 
 	"@large": {
 		width: "95%",
+	},
+})
+
+export const CustomTextField = muiStyled(TextField)({
+	flex: 1,
+
+	".MuiFormLabel-root": {
+		color: "white",
+		fontWeight: "600",
+	},
+	".Mui-focused": {
+		color: "var(--primary-color)",
+	},
+
+	"& .MuiInput-root:before": {
+		borderBottom: "2px solid #fff4",
+	},
+	"&:hover .MuiInput-root:before": {
+		borderBottom: "2px solid #fff8",
+	},
+
+	input: {
+		color: "#fffc",
+	},
+
+	textarea: {
+		color: "#fffc",
+	},
+})
+
+export const CustomFormControl = muiStyled(FormControl)({
+	flex: 1,
+
+	".MuiInputLabel-root": {
+		color: "white",
+		fontWeight: "600",
+	},
+
+	".MuiInput-root:before": {
+		borderBottom: "2px solid #fff4",
+	},
+	"&:hover .MuiInput-root:before": {
+		borderBottom: "2px solid #fff8",
+	},
+
+	".MuiSelect-select": {
+		color: "#fffc",
+	},
+
+	".MuiInput-root svg": {
+		color: "white",
 	},
 })
