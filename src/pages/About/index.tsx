@@ -3,7 +3,6 @@ import mainBg from "../../assets/img/backgroundAbout.png"
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 
-import { Header } from "../../components/Header"
 import { MainText } from "../../components/MainText"
 import { Button } from "../../components/Buttons/Button"
 import { MaxWidthWrapper } from "../../components/Global/MaxWidthWrapper"
@@ -99,6 +98,9 @@ export default function About() {
 					<SectionTitle title="Ideais" color="blue">
 						Missão, Visão e Valores!
 					</SectionTitle>
+					<p>
+						Passe o mouse sobre os tópicos para conhecer os ideais
+					</p>
 					<WrapperHex>
 						<HexIdeais
 							title="Missão"
