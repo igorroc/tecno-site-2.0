@@ -24,12 +24,16 @@ export const Card = styled("div", {
 
 	"&:hover .imgWrapper img.loaded": {
 		filter: "grayscale(0)",
-		transform: "scale(1.3) rotateZ(10deg)",
+		transform: "scale(1.1) rotateZ(5deg)",
 	},
-	
+
 	"&:hover .imgWrapper div": {
 		filter: "grayscale(0)",
-		transform: "scale(1.3) rotateZ(10deg)",
+		transform: "scale(1.1) rotateZ(5deg)",
+	},
+
+	"& .imgWrapper:hover ~ .box": {
+		transform: "translateY(0.5em)",
 	},
 })
 
@@ -43,16 +47,14 @@ export const ImgWrapper = styled("div", {
 		width: "100%",
 		height: "100%",
 		objectFit: "cover",
-		filter: "grayscale(1)",
 
 		transition: "all 200ms ease-out",
 	},
-	
+
 	"& div": {
 		width: "100%",
 		height: "100%",
 		objectFit: "cover",
-		filter: "grayscale(1)",
 
 		transition: "all 200ms ease-out",
 	},
@@ -60,6 +62,7 @@ export const ImgWrapper = styled("div", {
 
 export const Box = styled("div", {
 	display: "flex",
+	zIndex: "10",
 	gap: "0.5em",
 	flexDirection: "column",
 	width: "max-content",
@@ -68,6 +71,8 @@ export const Box = styled("div", {
 	fontSize: "1em",
 
 	transform: "translateY(-50%)",
+
+	transition: "all 300ms ease-out",
 
 	borderRadius: "5px",
 	backgroundColor: "#232033",

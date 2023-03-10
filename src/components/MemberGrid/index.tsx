@@ -64,7 +64,7 @@ export function MemberImage(props: ImageProps) {
 }
 
 export function MemberBox(props: hasChildren) {
-	return <Box>{props.children}</Box>
+	return <Box className="box">{props.children}</Box>
 }
 
 export function MemberName(props: hasChildren) {
