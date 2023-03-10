@@ -73,7 +73,7 @@ export const FooterDiv = styled("footer", {
 			},
 
 			"&:hover": {
-				color: "white",
+				color: "#232323",
 				fontWeight: "bold",
 				padding: "0 5px",
 
