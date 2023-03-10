@@ -46,7 +46,7 @@ export const memberList = [
 	},
 	{
 		name: "Igor Rocha",
-		role: "Diretor Presidente",
+		role: "Diretoria de Presidência",
 		blurhash:
 			"y8D]9,D$00^+}s00E1*Is,}[I=0La0xa0ef9}tt79ZRj%M=|D*4.%1%MX5%1RPofR*Ioxu%MRjnhxuS5In-pxuE1D%s:xuD*og%MIU",
 		img: "igor_rocha.png",
@@ -146,6 +146,25 @@ export const memberList = [
 		],
 	},
 	{
+		name: "Daniel Oliveira",
+		role: "Diretoria Financeira",
+		blurhash:
+			"yBKme4%hCSxt.8xC~W004ni[56?GtRj?0KtS={%14:Rj4o-;4:?boJV[nhRkNGIUxa-oEMNd-V^*tRRkIoM|NFt7-:soWXNGs;I;%1",
+		img: "daniel_oliveira.png",
+		links: [
+			{
+				icon: "sheet-plastic",
+				prefix: "fas",
+				url: "http://lattes.cnpq.br/8179726948969845",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/oliveira4552/",
+			},
+		],
+	},
+	{
 		name: "Gabriella Oliveira",
 		role: "Diretoria de Marketing",
 		blurhash:
@@ -166,25 +185,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:maria0gabriella@gmail.com",
-			},
-		],
-	},
-	{
-		name: "Daniel Oliveira",
-		role: "Diretoria Financeira",
-		blurhash:
-			"yBKme4%hCSxt.8xC~W004ni[56?GtRj?0KtS={%14:Rj4o-;4:?boJV[nhRkNGIUxa-oEMNd-V^*tRRkIoM|NFt7-:soWXNGs;I;%1",
-		img: "daniel_oliveira.png",
-		links: [
-			{
-				icon: "sheet-plastic",
-				prefix: "fas",
-				url: "http://lattes.cnpq.br/8179726948969845",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://www.instagram.com/oliveira4552/",
 			},
 		],
 	},
@@ -271,20 +271,6 @@ export const memberList = [
 				icon: "envelope",
 				prefix: "fas",
 				url: "mailto:alicia.mar.val@gmail.com",
-			},
-		],
-	},
-	{
-		name: "Breno Vitório",
-		role: "Membro",
-		blurhash:
-			"ycK0{KNy_Nt7x]xaNG-;-pozozoLWVV@E2R*nOoLRja|s:S#V@s:aye:ofa#xukCWVs:WBRkaexabHjtsmS2Rjoea{ayaeoLWCR+j[",
-		img: "breno.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://www.linkedin.com/in/therealbrenu/",
 			},
 		],
 	},
@@ -377,7 +363,7 @@ export const memberList = [
 			{
 				icon: "envelope",
 				prefix: "fas",
-				url: "linksyamato@gmail.com",
+				url: "mailto:linksyamato@gmail.com",
 			},
 		],
 	},
@@ -601,35 +587,6 @@ export const memberList = [
 				icon: "linkedin",
 				prefix: "fab",
 				url: "https://www.linkedin.com/in/victor-martins-02946610b/",
-			},
-		],
-	},
-	{
-		name: "Yan Costa",
-		role: "Membro",
-		blurhash:
-			"yuNAVOs:?vRjs-t7NG~qj]ofjsRQayWBRkayMxf6f+azxu%Mayf6j[WBj[ofWCayV@ofj]juayjtf6WVaztRoLj@ogj[jsofRkR*WB",
-		img: "yan.png",
-		links: [
-			{
-				icon: "linkedin",
-				prefix: "fab",
-				url: "https://linkedin.com/in/yan-macedo-485015251",
-			},
-			{
-				icon: "github",
-				prefix: "fab",
-				url: "https://github.com/KiritoKi",
-			},
-			{
-				icon: "instagram",
-				prefix: "fab",
-				url: "https://instagram.com/kiritokkazuto",
-			},
-			{
-				icon: "envelope",
-				prefix: "fas",
-				url: "mailto:yanc.macedo@hotmail.com",
 			},
 		],
 	},
