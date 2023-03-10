@@ -53,26 +53,16 @@ const externalProjects = [
 		img: "afusc.png",
 	},
 	{
-		title: "UEPG",
-		description: "WebSite",
-		link: "",
-	},
-	{
 		title: "Partiu Dirigir",
 		description: "Sistema Web",
 		link: "https://partiu.tecnojr.com.br",
 		img: "partiu.png",
 	},
-	{
-		title: "Observatório Social",
-		description: "WebSite",
-		link: "",
-	},
 ]
 
 const internalProjects = [
 	{
-		title: "COLCIC",
+		title: "COLCIC UESC",
 		author: "Igor Rocha",
 		link: "https://colcic.uesc.br",
 		img: "colcic.png",
