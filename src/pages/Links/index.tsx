@@ -27,7 +27,7 @@ const socialList = [
 	{
 		iconName: "whatsapp",
 		iconPrefix: "fab",
-		url: "https://wa.me/557336805389",
+		url: "https://wa.me/557399301800?text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20pelo%20site%20da%20*Tecno*,%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20para",
 	},
 ]
 
