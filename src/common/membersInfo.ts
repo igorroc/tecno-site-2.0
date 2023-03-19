@@ -162,6 +162,16 @@ export const memberList = [
 				prefix: "fab",
 				url: "https://www.instagram.com/oliveira4552/",
 			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/DanielOliveiradaSilva",
+			},
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/daniel-oliveira-da-silva-436276238/",
+			},
 		],
 	},
 	{
@@ -574,7 +584,16 @@ export const memberList = [
 	{
 		name: "Valcírio III",
 		role: "Membro",
-		links: [],
+		blurhash:
+			"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
+		img: "valcirio.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:vfsvsilva.cic@uesc.br",
+			},
+		],
 	},
 	{
 		name: "Victor José",
