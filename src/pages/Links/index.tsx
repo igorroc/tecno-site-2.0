@@ -34,7 +34,13 @@ const socialList = [
 const linkList = [
 	{
 		category: "Importantes",
-		links: [{ title: "Tecno Site", url: "http://tecnojr.com.br/" }],
+		links: [
+			{ title: "Tecno Site", url: "http://tecnojr.com.br/" },
+			{
+				title: "Oracle Opportunity",
+				url: "https://www.sympla.com.br/oracle-opportunity--tecnojr__1921495",
+			},
+		],
 	},
 	{
 		category: "Outros",
