@@ -15,6 +15,7 @@ const LinkList = [
 	{ url: "/contact", text: "Contato" },
 	{ url: "/projects", text: "Projetos" },
 	{ url: "/press-kit", text: "Press Kit" },
+	{ url: "/prosel", text: "Processo Seletivo" },
 ]
 
 type HeaderProps = {
@@ -25,7 +26,7 @@ export function Header(props: HeaderProps) {
 	const { height, width } = useWindowDimensions()
 	const [toggle, setToggle] = useState(false)
 	const [doShow, setDoShow] = useState(true)
-	const breakpointMobile = 800
+	const breakpointMobile = 1140
 	const location = useLocation()
 
 	const handleMenuClick = () => {

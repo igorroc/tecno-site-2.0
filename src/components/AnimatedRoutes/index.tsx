@@ -11,6 +11,7 @@ import WpAdmin from "../../pages/WpAdmin"
 
 import { AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
+import Prosel from "../../pages/Prosel"
 
 export function AnimatedRoutes() {
 	const location = useLocation()
@@ -25,6 +26,7 @@ export function AnimatedRoutes() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/press-kit" element={<PressKit />} />
+				<Route path="/prosel" element={<Prosel />} />
 				<Route path="/links" element={<Links />} />
 				<Route path="/404" element={<PageNotFound />} />
 				<Route path="/wp-admin" element={<WpAdmin />} />
