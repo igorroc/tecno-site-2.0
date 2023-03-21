@@ -21,7 +21,7 @@ const animations = {
 	exit: { opacity: 0, y: -50 },
 }
 
-export default function Contact() {
+export default function Contato() {
 	const [status, setStatus] = useState("form")
 	const latitude = -14.796529895258624
 	const longitude = -39.170944442327475

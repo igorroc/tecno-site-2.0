@@ -11,9 +11,9 @@ import { motion } from "framer-motion"
 
 const LinkList = [
 	{ url: "/", text: "Início" },
-	{ url: "/about", text: "Sobre" },
-	{ url: "/contact", text: "Contato" },
-	{ url: "/projects", text: "Projetos" },
+	{ url: "/sobre", text: "Sobre" },
+	{ url: "/contato", text: "Contato" },
+	{ url: "/projetos", text: "Projetos" },
 	{ url: "/press-kit", text: "Press Kit" },
 	{ url: "/prosel", text: "Processo Seletivo" },
 ]

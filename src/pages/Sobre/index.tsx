@@ -36,7 +36,7 @@ const animations = {
 	exit: { opacity: 0, y: -50 },
 }
 
-export default function About() {
+export default function Sobre() {
 	const [filter, setFilter] = useState<Array<string>>([])
 	const [filteredMembers, setFilteredMembers] =
 		useState<Array<any>>(memberList)

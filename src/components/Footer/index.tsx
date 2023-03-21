@@ -56,7 +56,7 @@ export function Footer(props: FooterProps) {
 						<span>Aproveite nosso serviço</span>
 						<p>Seja Nosso Cliente!</p>
 					</div>
-					<Button url="/contact">Vamos nessa!</Button>
+					<Button url="/contato">Vamos nessa!</Button>
 				</ContactDiv>
 				<FlexDiv verticalAlign="center" horizontalAlign="spaceBetween">
 					<SocialList>

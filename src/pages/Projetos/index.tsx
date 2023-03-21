@@ -104,7 +104,7 @@ const animations = {
 	animate: { opacity: 1, y: 0 },
 	exit: { opacity: 0, y: -50 },
 }
-export default function Projects() {
+export default function Projetos() {
 	return (
 		<motion.div
 			variants={animations}

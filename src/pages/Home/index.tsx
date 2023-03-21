@@ -88,7 +88,7 @@ export default function Home() {
 							garantir que as nossas soluções ofereçam segurança e
 							praticidade para a vida de nossos clientes.
 						</p>
-						<Button url="/contact">
+						<Button url="/contato">
 							Contate-nos
 							<i className="fa-solid fa-arrow-right"></i>
 						</Button>
