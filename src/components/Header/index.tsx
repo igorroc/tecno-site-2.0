@@ -13,7 +13,7 @@ const LinkList = [
 	{ url: "/", text: "Início" },
 	{ url: "/sobre", text: "Sobre" },
 	{ url: "/contato", text: "Contato" },
-	{ url: "/projetos", text: "Projetos" },
+	{ url: "/sonhos", text: "Projetos" },
 	{ url: "/press-kit", text: "Press Kit" },
 	{ url: "/prosel", text: "Processo Seletivo" },
 ]

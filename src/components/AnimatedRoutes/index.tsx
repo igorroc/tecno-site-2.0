@@ -8,10 +8,10 @@ import Login from "../../pages/Login"
 import PressKit from "../../pages/PressKit"
 import Projetos from "../../pages/Projetos"
 import WpAdmin from "../../pages/WpAdmin"
+import Prosel from "../../pages/Prosel"
 
 import { AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
-import Prosel from "../../pages/Prosel"
 
 export function AnimatedRoutes() {
 	const location = useLocation()
@@ -24,7 +24,7 @@ export function AnimatedRoutes() {
 				<Route path="/" element={<Home />} />
 				<Route path="/sobre" element={<Sobre />} />
 				<Route path="/contato" element={<Contato />} />
-				<Route path="/projetos" element={<Projetos />} />
+				<Route path="/sonhos" element={<Projetos />} />
 				<Route path="/press-kit" element={<PressKit />} />
 				<Route path="/prosel" element={<Prosel />} />
 				<Route path="/links" element={<Links />} />
