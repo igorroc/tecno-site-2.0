@@ -346,7 +346,28 @@ export const memberList = [
 		blurhash:
 			"yBHdNxDh1Q0}}XxaNGxuMx-pNxX8xZn%7MEL}s={IUsmNdM|bbNGs:aejGoJI;t7$gn$JUE2xaR*W=xG$iR*I:WCJnWqwIjZW=s:oL",
 		img: "joabe_andrade.png",
-		links: [],
+		links: [
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/joabeandrade/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://www.github.com/JoabeAndrade/",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/j0abeandrade/",
+			},
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:joabeandrade2k01@gmail.com",
+			},
+		],
 	},
 	{
 		name: "Joabe Ferreira",
