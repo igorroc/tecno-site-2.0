@@ -16,10 +16,13 @@ export const CustomSection = styled("section", {
 	gap: "3em",
 
 	p: {
-		margin: "20px 0",
+		margin: "1em 0",
+	},
+	h3: {
+		marginTop: "2em",
 	},
 
-	a: {
+	".clickableLink": {
 		textDecoration: "underline",
 		animation: `${blink} 1s ease-in-out infinite`,
 		transition: "all 0.2s ease-in-out",
@@ -35,10 +38,12 @@ export const CustomSection = styled("section", {
 		width: "100%",
 		borderCollapse: "collapse",
 		boxShadow: "0 0 10px rgba(0, 0, 0, 0.35)",
+		border: "1px solid #ddd",
 
 		th: {
 			padding: "0.5em",
 			background: "var(--primary-color)",
+			border: "1px solid #ddd",
 			color: "#fff",
 		},
 
@@ -52,6 +57,13 @@ export const CustomSection = styled("section", {
 			"&:nth-child(even)": {
 				background: "#f2f2f211",
 			},
+		},
+	},
+
+	ul: {
+		marginLeft: "1em",
+		li: {
+			margin: "0.5em 0",
 		},
 	},
 
@@ -79,8 +91,18 @@ export const CustomSection = styled("section", {
 				objectFit: "cover",
 			},
 		},
+	},
 
-		"@media (max-width: 850px)": {
+	".center": {
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+
+	"@media (max-width: 850px)": {
+		gap: "0",
+		".twoColumns": {
 			flexDirection: "column-reverse",
 
 			"&.reverse": { flexDirection: "column-reverse" },
@@ -93,13 +115,6 @@ export const CustomSection = styled("section", {
 				width: "100%",
 			},
 		},
-	},
-
-	".center": {
-		display: "flex",
-		flexDirection: "column",
-		justifyContent: "center",
-		alignItems: "center",
 	},
 })
 

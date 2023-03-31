@@ -73,7 +73,7 @@ export default function Prosel() {
 									Sabe aquela vibe de colocar a{" "}
 									<b>mão na massa</b> e{" "}
 									<b>aprender na prática</b>? Então, é isso
-									que a gente faz. Somos uma empresa júnior,
+									que a gente faz. Somos uma empresa júnior sem fins lucrativos,
 									formada e gerenciada por estudantes
 									universitários, que oferece serviços
 									profissionais de qualidade a preços
@@ -107,14 +107,13 @@ export default function Prosel() {
 									<b>ideias inovadoras</b>.
 								</p>
 								<p>
-									Resumindo, ser uma empresa júnior é uma
-									oportunidade incrível para estudantes
-									universitários aprenderem sobre negócios,
-									desenvolverem habilidades práticas e
+									Resumindo, ser uma empresa júnior é uma{" "}
+									<b>oportunidade incrível</b> para estudantes
+									universitários aprenderem sobre <b>negócios</b>,
+									desenvolverem <b>habilidades</b> práticas e
 									ajudarem a comunidade local. E a{" "}
 									<b>Tecno</b> é uma dessas empresas, que
-									busca sempre oferecer serviços de alta
-									qualidade em desenvolvimento de software,
+									busca sempre oferecer serviços de <b>alta qualidade</b> em desenvolvimento de software,
 									aplicativos e sites. Tá esperando o que para
 									vir com a gente?
 								</p>
@@ -160,9 +159,9 @@ export default function Prosel() {
 									vai <b>desenvolver um projeto</b>, como se
 									fosse para um <b>cliente fictício</b>, na
 									área que você escolheu:{" "}
-									<a href="#front">Front</a>,{" "}
-									<a href="#back">Back</a> ou{" "}
-									<a href="#design">Design</a>. É a hora de
+									<a className="clickableLink" href="#front">Front</a>,{" "}
+									<a className="clickableLink" href="#back">Back</a> ou{" "}
+									<a className="clickableLink" href="#design">Design</a>. É a hora de
 									colocar a mão na massa e mostrar o{" "}
 									<b>seu potencial</b>!
 								</p>
@@ -186,12 +185,12 @@ export default function Prosel() {
 								Ah, e você pode ficar tranquilo(a) em relação à
 								sua escolha de área, pois as etapas 2 e 3 são
 								específicas para cada uma delas. Ou seja, se
-								você escolheu <a href="#front">Front</a>, vai
+								você escolheu <a className="clickableLink" href="#front">Front</a>, vai
 								desenvolver um projeto de{" "}
-								<a href="#front">Front</a> e ser entrevistado
-								por quem entende de <a href="#front">Front</a>.
-								O mesmo vale para <a href="#back">Back</a> e{" "}
-								<a href="#design">Design</a>.
+								<a className="clickableLink" href="#front">Front</a> e ser entrevistado
+								por quem entende de <a className="clickableLink" href="#front">Front</a>.
+								O mesmo vale para <a className="clickableLink" href="#back">Back</a> e{" "}
+								<a className="clickableLink" href="#design">Design</a>.
 							</p>
 							<p>
 								<b>Bora participar</b>? Preencha o formulário
@@ -208,22 +207,22 @@ export default function Prosel() {
 					<CustomSection>
 						<p>
 							Na <b>Tecno</b>, temos três áreas principais para
-							nossos projetos: <a href="#front">Front-end</a>,{" "}
-							<a href="#back">Back-end</a> e{" "}
-							<a href="#design">Design</a>.
+							nossos projetos: <a className="clickableLink" href="#front">Front-end</a>,{" "}
+							<a className="clickableLink" href="#back">Back-end</a> e{" "}
+							<a className="clickableLink" href="#design">Design</a>.
 						</p>
 						<div className="twoColumns">
 							<div className="content">
-								<h2 id="front">Front</h2>
+								<h3 id="front">Front</h3>
 								<p>
 									Se você tem interesse em{" "}
 									<b>desenvolver interfaces</b>, a área de
 									Front é ideal para você. Nela, você será
 									responsável por{" "}
 									<b>transformar os designs</b> criados pela
-									equipe de <a href="#design">Design</a> em
+									equipe de <a className="clickableLink" href="#design">Design</a> em
 									código, utilizando principalmente{" "}
-									<a
+									<a className="clickableLink"
 										href="https://react.dev/"
 										target="_blank"
 									>
@@ -238,7 +237,7 @@ export default function Prosel() {
 						</div>
 						<div className="twoColumns reverse">
 							<div className="content">
-								<h2 id="back">Back</h2>
+								<h3 id="back">Back</h3>
 								<p>
 									Se você prefere trabalhar com a parte mais
 									técnica do desenvolvimento, a área de{" "}
@@ -247,14 +246,14 @@ export default function Prosel() {
 									, <b>bancos de dados</b> e outras
 									ferramentas necessárias para o funcionamento
 									de um software, utilizando{" "}
-									<a
+									<a className="clickableLink"
 										href="https://nodejs.org/"
 										target="_blank"
 									>
 										Node
 									</a>{" "}
 									ou{" "}
-									<a
+									<a className="clickableLink"
 										href="https://www.djangoproject.com/"
 										target="_blank"
 									>
@@ -269,7 +268,7 @@ export default function Prosel() {
 						</div>
 						<div className="twoColumns">
 							<div className="content">
-								<h2 id="design">Design</h2>
+								<h3 id="design">Design</h3>
 								<p>
 									Por fim, se você tem uma veia mais{" "}
 									<b>criativa</b> e gosta de trabalhar com
@@ -279,7 +278,7 @@ export default function Prosel() {
 									<b>criar interfaces</b> intuitivas e
 									prototipadas, utilizando principalmente a
 									ferramenta{" "}
-									<a
+									<a className="clickableLink"
 										href="https://www.figma.com/"
 										target="_blank"
 									>
@@ -297,50 +296,53 @@ export default function Prosel() {
 						Pré <strong>Requisitos</strong>
 					</SectionTitle>
 					<CustomSection>
-						<p>
-							Antes de se candidatar a uma das vagas da TecnoJr, é
-							importante verificar se você atende aos seguintes
-							pré-requisitos:
-						</p>
-						<ul>
-							<li>
-								Estar regularmente <b>matriculado</b> em um
-								curso de ensino superior em alguma das áreas
-								relacionadas à tecnologia, como{" "}
-								<b>ciência da computação</b>,{" "}
-								<b>sistemas de informação</b> ou <b>design</b>.
-							</li>
-							<li>
-								Ter disponibilidade para dedicar pelo menos{" "}
-								<b>6 horas semanais</b> às atividades da empresa
-								júnior, que incluem <b>reuniões</b>,{" "}
-								<b>treinamentos</b> e o{" "}
-								<b>desenvolvimento de projetos</b> para
-								clientes.
-							</li>
-							<li>
-								Estar disposto a <b>aprender</b> e a se{" "}
-								<b>desenvolver profissionalmente</b>, colocando
-								em prática os conhecimentos adquiridos.
-							</li>
-							<li>
-								Submeter-se às etapas do{" "}
-								<b>processo seletivo</b>, que incluem{" "}
-								<b>responder a um formulário</b>,{" "}
-								<b>desenvolver um projeto</b> em sua área de
-								interesse e participar de <b>entrevistas</b> com
-								os membros da equipe.
-							</li>
-						</ul>
-						<p>
-							Se você se identifica com a nossa proposta e atende
-							aos pré-requisitos acima, não perca a oportunidade
-							de fazer parte da TecnoJr e desenvolver suas
-							habilidades em uma empresa júnior de qualidade.
-						</p>
-						<Button url="https://forms.gle/oszxPVXE55sANa71A">
-							Inscreva-se
-						</Button>
+						<div>
+
+							<p>
+								Antes de se candidatar a uma das vagas da <b>Tecno</b>, é
+								importante verificar se você atende aos seguintes
+								pré-requisitos:
+							</p>
+							<ul>
+								<li>
+									Estar regularmente <b>matriculado</b> em um
+									curso de ensino superior em alguma das áreas
+									relacionadas à tecnologia, como{" "}
+									<b>ciência da computação</b>,{" "}
+									<b>sistemas de informação</b> ou <b>design</b>.
+								</li>
+								<li>
+									Ter disponibilidade para dedicar pelo menos{" "}
+									<b>6 horas semanais</b> às atividades da empresa
+									júnior, que incluem <b>reuniões</b>,{" "}
+									<b>treinamentos</b> e o{" "}
+									<b>desenvolvimento de projetos</b> para
+									clientes.
+								</li>
+								<li>
+									Estar disposto a <b>aprender</b> e a se{" "}
+									<b>desenvolver profissionalmente</b>, colocando
+									em prática os conhecimentos adquiridos.
+								</li>
+								<li>
+									Submeter-se às etapas do{" "}
+									<b>processo seletivo</b>, que incluem{" "}
+									<b>responder a um formulário</b>,{" "}
+									<b>desenvolver um projeto</b> em sua área de
+									interesse e participar de <b>entrevistas</b> com
+									os membros da equipe.
+								</li>
+							</ul>
+							<p>
+								Se você se identifica com a nossa proposta e atende
+								aos pré-requisitos acima, não perca a oportunidade
+								de fazer parte da <b>Tecno</b> e desenvolver suas
+								habilidades em uma empresa júnior de qualidade.
+							</p>
+							<Button url="https://forms.gle/oszxPVXE55sANa71A">
+								Inscreva-se
+							</Button>
+						</div>
 					</CustomSection>
 					<SectionTitle title="Prazo" color="blue">
 						Os <strong>Prazos</strong>
@@ -387,7 +389,7 @@ export default function Prosel() {
 									<td>10/04/2023 → 23/04/2023</td>
 								</tr>
 								<tr>
-									<td>Avaliações Internas</td>
+									<td>Correção dos Projetos</td>
 									<td>24/04/2023 → 30/04/2023</td>
 								</tr>
 								<tr>
