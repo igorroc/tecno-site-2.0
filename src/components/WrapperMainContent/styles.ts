@@ -22,5 +22,10 @@ export const WrapperContent = styled("div", {
 	"& > p": {
 		fontSize: "1.2em",
 		maxWidth: "500px",
+
+		"& b": {
+			fontWeight: "bold",
+			fontSize: "inherit",
+		},
 	},
 })

@@ -83,10 +83,11 @@ export default function Home() {
 							<MainText>Sonhos e Soluções</MainText>
 						</h1>
 						<p>
-							A nossa cultura é transformar qualquer ideia em um
-							projeto de qualidade. Aqui, fazemos de tudo para
-							garantir que as nossas soluções ofereçam segurança e
-							praticidade para a vida de nossos clientes.
+							A nossa cultura é transformar qualquer <b>ideia</b>{" "}
+							em um <b>projeto de qualidade</b>. Aqui, fazemos de
+							tudo para garantir que as nossas soluções ofereçam{" "}
+							<b>segurança e praticidade</b> para a vida de nossos
+							clientes.
 						</p>
 						<Button url="/contato">
 							Contate-nos

@@ -126,10 +126,11 @@ export default function Projetos() {
 							já desenvolvidos!
 						</h1>
 						<p>
-							A TecnoJr investe fundo em capacitações de nossos
-							desenvolvedores para oferecer aos nossos clientes a
-							qualidade e confiança que eles precisam. Confira
-							quem já confiou em nossas soluções:
+							A TecnoJr investe fundo em <b>capacitações</b> de
+							nossos desenvolvedores para oferecer aos nossos
+							clientes a <b>qualidade</b> e <b>confiança</b> que
+							eles precisam. Confira quem já confiou em nossas
+							soluções:
 						</p>
 
 						<Button url="#projetosExternos">

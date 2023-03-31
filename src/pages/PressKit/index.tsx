@@ -142,10 +142,11 @@ function PressKit() {
 							Kit
 						</h1>
 						<p>
-							O kit de imprensa da TecnoJr é um conjunto de
-							informações que podem ser utilizadas para divulgar a
-							empresa e seus produtos. Aqui você encontra o
-							logotipo, cores e material de divulgação.
+							O <b>kit de imprensa</b> da TecnoJr é um conjunto de
+							informações que podem ser utilizadas para{" "}
+							<b>divulgar</b> a empresa e seus produtos. Aqui você
+							encontra o{" "}
+							<b>logotipo, cores e material de divulgação</b>.
 						</p>
 						<Button url="#logo">
 							Saiba mais
