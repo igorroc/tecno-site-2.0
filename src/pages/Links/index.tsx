@@ -35,7 +35,8 @@ const linkList = [
 	{
 		category: "Importantes",
 		links: [
-			{ title: "Tecno Site", url: "http://tecnojr.com.br/" },
+			{ title: "PROCESSO SELETIVO 2023.1", url: "https://tecnojr.com.br/prosel" },
+			{ title: "Tecno Site", url: "https://tecnojr.com.br/" },
 			{
 				title: "Oracle Opportunity",
 				url: "https://www.sympla.com.br/oracle-opportunity--tecnojr__1921495",
