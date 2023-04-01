@@ -1,3 +1,4 @@
+import { animation } from "./../../components/Buttons/ButtonBorder/styles"
 import { keyframes, styled } from "@stitches/react"
 
 export const fade = keyframes({
@@ -24,13 +25,17 @@ export const CustomSection = styled("section", {
 
 	".clickableLink": {
 		textDecoration: "underline",
-		animation: `${blink} 1s ease-in-out infinite`,
+		animation: `${blink} 1.5s ease-in-out infinite`,
 		transition: "all 0.2s ease-in-out",
 
 		"&:hover": {
 			animation: "none",
 			textDecoration: "none",
 			fontWeight: "bold",
+		},
+
+		"&:nth-child(2n)": {
+			animationDelay: "0.5s",
 		},
 	},
 

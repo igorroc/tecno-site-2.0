@@ -1,4 +1,4 @@
-import mainBg from "../../assets/img/backgroundHome.png"
+import mainBg from "../../assets/img/backgroundAbout.png"
 import MEJ from "../../assets/img/mej.jpeg"
 import proselImage from "../../assets/img/prosel.png"
 import clientImage from "../../assets/img/client.jpg"
@@ -38,7 +38,7 @@ export default function Prosel() {
 			<GlobalDiv>
 				<BackgroundImage
 					image={mainBg}
-					blurHash="oNB2jb0]-at6NXssRWX3V_WVafj]X2xIotjJocaxRlWnRlbaWDj[t3n,t6aeofaxRkbHRkkCWBj]"
+					blurHash="o65F2?DN?daJtMWE9abcD*kXM|og?bRO-;V?xuadE4WVE2bcRkbI-;aJ-;RNx]ae9Zf,ItRhj{f+"
 				></BackgroundImage>
 
 				<MaxWidthWrapper>
@@ -73,10 +73,10 @@ export default function Prosel() {
 									Sabe aquela vibe de colocar a{" "}
 									<b>mão na massa</b> e{" "}
 									<b>aprender na prática</b>? Então, é isso
-									que a gente faz. Somos uma empresa júnior sem fins lucrativos,
-									formada e gerenciada por estudantes
-									universitários, que oferece serviços
-									profissionais de qualidade a preços
+									que a gente faz. Somos uma empresa júnior
+									sem fins lucrativos, formada e gerenciada
+									por estudantes universitários, que oferece
+									serviços profissionais de qualidade a preços
 									acessíveis.
 								</p>
 								<p>
@@ -109,13 +109,15 @@ export default function Prosel() {
 								<p>
 									Resumindo, ser uma empresa júnior é uma{" "}
 									<b>oportunidade incrível</b> para estudantes
-									universitários aprenderem sobre <b>negócios</b>,
-									desenvolverem <b>habilidades</b> práticas e
-									ajudarem a comunidade local. E a{" "}
-									<b>Tecno</b> é uma dessas empresas, que
-									busca sempre oferecer serviços de <b>alta qualidade</b> em desenvolvimento de software,
-									aplicativos e sites. Tá esperando o que para
-									vir com a gente?
+									universitários aprenderem sobre{" "}
+									<b>negócios</b>, desenvolverem{" "}
+									<b>habilidades</b> práticas e ajudarem a
+									comunidade local. E a <b>Tecno</b> é uma
+									dessas empresas, que busca sempre oferecer
+									serviços de <b>alta qualidade</b> em
+									desenvolvimento de software, aplicativos e
+									sites. Tá esperando o que para vir com a
+									gente?
 								</p>
 							</div>
 							<div className="imagem">
@@ -159,11 +161,60 @@ export default function Prosel() {
 									vai <b>desenvolver um projeto</b>, como se
 									fosse para um <b>cliente fictício</b>, na
 									área que você escolheu:{" "}
-									<a className="clickableLink" href="#front">Front</a>,{" "}
-									<a className="clickableLink" href="#back">Back</a> ou{" "}
-									<a className="clickableLink" href="#design">Design</a>. É a hora de
-									colocar a mão na massa e mostrar o{" "}
-									<b>seu potencial</b>!
+									<a className="clickableLink" href="#front">
+										Front
+									</a>
+									,{" "}
+									<a className="clickableLink" href="#back">
+										Back
+									</a>{" "}
+									ou{" "}
+									<a className="clickableLink" href="#design">
+										Design
+									</a>
+									. É a hora de colocar a mão na massa e
+									mostrar o <b>seu potencial</b>!
+								</p>
+								<p>
+									Caso queira, você pode se candidatar para{" "}
+									<b>mais de uma área</b>, mas lembre-se que
+									você tem o <b>mesmo período</b> para
+									desenvolver o projeto para todas as áreas. E
+									o projeto será o{" "}
+									<b>mesmo para todas as áreas</b>.
+								</p>
+								<p>
+									<i>
+										Exemplo: Eu escolhi{" "}
+										<a
+											className="clickableLink"
+											href="#design"
+										>
+											Design
+										</a>
+										,{" "}
+										<a
+											className="clickableLink"
+											href="#front"
+										>
+											Front
+										</a>{" "}
+										e{" "}
+										<a
+											className="clickableLink"
+											href="#back"
+										>
+											Back
+										</a>
+										. Então eu vou receber um pedido de
+										cliente que vai ser o mesmo para as três
+										áreas. Eu vou criar a{" "}
+										<b>interface visual</b> de um site, o{" "}
+										<b>código dessa interface</b> e a{" "}
+										<b>API que vai ser consumida</b> por
+										essa interface.{" "}
+										<b>Tudo isso em 2 semanas</b>.
+									</i>
 								</p>
 								<h3>Terceira Etapa</h3>
 								<p>
@@ -182,17 +233,6 @@ export default function Prosel() {
 						</div>
 						<div className="center">
 							<p>
-								Ah, e você pode ficar tranquilo(a) em relação à
-								sua escolha de área, pois as etapas 2 e 3 são
-								específicas para cada uma delas. Ou seja, se
-								você escolheu <a className="clickableLink" href="#front">Front</a>, vai
-								desenvolver um projeto de{" "}
-								<a className="clickableLink" href="#front">Front</a> e ser entrevistado
-								por quem entende de <a className="clickableLink" href="#front">Front</a>.
-								O mesmo vale para <a className="clickableLink" href="#back">Back</a> e{" "}
-								<a className="clickableLink" href="#design">Design</a>.
-							</p>
-							<p>
 								<b>Bora participar</b>? Preencha o formulário
 								agora mesmo e vem com a gente!
 							</p>
@@ -207,9 +247,19 @@ export default function Prosel() {
 					<CustomSection>
 						<p>
 							Na <b>Tecno</b>, temos três áreas principais para
-							nossos projetos: <a className="clickableLink" href="#front">Front-end</a>,{" "}
-							<a className="clickableLink" href="#back">Back-end</a> e{" "}
-							<a className="clickableLink" href="#design">Design</a>.
+							nossos projetos:{" "}
+							<a className="clickableLink" href="#front">
+								Front-end
+							</a>
+							,{" "}
+							<a className="clickableLink" href="#back">
+								Back-end
+							</a>{" "}
+							e{" "}
+							<a className="clickableLink" href="#design">
+								Design
+							</a>
+							.
 						</p>
 						<div className="twoColumns">
 							<div className="content">
@@ -220,9 +270,13 @@ export default function Prosel() {
 									Front é ideal para você. Nela, você será
 									responsável por{" "}
 									<b>transformar os designs</b> criados pela
-									equipe de <a className="clickableLink" href="#design">Design</a> em
-									código, utilizando principalmente{" "}
-									<a className="clickableLink"
+									equipe de{" "}
+									<a className="clickableLink" href="#design">
+										Design
+									</a>{" "}
+									em código, utilizando principalmente{" "}
+									<a
+										className="clickableLink"
 										href="https://react.dev/"
 										target="_blank"
 									>
@@ -246,14 +300,16 @@ export default function Prosel() {
 									, <b>bancos de dados</b> e outras
 									ferramentas necessárias para o funcionamento
 									de um software, utilizando{" "}
-									<a className="clickableLink"
+									<a
+										className="clickableLink"
 										href="https://nodejs.org/"
 										target="_blank"
 									>
 										Node
 									</a>{" "}
 									ou{" "}
-									<a className="clickableLink"
+									<a
+										className="clickableLink"
 										href="https://www.djangoproject.com/"
 										target="_blank"
 									>
@@ -278,7 +334,8 @@ export default function Prosel() {
 									<b>criar interfaces</b> intuitivas e
 									prototipadas, utilizando principalmente a
 									ferramenta{" "}
-									<a className="clickableLink"
+									<a
+										className="clickableLink"
 										href="https://www.figma.com/"
 										target="_blank"
 									>
@@ -297,11 +354,10 @@ export default function Prosel() {
 					</SectionTitle>
 					<CustomSection>
 						<div>
-
 							<p>
-								Antes de se candidatar a uma das vagas da <b>Tecno</b>, é
-								importante verificar se você atende aos seguintes
-								pré-requisitos:
+								Antes de se candidatar a uma das vagas da{" "}
+								<b>Tecno</b>, é importante verificar se você
+								atende aos seguintes pré-requisitos:
 							</p>
 							<ul>
 								<li>
@@ -309,35 +365,38 @@ export default function Prosel() {
 									curso de ensino superior em alguma das áreas
 									relacionadas à tecnologia, como{" "}
 									<b>ciência da computação</b>,{" "}
-									<b>sistemas de informação</b> ou <b>design</b>.
+									<b>sistemas de informação</b> ou{" "}
+									<b>design</b>.
 								</li>
 								<li>
 									Ter disponibilidade para dedicar pelo menos{" "}
-									<b>6 horas semanais</b> às atividades da empresa
-									júnior, que incluem <b>reuniões</b>,{" "}
+									<b>6 horas semanais</b> às atividades da
+									empresa júnior, que incluem <b>reuniões</b>,{" "}
 									<b>treinamentos</b> e o{" "}
 									<b>desenvolvimento de projetos</b> para
 									clientes.
 								</li>
 								<li>
 									Estar disposto a <b>aprender</b> e a se{" "}
-									<b>desenvolver profissionalmente</b>, colocando
-									em prática os conhecimentos adquiridos.
+									<b>desenvolver profissionalmente</b>,
+									colocando em prática os conhecimentos
+									adquiridos.
 								</li>
 								<li>
 									Submeter-se às etapas do{" "}
 									<b>processo seletivo</b>, que incluem{" "}
 									<b>responder a um formulário</b>,{" "}
 									<b>desenvolver um projeto</b> em sua área de
-									interesse e participar de <b>entrevistas</b> com
-									os membros da equipe.
+									interesse e participar de <b>entrevistas</b>{" "}
+									com os membros da equipe.
 								</li>
 							</ul>
 							<p>
-								Se você se identifica com a nossa proposta e atende
-								aos pré-requisitos acima, não perca a oportunidade
-								de fazer parte da <b>Tecno</b> e desenvolver suas
-								habilidades em uma empresa júnior de qualidade.
+								Se você se identifica com a nossa proposta e
+								atende aos pré-requisitos acima, não perca a
+								oportunidade de fazer parte da <b>Tecno</b> e
+								desenvolver suas habilidades em uma empresa
+								júnior de qualidade.
 							</p>
 							<Button url="https://forms.gle/oszxPVXE55sANa71A">
 								Inscreva-se
@@ -366,6 +425,20 @@ export default function Prosel() {
 									importante para nós. Não deixe de se
 									inscrever dentro do prazo e <b>boa sorte</b>
 									!
+								</p>
+								<p>
+									<i>
+										OBS: Os prazos abaixo podem sofrer
+										alterações, para acompanhar as mudanças
+										da melhor forma, siga a{" "}
+										<a
+											href="https://instagram.com/tecnojr"
+											target="_blank"
+										>
+											Tecno no Insta
+										</a>
+										.
+									</i>
 								</p>
 							</div>
 							<div className="imagem">
@@ -412,11 +485,12 @@ export default function Prosel() {
 						</table>
 						<p>
 							E ai? Tudo pronto? <b>Vem com a gente</b>!
+							<br />
+							<br />
+							<Button url="https://forms.gle/oszxPVXE55sANa71A">
+								Inscreva-se
+							</Button>
 						</p>
-
-						<Button url="https://forms.gle/oszxPVXE55sANa71A">
-							Inscreva-se
-						</Button>
 					</CustomSection>
 				</MaxWidthWrapper>
 				<Footer />
