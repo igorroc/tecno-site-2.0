@@ -5,7 +5,7 @@ import clientImage from "../../assets/img/client.jpg"
 import frontImage from "../../assets/img/front.jpg"
 import backImage from "../../assets/img/back.jpg"
 import designImage from "../../assets/img/design.png"
-import calendarImage from "../../assets/img/calendar.webp"
+import calendarImage from "../../assets/img/calendar.png"
 
 import { MainText } from "../../components/MainText"
 import { Button } from "../../components/Buttons/Button"
