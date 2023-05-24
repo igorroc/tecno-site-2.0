@@ -37,15 +37,21 @@ const animations = {
 }
 
 export default function Sobre() {
-	const [filter, setFilter] = useState<Array<string>>([])
+	const [filter, setFilter] = useState<Array<number>>([])
 	const [filteredMembers, setFilteredMembers] =
 		useState<Array<any>>(memberList)
 
 	function filterChange(ev: any) {
-		if (filter.includes(ev.target.value)) {
-			setFilter(filter.filter((item) => item !== ev.target.value))
+		const selectedFilter = Number(ev.target.value)
+
+		if (filter.includes(selectedFilter)) {
+			setFilter(
+				filter.filter((item) => {
+					return item !== selectedFilter
+				})
+			)
 		} else {
-			setFilter([...filter, ev.target.value])
+			setFilter([...filter, selectedFilter])
 		}
 	}
 
@@ -54,9 +60,7 @@ export default function Sobre() {
 			setFilteredMembers(memberList)
 		} else {
 			setFilteredMembers(
-				memberList.filter((member) =>
-					filter.includes(member.role.toLowerCase().split(" ")[0])
-				)
+				memberList.filter((member) => filter.includes(member.roleId))
 			)
 		}
 	}, [filter])
