@@ -15,7 +15,7 @@ const LinkList = [
 	{ url: "/contato", text: "Contato" },
 	{ url: "/sonhos", text: "Projetos" },
 	{ url: "/press-kit", text: "Press Kit" },
-	{ url: "/prosel", text: "Processo Seletivo" },
+	{ url: "/prosel", text: "Processo Seletivo", disabled: true },
 ]
 
 type HeaderProps = {
@@ -63,7 +63,10 @@ export function Header(props: HeaderProps) {
 											to={link.url}
 											key={index}
 											className={
-												link.url == location.pathname
+												link.disabled
+													? "disabled"
+													: link.url ==
+													  location.pathname
 													? "headerActiveItem"
 													: ""
 											}

@@ -52,6 +52,11 @@ export const HeaderDiv = styled("header", {
 					backgroundColor: "white",
 				},
 			},
+
+			"&.disabled": {
+				textDecoration: "line-through",
+				opacity: "0.5",
+			},
 		},
 	},
 
