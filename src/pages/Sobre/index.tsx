@@ -133,7 +133,7 @@ export default function Sobre() {
 					<MemberGrid>
 						<AnimatePresence
 							mode="popLayout"
-							// mode="sync"
+						// mode="sync"
 						>
 							{filteredMembers.map((usr, index) => {
 								return (
@@ -161,27 +161,29 @@ export default function Sobre() {
 													{usr.role}
 												</MemberRole>
 											</MemberBox>
-											<MemberLinksRow>
-												{usr.links.map(
-													(
-														link: any,
-														index: number
-													) => {
-														return (
-															<MemberLink
-																key={index}
-																icon={
-																	link.icon as IconName
-																}
-																prefix={
-																	link.prefix as IconPrefix
-																}
-																url={link.url}
-															/>
-														)
-													}
-												)}
-											</MemberLinksRow>
+											{usr.links && (
+												<MemberLinksRow>
+													{usr.links.map(
+														(
+															link: any,
+															index: number
+														) => {
+															return (
+																<MemberLink
+																	key={index}
+																	icon={
+																		link.icon as IconName
+																	}
+																	prefix={
+																		link.prefix as IconPrefix
+																	}
+																	url={link.url}
+																/>
+															)
+														}
+													)}
+												</MemberLinksRow>
+											)}
 										</MemberCard>
 									</motion.span>
 								)
