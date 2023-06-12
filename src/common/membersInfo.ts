@@ -1,9 +1,17 @@
 import { encodeImageToBlurhash } from "../hooks/handleBlurHash"
 
+enum ROLE_ID {
+	"Trainee" = 0,
+	"Assessor" = 1,
+	"Diretor" = 2,
+	"Conselheiro" = 3,
+	"Coordenador" = 4,
+}
+
 export const memberList = [
 	{
 		name: "Hélder Almeida",
-		roleId: 4,
+		roleId: ROLE_ID.Coordenador,
 		role: "Coordenador",
 		blurhash:
 			"yiN9OG9F~3?axYWAS5V?NMoJaeoyxXj?IoxZogWBR+Rlt5xVWEt6j?R+kCWBofs,R+t6fhR*xa%1WCoJbIWCbHf6oLoeNHoJt7WBay",
@@ -18,7 +26,7 @@ export const memberList = [
 	},
 	{
 		name: "Elinaldo Goes",
-		roleId: 4,
+		roleId: ROLE_ID.Coordenador,
 		role: "Coordenador",
 		blurhash:
 			"yiMkFgM{*0xvR4RjWCjEa#NcWVs:j[aeOZa#VsWBj[j[ogkVj[s:ayWAaxkDkXfkV@WBWXfkofWBays.j[kCj[f7kCj[aeaybIa}jZ",
@@ -33,7 +41,7 @@ export const memberList = [
 	},
 	{
 		name: "Katia Vaskys",
-		roleId: 3,
+		roleId: ROLE_ID.Conselheiro,
 		role: "Conselheira Executiva",
 		blurhash:
 			"yFC?vCD%%%b_$z-pD*.A-VE3bbskV@WBD%R*rpWANHR*xaRlR.%1xFNyaet8OZxDbHoeV?NHjEnhS5s8aybIayogbcniWXoIf,ozRj",
@@ -48,7 +56,7 @@ export const memberList = [
 	},
 	{
 		name: "Igor Rocha",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretor Presidente",
 		blurhash:
 			"y8D]9,D$00^+}s00E1*Is,}[I=0La0xa0ef9}tt79ZRj%M=|D*4.%1%MX5%1RPofR*Ioxu%MRjnhxuS5In-pxuE1D%s:xuD*og%MIU",
@@ -78,7 +86,7 @@ export const memberList = [
 	},
 	{
 		name: "Isaac Lima",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretor de Projetos",
 		blurhash:
 			"yWHmfEX9=voJxZ$%s.}=WXI;f6NdS4azf6s.R+WDj@WWoeI=WWs.j[j?jsayR*WVs.s.ayWCWWs.j@WWjtWVWVoLjZayj[j[WWR+az",
@@ -108,7 +116,7 @@ export const memberList = [
 	},
 	{
 		name: "João Rupp",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretor de Vendas",
 		blurhash:
 			"ygJkQ100?^r=ofRkRPE1t7t6NGxujYR*IoofsoR*j?kCoLW:aes:bHWBayays:kCR*jZbGj@WVWBWBoLaza}oeWVkCofoLa{WBj[ay",
@@ -128,7 +136,7 @@ export const memberList = [
 	},
 	{
 		name: "Beatriz Pereira",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretora de RH",
 		blurhash:
 			"yID+Vl9t57xa-9j?I;~VI:Ri%2Rjj[R+57Rj=xxuELt7soX8M{xGS5WUxaR+%MWBaxW=aes.WpShs:n$j]j[WBWBt6RkNGkCxaaeR*",
@@ -153,7 +161,7 @@ export const memberList = [
 	},
 	{
 		name: "Daniel Oliveira",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretor Financeiro",
 		blurhash:
 			"yBKme4%hCSxt.8xC~W004ni[56?GtRj?0KtS={%14:Rj4o-;4:?boJV[nhRkNGIUxa-oEMNd-V^*tRRkIoM|NFt7-:soWXNGs;I;%1",
@@ -183,7 +191,7 @@ export const memberList = [
 	},
 	{
 		name: "Gabriella Oliveira",
-		roleId: 2,
+		roleId: ROLE_ID.Diretor,
 		role: "Diretoria de Marketing",
 		blurhash:
 			"oEC$1S?a0~nj-At6~W%MOYsAWBNupItR-poyS1a#%g%M%MxaxZW;-;xvxusmjskC%MxuxuR*WBoL",
@@ -208,7 +216,7 @@ export const memberList = [
 	},
 	{
 		name: "Gabriela Zerbone",
-		roleId: 3,
+		roleId: ROLE_ID.Conselheiro,
 		role: "Conselheira",
 		blurhash:
 			"yCDbc*,HEf9[oyWXI:~oIV={azNHWVayFv5R-U^QoLayxa%1t7ELoexaxas:xaxaNHRjofoeWCxtofSgsoxGoKoL%1$*t6I:Rks:oK",
@@ -228,7 +236,7 @@ export const memberList = [
 	},
 	{
 		name: "Thalles Cerqueira",
-		roleId: 3,
+		roleId: ROLE_ID.Conselheiro,
 		role: "Conselheiro",
 		blurhash:
 			"yEE.@ZD*DgM_xwIBcFWODiO]xuxURPo#I7RP_4R*tSWEr:pLxurpIUS%WCnis=NFsAM_NsROt8tSSixZM_s8Rjj]jCRPS%t7X9oLM{",
@@ -243,7 +251,7 @@ export const memberList = [
 	},
 	{
 		name: "Bruno Felipe",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de RH",
 		blurhash:
 			"yWKd-[jXpyaxDiM{D%.9WBnhxtR*RjbIELWBVYxukCayt8-;ofRjt7WCRjWBoLWARkWBxuayoLxuayRjj[niayR*nhofR*WBt7j@f5",
@@ -273,7 +281,7 @@ export const memberList = [
 	},
 	{
 		name: "Joabe Andrade",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Projetos",
 		blurhash:
 			"yBHdNxDh1Q0}}XxaNGxuMx-pNxX8xZn%7MEL}s={IUsmNdM|bbNGs:aejGoJI;t7$gn$JUE2xaR*W=xG$iR*I:WCJnWqwIjZW=s:oL",
@@ -303,7 +311,7 @@ export const memberList = [
 	},
 	{
 		name: "Joabe Ferreira",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Presidência",
 		blurhash:
 			"yrPFo-W;.mnirqRkRPb^f6smbHbboeayXSofniWBWBa{j[o~fPs9WVIooft7s:ayRjayj[j[j[t7j[V[fkbHj[off+f6V@fQs:ayWX",
@@ -333,7 +341,7 @@ export const memberList = [
 	},
 	{
 		name: "João P. Norberto",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Projetos",
 		blurhash:
 			"y5FXL^OG]NT0JV$zNd}6xC%gM{IoxaRkKjV@RPT0t7xZof^ixuX9ELEL%1-9M_E2R*^5$%f+Nw^kR+E2%1xuNbI;-9ogJVjYV@Rj$$",
@@ -363,7 +371,7 @@ export const memberList = [
 	},
 	{
 		name: "Larissa de Brito",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessora de Vendas",
 		blurhash:
 			"ybJactIn~qxasobINH_4ofR+t7RPR*jFW:t7RONGWqWAo#tRoLaeR*kCj[o0xakCRjfkWVofofa{jZWBWBofofofbHj[axWVofj[ay",
@@ -393,7 +401,7 @@ export const memberList = [
 	},
 	{
 		name: "Luiz Rosário",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Presidência",
 		blurhash:
 			"yDCP9V-p00D%~V-;R+$LjEa_ofbIWBae0MNH^*xuM{M{WCV?jrs:WCj=oejZIVWV%2ofNHWCoextofNHRjjYs:s:Iojs%1WXNGoLt7",
@@ -423,7 +431,7 @@ export const memberList = [
 	},
 	{
 		name: "Murilo Maia",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Marketing",
 		blurhash:
 			"yXJHUE-A.TOYxa%MRjR+NHRjxZoKofofS~R*xat7Rje.n%a#t7j[aeaeV@WBR+jZxZs:RkRjofR*WBs:ofWBWBR*W=bHoeofWBWBj@",
@@ -443,7 +451,7 @@ export const memberList = [
 	},
 	{
 		name: "Thompson Raul",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor Financeiro",
 		blurhash:
 			"yGE2OcSN00%L~BRONGD%WUt7NINJxus:Nvxu-pRit3s.RkE1RjkCt7WYR,WBxbogxtxYWAbHxZE2R+%1xZIpR*flNHof%2j?aykCoe",
@@ -473,7 +481,7 @@ export const memberList = [
 	},
 	{
 		name: "Valcírio III",
-		roleId: 1,
+		roleId: ROLE_ID.Assessor,
 		role: "Assessor de Vendas",
 		blurhash:
 			"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
@@ -486,14 +494,56 @@ export const memberList = [
 			},
 		],
 	},
+	{
+		name: "Davi Roriz",
+		roleId: ROLE_ID.Trainee,
+		role: "Trainee",
+		// blurhash:
+		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
+		// img: "valcirio.png",
+		links: [
+			// {
+			// 	icon: "envelope",
+			// 	prefix: "fas",
+			// 	url: "mailto:vfsvsilva.cic@uesc.br",
+			// },
+		],
+	},
+	{
+		name: "Matheus Santos Silva",
+		roleId: ROLE_ID.Trainee,
+		role: "Trainee",
+		blurhash:
+			":UKTuax@?vIVM{xut3kB_NaIxuV@M|ogRkoeM{b0RikCxaayWBWCr:W?M{RktRoIoya#ozogWBayflWAj[WBWXRjWBt7fPWXofays,a$aeofaxWBj[fPaej]a#fPofaea#ay",
+		img: "matheus_silva.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:mssilva.cic@uesc.br",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/matheusssilva991",
+			},
+		],
+	},
 ]
 
 export const roles = {
-	coordenadores: memberList.filter((member) => member.roleId == 4).length,
-	conselheiros: memberList.filter((member) => member.roleId == 3).length,
-	diretores: memberList.filter((member) => member.roleId == 2).length,
-	assessores: memberList.filter((member) => member.roleId == 1).length,
-	trainees: memberList.filter((member) => member.roleId == 0).length,
+	coordenadores: memberList.filter(
+		(member) => member.roleId == ROLE_ID.Coordenador
+	).length,
+	conselheiros: memberList.filter(
+		(member) => member.roleId == ROLE_ID.Conselheiro
+	).length,
+	diretores: memberList.filter((member) => member.roleId == ROLE_ID.Diretor)
+		.length,
+	assessores: memberList.filter((member) => member.roleId == ROLE_ID.Assessor)
+		.length,
+	trainees: memberList.filter((member) => member.roleId == ROLE_ID.Trainee)
+		.length,
 	total: memberList.length,
 }
 
