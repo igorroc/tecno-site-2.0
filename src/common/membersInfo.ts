@@ -494,21 +494,21 @@ export const memberList = [
 			},
 		],
 	},
-	{
-		name: "Davi Roriz",
-		roleId: ROLE_ID.Trainee,
-		role: "Trainee",
+	// {
+	// 	name: "Davi Roriz",
+	// 	roleId: ROLE_ID.Trainee,
+	// 	role: "Trainee",
 		// blurhash:
 		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
 		// img: "valcirio.png",
-		links: [
+	// 	links: [
 			// {
 			// 	icon: "envelope",
 			// 	prefix: "fas",
 			// 	url: "mailto:vfsvsilva.cic@uesc.br",
 			// },
-		],
-	},
+	// 	],
+	// },
 	{
 		name: "Matheus Santos Silva",
 		roleId: ROLE_ID.Trainee,
