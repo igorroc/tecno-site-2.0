@@ -27,3 +27,17 @@ jobs:
                   FOLDER: dist # The folder to push to the branch
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
                   MESSAGE: "🚀 Build: ({sha}) {msg}"
+
+            - name: Trigger next action
+              uses: actions/github-script@v4
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                script: |
+                  const { data: { id: workflowId } } = await github.actions.createWorkflowDispatch({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    workflow_file: '.github/workflows/deploy.yml',
+                    ref: 'build'
+                  });
+                  console.log(`Workflow ${workflowId} triggered in build.`);
