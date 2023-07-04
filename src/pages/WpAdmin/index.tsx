@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Logo from "../../assets/icons/favicon.svg?component"
+import Logo from "../../assets/icons/favicon.png"
 import rickRoll from "../../assets/video/rick-roll.gif"
 import { Icon } from "../../components/Icon"
 import { GlobalDiv } from "./styles"
@@ -42,7 +42,7 @@ export default function WpAdmin() {
 				style={{ opacity: opacity }}
 			/>
 			<main className="main">
-				<Logo style={{ width: "84px", height: "auto" }} />
+				<img src={Logo} style={{ width: "84px", height: "auto" }} />
 				<div className="form">
 					<label>
 						Nome de usuário ou endereço de e-mail
