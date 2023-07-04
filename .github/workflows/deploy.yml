@@ -4,7 +4,6 @@ on:
     push:
         branches:
             - build
-    workflow_dispatch:
 
 jobs:
     web-deploy:
@@ -20,3 +19,11 @@ jobs:
                 server: ${{ secrets.ftp_host }}
                 username: ${{ secrets.ftp_user }}
                 password: ${{ secrets.ftp_password }}
+
+    manual-trigger:
+      needs: [web-deploy]
+      if: github.ref == 'refs/heads/build'
+      runs-on: ubuntu-latest
+      steps:
+        - name: Manual Trigger
+          run: echo "This workflow was manually triggered."
