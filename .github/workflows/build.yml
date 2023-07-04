@@ -26,4 +26,5 @@ jobs:
                   REPO: self
                   BRANCH: build
                   FOLDER: build
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
                   MESSAGE: "Build: ({sha}) {msg}"
