@@ -97,11 +97,8 @@ export const OrbitCenter = styled("div", {
 	background: "white",
 	borderRadius: "100%",
 
-	"& svg": {
+	"& img": {
 		width: "60px",
 		height: "auto",
-		"& path": {
-			fill: "#232225",
-		},
 	},
 })

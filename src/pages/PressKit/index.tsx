@@ -23,29 +23,29 @@ import { motion } from "framer-motion"
 const FullLogos = [
 	{
 		name: "Logo branca",
-		path: "/logo/FullLogoWhite",
+		path: "/assets/logo/FullLogoWhite",
 	},
 	{
 		name: "Logo preta",
-		path: "/logo/FullLogoBlack",
+		path: "/assets/logo/FullLogoBlack",
 		inverted: true,
 	},
 	{
 		name: "Logo branca e azul",
-		path: "/logo/FullLogoWhiteBlue",
+		path: "/assets/logo/FullLogoWhiteBlue",
 	},
 	{
 		name: "Logo preta e azul",
-		path: "/logo/FullLogoBlackBlue",
+		path: "/assets/logo/FullLogoBlackBlue",
 		inverted: true,
 	},
 	{
 		name: "Logo branca e roxa",
-		path: "/logo/FullLogoWhitePurple",
+		path: "/assets/logo/FullLogoWhitePurple",
 	},
 	{
 		name: "Logo preta e roxa",
-		path: "/logo/FullLogoBlackPurple",
+		path: "/assets/logo/FullLogoBlackPurple",
 		inverted: true,
 	},
 ]
@@ -53,40 +53,40 @@ const FullLogos = [
 const Icons = [
 	{
 		name: "Ícone branco",
-		path: "/icon/IconWhite",
+		path: "/assets/icon/IconWhite",
 	},
 	{
 		name: "Ícone preto",
-		path: "/icon/IconBlack",
+		path: "/assets/icon/IconBlack",
 		inverted: true,
 	},
 	{
 		name: "Ícone azul",
-		path: "/icon/IconBlue",
+		path: "/assets/icon/IconBlue",
 	},
 	{
 		name: "Ícone roxo",
-		path: "/icon/IconPurple",
+		path: "/assets/icon/IconPurple",
 	},
 ]
 
 const Typos = [
 	{
 		name: "Tipografia branca",
-		path: "/typo/TypoWhite",
+		path: "/assets/typo/TypoWhite",
 	},
 	{
 		name: "Tipografia preta",
-		path: "/typo/TypoBlack",
+		path: "/assets/typo/TypoBlack",
 		inverted: true,
 	},
 	{
 		name: "Tipografia azul",
-		path: "/typo/TypoBlue",
+		path: "/assets/typo/TypoBlue",
 	},
 	{
 		name: "Tipografia roxo",
-		path: "/typo/TypoPurple",
+		path: "/assets/typo/TypoPurple",
 	},
 ]
 

@@ -513,61 +513,101 @@ export const memberList = [
 		name: "Davi Roriz",
 		roleId: ROLE_ID.Trainee,
 		role: "Trainee",
-		// blurhash:
-		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
-		// img: "valcirio.png",
-		// links: [
-		// 	{
-		// 		icon: "envelope",
-		// 		prefix: "fas",
-		// 		url: "mailto:vfsvsilva.cic@uesc.br",
-		// 	},
-		// ],
+		blurhash:
+			"ycKA=]Di_Ns.xaa#RPx[o#%2WCWWj@R*OFt7s:kCWAayoexuj[t6ayM|j[WCS5ofjZafRjjZofxuaeaxj[WBj[bHs:f6NGj[a{ays:",
+		img: "davi.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:droliveira1.cic@uesc.br",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/DaviRorizOliveira",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/rorizdavioliveira/",
+			},
+		],
 	},
 	{
 		name: "Gabriel Prado",
 		roleId: ROLE_ID.Trainee,
 		role: "Trainee",
-		// blurhash:
-		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
-		// img: "valcirio.png",
-		// links: [
-		// 	{
-		// 		icon: "envelope",
-		// 		prefix: "fas",
-		// 		url: "mailto:vfsvsilva.cic@uesc.br",
-		// 	},
-		// ],
+		blurhash:
+			"y8Am6uob00#m~BS~I;E1t7s:oeNwjYxG02-T~BXRR%xFWB$$sl%LxZnOofSgIqX8xtn$NGjY%1^i$%nhs.xZkBWDR*WBxZxtS4s.NH",
+		img: "gabriel.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:gabrielpradomartinsgbi@gmail.com",
+			},
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/gabrielprd/",
+			},
+		],
 	},
 	{
 		name: "Igor Campos",
 		roleId: ROLE_ID.Trainee,
 		role: "Trainee",
-		// blurhash:
-		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
-		// img: "valcirio.png",
-		// links: [
-		// 	{
-		// 		icon: "envelope",
-		// 		prefix: "fas",
-		// 		url: "mailto:vfsvsilva.cic@uesc.br",
-		// 	},
-		// ],
+		blurhash:
+			"ypMG#JRj~qoKV@RkM{tRM{xZkCj[s:WBNHxuV@WBWBj[oz-:RjWCayRjayoLbHt6RjoLWVaeof%LayR*WBWBays:s:ayRjofoffQay",
+		img: "igor_campos.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:igoruser07@gmail.com",
+			},
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/igorcamposm/",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/IgorCamps",
+			},
+			{
+				icon: "instagram",
+				prefix: "fab",
+				url: "https://www.instagram.com/igu.cm/",
+			},
+		],
 	},
 	{
 		name: "Isabela Madureira",
 		roleId: ROLE_ID.Trainee,
 		role: "Trainee",
-		// blurhash:
-		// 	"qEGbbfIB00_N$LMx.8M_00oz%$M{n*WBIoWX00RPsoM_xutRjsWV%gRjRPRjW=t7oJae%$xujv%ME1oKjZbIM{ozs:t7bHRjxuf6",
-		// img: "valcirio.png",
-		// links: [
-		// 	{
-		// 		icon: "envelope",
-		// 		prefix: "fas",
-		// 		url: "mailto:vfsvsilva.cic@uesc.br",
-		// 	},
-		// ],
+		blurhash:
+			"y59?n4000L~B=|0fof-=IAxu$%ENoL$%Efr?^*0foe%2M|Iqn$OEw]xabGae={WBR+NGxZxaIpEMs-s.bHays.WV%LR*M{xukCIot6",
+		img: "isabela_madureira.png",
+		links: [
+			{
+				icon: "envelope",
+				prefix: "fas",
+				url: "mailto:isabelaargolo3110@gmail.com",
+			},
+			{
+				icon: "github",
+				prefix: "fab",
+				url: "https://github.com/bela-mad",
+			},
+			{
+				icon: "linkedin",
+				prefix: "fab",
+				url: "https://www.linkedin.com/in/isabelamad/",
+			},
+		],
 	},
 	{
 		name: "Matheus Santos Silva",

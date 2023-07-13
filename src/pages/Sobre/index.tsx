@@ -148,7 +148,7 @@ export default function Sobre() {
 										<MemberCard>
 											<MemberImage
 												img={
-													"/img/members/" +
+													"/assets/img/members/" +
 													(usr.img || "photo.png")
 												}
 												blur={usr.blurhash}

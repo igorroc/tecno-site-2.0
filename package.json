@@ -22,7 +22,7 @@
 		"blurhash": "^2.0.4",
 		"emailjs-com": "^3.2.0",
 		"framer-motion": "^7.9.1",
-		"npm": "^8.12.1",
+		"npm": "^9.7.2",
 		"react": "^18.1.0",
 		"react-blurhash": "^0.2.0",
 		"react-dom": "^18.1.0",
@@ -31,7 +31,6 @@
 		"slick-carousel": "^1.8.1"
 	},
 	"devDependencies": {
-		"@honkhonk/vite-plugin-svgr": "^1.1.0",
 		"@types/react": "^18.0.10",
 		"@types/react-dom": "^18.0.5",
 		"@types/react-slick": "^0.23.8",

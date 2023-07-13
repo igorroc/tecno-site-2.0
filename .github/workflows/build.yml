@@ -1,0 +1,43 @@
+name: ⚙️ Generate a build and push to another branch
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Build and Push
+        steps:
+            - name: git-checkout
+              uses: actions/checkout@v2
+
+            - name: Install all dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Push
+              uses: s0/git-publish-subdir-action@develop
+              env:
+                  REPO: self
+                  BRANCH: build
+                  FOLDER: dist # The folder to push to the branch
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+                  MESSAGE: "🚀 Build: ({sha}) {msg}"
+
+            - name: Trigger next action
+              uses: actions/github-script@v4
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                script: |
+                  const { data: { id: workflowId } } = await github.actions.createWorkflowDispatch({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    workflow_file: '.github/workflows/deploy.yml',
+                    ref: 'build'
+                  });
+                  console.log(`Workflow ${workflowId} triggered in build.`);

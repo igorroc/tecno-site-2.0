@@ -1,5 +1,5 @@
 import React from "react"
-import Tecno from "../../assets/icons/logo_white.svg?component"
+import Tecno from "../../assets/icons/logo_black.png"
 import BrasilJr from "../../assets/img/partners/brasiljr.png"
 import UniJr from "../../assets/img/partners/unijr.png"
 import COLCIC from "../../assets/img/partners/colcic.png"
@@ -46,7 +46,7 @@ export default function Orbit() {
 
 			{/* LOGO */}
 			<OrbitCenter>
-				<Tecno />
+				<img src={Tecno} />
 			</OrbitCenter>
 		</OrbitContainer>
 	)

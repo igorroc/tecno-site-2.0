@@ -16,8 +16,7 @@ export const HeaderDiv = styled("header", {
 		backgroundColor: "#232323",
 	},
 
-	"& #headerLogo svg": {
-		fontSize: "1em",
+	"& #headerLogo img": {
 		height: "30px",
 		width: "auto",
 	},

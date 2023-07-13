@@ -54,7 +54,7 @@ export function MemberImage(props: ImageProps) {
 				src={props.img}
 				onError={(e) => {
 					let el = e.target as HTMLImageElement
-					el.src = "/members/photo.png"
+					el.src = "/assets/img/members/photo.png"
 				}}
 				className={loaded ? "loaded" : ""}
 				onLoad={() => setLoaded(true)}

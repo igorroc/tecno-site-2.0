@@ -1,5 +1,5 @@
 import { ButtonBorder } from "../Buttons/ButtonBorder"
-import Logo from "../../assets/icons/logo_nome_horizontal_white.svg?component"
+import Logo from "../../assets/icons/logo_nome_horizontal_white.png"
 import { MaxWidthWrapper } from "../Global/MaxWidthWrapper"
 import useWindowDimensions from "../../hooks/useWindowDimentions"
 import { Icon } from "../Icon"
@@ -54,7 +54,7 @@ export function Header(props: HeaderProps) {
 					{width > breakpointMobile ? (
 						<MaxWidthWrapper>
 							<Link id="headerLogo" to="/">
-								<Logo />
+								<img src={Logo} />
 							</Link>
 							<ul>
 								{LinkList.map((link, index) => {
@@ -87,7 +87,7 @@ export function Header(props: HeaderProps) {
 					) : (
 						<MaxWidthWrapper>
 							<Link id="headerLogo" to="/">
-								<Logo />
+								<img src={Logo} />
 							</Link>
 							<SideNav
 								id="sideNav"

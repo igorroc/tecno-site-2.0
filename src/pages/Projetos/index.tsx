@@ -81,7 +81,7 @@ export default function Projetos() {
 									description={project.description}
 									link={project.link}
 									img={
-										"/img/projects/" +
+										"/assets/img/projects/" +
 										(project.img || "placeholder.png")
 									}
 									key={index}
@@ -111,7 +111,7 @@ export default function Projetos() {
 									description={project.author}
 									link={project.link}
 									img={
-										"/img/projects/" +
+										"/assets/img/projects/" +
 										(project.img || "placeholder.png")
 									}
 									key={index}

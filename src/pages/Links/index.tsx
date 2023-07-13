@@ -1,6 +1,6 @@
 import { LinksWrapper, CustomHeader, Section, SocialWrapper } from "./styles"
 
-import SmallLogo from "../../assets/icons/logo_white.svg?component"
+import SmallLogo from "../../assets/icons/logo_white.png"
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
 
@@ -34,14 +34,7 @@ const socialList = [
 const linkList = [
 	{
 		category: "Importantes",
-		links: [
-			{ title: "PROCESSO SELETIVO 2023.1", url: "https://tecnojr.com.br/prosel" },
-			{ title: "Tecno Site", url: "https://tecnojr.com.br/" },
-			{
-				title: "Oracle Opportunity",
-				url: "https://www.sympla.com.br/oracle-opportunity--tecnojr__1921495",
-			},
-		],
+		links: [{ title: "Tecno Site", url: "https://tecnojr.com.br/" }],
 	},
 	{
 		category: "Outros",
@@ -62,7 +55,7 @@ export default function Links() {
 			<LinksWrapper>
 				<CustomHeader>
 					<a href="http://beta.tecnojr.com.br/">
-						<SmallLogo className="logo" />
+						<img src={SmallLogo} className="logo" />
 					</a>
 					<a href="http://beta.tecnojr.com.br/">
 						<h1>TecnoJr</h1>

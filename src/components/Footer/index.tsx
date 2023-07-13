@@ -1,4 +1,4 @@
-import Logo from "../../assets/icons/logo_nome_horizontal_white.svg?component"
+import Logo from "../../assets/icons/logo_nome_horizontal_white.png"
 import { MaxWidthWrapper } from "../Global/MaxWidthWrapper"
 import { Division } from "../Global/Division"
 import { Button } from "../Buttons/Button"
@@ -76,7 +76,7 @@ export function Footer(props: FooterProps) {
 						})}
 					</SocialList>
 					<a href="/">
-						<Logo id="logoFooter" />
+						<img id="logoFooter" src={Logo} />
 					</a>
 					<a href="#pageTop" id="goBack">
 						Voltar ao início
