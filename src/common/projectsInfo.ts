@@ -47,20 +47,14 @@ export const internalProjects = [
 	{
 		title: "COLCIC UESC",
 		author: "Igor Rocha",
-		link: "https://colcic.uesc.br",
+		link: "https://colcic.vercel.app",
 		img: "colcic.png",
 	},
 	{
-		title: "Database UESC",
+		title: "Ferramentas UESC",
 		author: "Igor Rocha",
-		link: "https://uesc.ilrocha.com/emails",
-		img: "databaseuesc.png",
-	},
-	{
-		title: "Calculadora de Notas",
-		author: "Igor Rocha",
-		link: "https://igorroc.github.io/finalcountdown/",
-		img: "calculadoranotas.png",
+		link: "https://uesc.ilrocha.com/",
+		img: "ferramentasuesc.png",
 	},
 	{
 		title: "Wiki de Suporte (LOL)",
