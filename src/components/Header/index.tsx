@@ -10,12 +10,12 @@ import { Link, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const LinkList = [
-	{ url: "/", text: "Início" },
-	{ url: "/sobre", text: "Sobre" },
-	{ url: "/contato", text: "Contato" },
-	{ url: "/sonhos", text: "Projetos" },
-	{ url: "/press-kit", text: "Press Kit" },
-	{ url: "/prosel", text: "Processo Seletivo", disabled: true },
+	{ url: "/", text: "Início", disabled: false },
+	{ url: "/sobre", text: "Sobre", disabled: false },
+	// { url: "/contato", text: "Contato", disabled: false },
+	{ url: "/sonhos", text: "Projetos", disabled: false },
+	{ url: "/press-kit", text: "Press Kit", disabled: false },
+	// { url: "/prosel", text: "Processo Seletivo", disabled: true },
 ]
 
 type HeaderProps = {

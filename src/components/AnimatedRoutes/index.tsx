@@ -23,7 +23,7 @@ export function AnimatedRoutes() {
 			<Routes location={location} key={location.pathname}>
 				<Route path="/" element={<Home />} />
 				<Route path="/sobre" element={<Sobre />} />
-				<Route path="/contato" element={<Contato />} />
+				{/* <Route path="/contato" element={<Contato />} /> */}
 				<Route path="/sonhos" element={<Projetos />} />
 				<Route path="/press-kit" element={<PressKit />} />
 				<Route path="/prosel" element={<Prosel />} />
